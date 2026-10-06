@@ -1,6 +1,6 @@
 # VRM breakdown outlook
 
-Dashboard for the next 5 days of **electrical and mechanical breakdowns** on VRM-1 and VRM-2.
+Dashboard for the next 5 days of **Electrical, Mechanical & Other breakdowns** on VRM-1 and VRM-2.
 
 ```
 Google Sheet (tab "VRM Breakdown")
@@ -10,13 +10,12 @@ ml/fetch_sheet.py  ->  ml/forecast.py  ->  data/*.json  ->  index.html (GitHub P
 ```
 
 ## What the model does
-* Only Electrical Breakdown and Mechanical Breakdown rows are used. Duplicate entries are removed, shutdown days and days with no log are excluded from training.
-* **Stage 1** estimates the chance of an E/M breakdown on each of D+1..D+5 (pooled XGBoost, Platt-calibrated).
-* **Stage 2** ranks equipment families (Fan, Bag House, Belt Conveyor...) given a breakdown (CatBoost blended with a recency-weighted frequency). The family comes from the equipment recorded in each breakdown.
-* Chosen after a walk-forward comparison of the six models in the design guide (frequency baseline, Logistic Regression, Random Forest, XGBoost, CatBoost, LightGBM).
+* All breakdown types are used (Electrical, Mechanical, and Other — which includes utility outages, warehouse blocks, raw-material shortages, and in-process adjustments). Planned Down Time is excluded.
+* **Type forecast** predicts the share of Electrical / Mechanical / Other for each of D+1…D+5 using a recency-weighted frequency mix (half-life 120 days) per mill. Walk-forward CV confirmed this beats XGBoost, CatBoost, Random Forest and Logistic Regression on this data.
+* **Equipment forecast** ranks equipment families (Fan, Bag House, Belt Conveyor…) for Electrical and Mechanical days only (CatBoost blended 50/50 with recency-weighted frequency). "Other" breakdowns show no equipment.
 
 ## Honest limits
-Breakdown history alone predicts *which equipment* better than chance but barely predicts *which day*. The chance shown stays close to each mill's usual rate. Sensor, run-hour or maintenance data would improve it. The dashboard's backtest and live-tracking sections show the real hit rate.
+Breakdown history alone predicts *which type* well (~92% top-hit rate) and *which equipment* better than chance, but the daily type mix stays close to each mill's usual pattern. Sensor, run-hour or maintenance data would improve it. The dashboard's backtest and live-tracking sections show the real hit rates.
 
 ## Setup
 1. **Settings > Secrets and variables > Actions**: add `SHEET_ID` (the long id in the sheet URL) and either
