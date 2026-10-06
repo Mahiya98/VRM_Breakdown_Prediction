@@ -22,7 +22,8 @@ from catboost import CatBoostClassifier
 
 SRC, DROP, OUT = sys.argv[1:4]
 HL, BLEND = 120, 0.5
-VERSION = 'v5 overdue alerts + CatBoost equipment'
+VERSION = 'v5.1 overdue alerts + CatBoost equipment (top-3)'
+TOP_K = 3
 OTHER = {'VRM-1': 'VRM-2', 'VRM-2': 'VRM-1'}
 META = ['target_date', 'state_t', 'y', 'known', 'valid', 'primary', 'all_reasons', 'origin']
 
@@ -164,7 +165,7 @@ for m in FE.MILLS:
     for h in FE.HORIZONS:
         tgt = last + pd.Timedelta(days=h)
         x = of.copy(); x['h'] = h; x['tgt_dow'] = tgt.dayofweek; x['tgt_month'] = tgt.month; x['tgt_weekend'] = int(tgt.dayofweek >= 5)
-        P = p2f(x, m)[0]; top = np.argsort(-P)[:2]
+        P = p2f(x, m)[0]; top = np.argsort(-P)[:TOP_K]
         fcs.append(dict(mill=m, horizon=h, forecast_date=iso(tgt), weekday=tgt.strftime('%a'),
                         families=[dict(family=classes[i], conditional=round(float(P[i]), 3)) for i in top]))
 
@@ -212,11 +213,11 @@ for m in FE.MILLS:
         acts = [k for k in TC if rw['n_' + k] > 0]
         pred, act_f, hit = None, [], None
         if dte in pos and any(k != 'Other' for k in acts):
-            top = np.argsort(-P[pos[dte]])[:2]; pred = [cb[j] for j in top]
+            top = np.argsort(-P[pos[dte]])[:TOP_K]; pred = [cb[j] for j in top]
             act_f = te.loc[dte, 'all_reasons'] if isinstance(te.loc[dte, 'all_reasons'], list) else []
             if act_f:
                 n_em += 1; hit = bool(any(a in pred for a in act_f)); hits += hit
-                bhits += bool(any(a in [cb[j] for j in np.argsort(-base)[:2]] for a in act_f))
+                bhits += bool(any(a in [cb[j] for j in np.argsort(-base)[:TOP_K]] for a in act_f))
         bt_rows.append(dict(date=iso(dte), mill=m, actual_types=acts, predicted_families=pred, actual_families=act_f, top2_hit=hit))
     n = len(win)
     bt[m] = dict(breakdown_days=int(n), em_days_scored=int(n_em),

@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generated_at": "2026-10-06 11:34 UTC",
+  "generated_at": "2026-10-06 11:55 UTC",
   "data_through": "2026-10-06",
-  "model_version": "v5 overdue alerts + CatBoost equipment",
+  "model_version": "v5.1 overdue alerts + CatBoost equipment (top-3)",
   "rows_in_sheet": 7712,
   "duplicate_rows_removed": 2151
  },
@@ -20,6 +20,10 @@
     {
      "family": "Bag House / Bag Filter",
      "conditional": 0.189
+    },
+    {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.097
     }
    ]
   },
@@ -36,6 +40,10 @@
     {
      "family": "Bag House / Bag Filter",
      "conditional": 0.181
+    },
+    {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.089
     }
    ]
   },
@@ -52,6 +60,10 @@
     {
      "family": "Bag House / Bag Filter",
      "conditional": 0.182
+    },
+    {
+     "family": "Hydraulics / Rollers",
+     "conditional": 0.097
     }
    ]
   },
@@ -68,6 +80,10 @@
     {
      "family": "Bag House / Bag Filter",
      "conditional": 0.179
+    },
+    {
+     "family": "Hydraulics / Rollers",
+     "conditional": 0.098
     }
    ]
   },
@@ -84,6 +100,10 @@
     {
      "family": "Bag House / Bag Filter",
      "conditional": 0.179
+    },
+    {
+     "family": "Hydraulics / Rollers",
+     "conditional": 0.097
     }
    ]
   },
@@ -100,6 +120,10 @@
     {
      "family": "Hydraulics / Rollers",
      "conditional": 0.165
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "conditional": 0.146
     }
    ]
   },
@@ -116,6 +140,10 @@
     {
      "family": "Hydraulics / Rollers",
      "conditional": 0.164
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "conditional": 0.157
     }
    ]
   },
@@ -132,6 +160,10 @@
     {
      "family": "Hydraulics / Rollers",
      "conditional": 0.169
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "conditional": 0.161
     }
    ]
   },
@@ -148,6 +180,10 @@
     {
      "family": "Hydraulics / Rollers",
      "conditional": 0.185
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "conditional": 0.169
     }
    ]
   },
@@ -164,6 +200,10 @@
     {
      "family": "Belt Conveyor / Weigh Feeder",
      "conditional": 0.193
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "conditional": 0.176
     }
    ]
   }

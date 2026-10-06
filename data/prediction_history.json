@@ -7,7 +7,8 @@
   "forecast_date": "2026-10-07",
   "predicted": [
    "Fan",
-   "Bag House / Bag Filter"
+   "Bag House / Bag Filter",
+   "Belt Conveyor / Weigh Feeder"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -21,7 +22,8 @@
   "forecast_date": "2026-10-08",
   "predicted": [
    "Fan",
-   "Bag House / Bag Filter"
+   "Bag House / Bag Filter",
+   "Belt Conveyor / Weigh Feeder"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -35,7 +37,8 @@
   "forecast_date": "2026-10-09",
   "predicted": [
    "Fan",
-   "Bag House / Bag Filter"
+   "Bag House / Bag Filter",
+   "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -49,7 +52,8 @@
   "forecast_date": "2026-10-10",
   "predicted": [
    "Fan",
-   "Bag House / Bag Filter"
+   "Bag House / Bag Filter",
+   "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -63,7 +67,8 @@
   "forecast_date": "2026-10-11",
   "predicted": [
    "Fan",
-   "Bag House / Bag Filter"
+   "Bag House / Bag Filter",
+   "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -77,7 +82,8 @@
   "forecast_date": "2026-10-07",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
-   "Hydraulics / Rollers"
+   "Hydraulics / Rollers",
+   "Feeders / Gates / Dampers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -91,7 +97,8 @@
   "forecast_date": "2026-10-08",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
-   "Hydraulics / Rollers"
+   "Hydraulics / Rollers",
+   "Feeders / Gates / Dampers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -105,7 +112,8 @@
   "forecast_date": "2026-10-09",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
-   "Hydraulics / Rollers"
+   "Hydraulics / Rollers",
+   "Feeders / Gates / Dampers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -119,7 +127,8 @@
   "forecast_date": "2026-10-10",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
-   "Hydraulics / Rollers"
+   "Hydraulics / Rollers",
+   "Feeders / Gates / Dampers"
   ],
   "actual_status": "pending",
   "actual_families": [],
@@ -133,7 +142,8 @@
   "forecast_date": "2026-10-11",
   "predicted": [
    "Hydraulics / Rollers",
-   "Belt Conveyor / Weigh Feeder"
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
   ],
   "actual_status": "pending",
   "actual_families": [],

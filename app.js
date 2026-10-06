@@ -83,7 +83,7 @@
     var root = $('forecast'); root.replaceChildren();
     ['VRM-1', 'VRM-2'].forEach(function (mill) {
       var panel = el('div', 'panel'), h = el('h2', null, mill + ' — equipment forecast');
-      h.appendChild(el('span', 'rate', 'If E/M breakdown occurs, most likely equipment'));
+      h.appendChild(el('span', 'rate', 'If E/M breakdown occurs, top-3 most likely equipment'));
       panel.appendChild(h);
       p.forecasts.filter(function (f) { return f.mill === mill; }).forEach(function (f) {
         var d = el('div', 'day'), lab = el('div', 'dlabel');
@@ -164,9 +164,9 @@
     var s = $('bt-summary'); s.replaceChildren();
     ['VRM-1', 'VRM-2'].forEach(function (m) {
       var x = b.summary[m], st = el('div', 'stat');
-      st.appendChild(el('div', 'k', m + ' · equipment top-2 accuracy (' + x.em_days_scored + ' E/M days of ' + x.breakdown_days + ' total)'));
+      st.appendChild(el('div', 'k', m + ' · equipment top-3 accuracy (' + x.em_days_scored + ' E/M days of ' + x.breakdown_days + ' total)'));
       st.appendChild(el('div', 'v', x.top2_hit_rate == null ? 'n/a' : pct(x.top2_hit_rate)));
-      st.appendChild(el('div', 's', 'vs ' + (x.baseline_top2_hit_rate == null ? 'n/a' : pct(x.baseline_top2_hit_rate)) + ' baseline (always pick the most common families)'));
+      st.appendChild(el('div', 's', 'vs ' + (x.baseline_top2_hit_rate == null ? 'n/a' : pct(x.baseline_top2_hit_rate)) + ' baseline (always pick the 3 most common families)'));
       s.appendChild(st);
     });
     var tb = document.querySelector('#bt-table tbody'); tb.replaceChildren();
@@ -189,7 +189,7 @@
     var done = h.filter(function (e) { return e.equip_hit !== null && e.equip_hit !== undefined; });
     var hits = done.filter(function (e) { return e.equip_hit; }).length;
     $('track-summary').textContent = done.length
-      ? 'Equipment prediction: ' + hits + ' of ' + done.length + ' scored E/M days had the right equipment in the top 2 (' + pct(hits / done.length) + ').'
+      ? 'Equipment prediction: ' + hits + ' of ' + done.length + ' scored E/M days had the right equipment in the top 3 (' + pct(hits / done.length) + ').'
       : 'Tracking started with the first published forecast. Results appear here as each forecast day passes.';
     var tb = document.querySelector('#track-table tbody'); tb.replaceChildren();
     h.slice().sort(function (a, b) { return a.forecast_date < b.forecast_date ? 1 : a.forecast_date > b.forecast_date ? -1 : a.mill < b.mill ? -1 : 1; }).slice(0, 40).forEach(function (e) {
