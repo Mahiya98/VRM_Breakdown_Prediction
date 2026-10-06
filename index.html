@@ -10,7 +10,7 @@
 <header class="top">
   <div>
     <h1>VRM-1 &amp; VRM-2 breakdown outlook</h1>
-    <p class="sub">Electrical and mechanical breakdowns only &middot; next 5 days</p>
+    <p class="sub">Electrical, mechanical or other breakdown &middot; next 5 days</p>
   </div>
   <p class="meta" id="meta" aria-live="polite">Loading&hellip;</p>
 </header>
@@ -18,40 +18,40 @@
 <main>
   <section class="note" aria-labelledby="note-h">
     <h2 id="note-h">How to read this</h2>
-    <p>The <strong>equipment ranking</strong> is the useful part: in the last 90 days it named a failing equipment family more often than a simple &ldquo;usual suspects&rdquo; list (see the check at the bottom). The <strong>breakdown chance</strong> stays close to each mill&rsquo;s usual daily rate, so treat it as a rough risk level, not a firm probability. Planned maintenance, utility and warehouse stops are not included.</p>
+    <p>Every forecast day is a breakdown day: the bars show how likely it is to be <strong>electrical</strong>, <strong>mechanical</strong> or <strong>other</strong> (utility, warehouse, process and unclassified stops). Days with no breakdown are not modelled. For electrical and mechanical, the two most likely equipment families are shown; for &ldquo;other&rdquo; no reason is given. The type shares follow each mill&rsquo;s recent mix, so treat them as a rough lean, not a firm call.</p>
   </section>
 
   <section id="forecast" class="grid2" aria-label="5-day forecast"></section>
 
   <section class="card" aria-labelledby="hist-h">
-    <div class="card-head"><h2 id="hist-h">Last 60 days: electrical and mechanical breakdowns per day</h2>
-      <ul class="legend" aria-label="Legend"><li><i class="sw e"></i>Electrical</li><li><i class="sw m"></i>Mechanical</li><li><i class="sw n"></i>Shutdown / no log</li></ul></div>
+    <div class="card-head"><h2 id="hist-h">Last 60 days: breakdowns per day by type</h2>
+      <ul class="legend" aria-label="Legend"><li><i class="sw e"></i>Electrical</li><li><i class="sw m"></i>Mechanical</li><li><i class="sw o"></i>Other</li><li><i class="sw n"></i>Shutdown / no log</li></ul></div>
     <div id="history" class="grid2"></div>
   </section>
 
   <section class="card" aria-labelledby="fam-h">
-    <div class="card-head"><h2 id="fam-h">What failed in the last 90 days</h2><p class="hint">Breakdown events by equipment family</p></div>
+    <div class="card-head"><h2 id="fam-h">What failed in the last 90 days</h2><p class="hint">Electrical and mechanical events by equipment family</p></div>
     <div id="families" class="grid2"></div>
   </section>
 
   <section class="card" aria-labelledby="bt-h">
-    <div class="card-head"><h2 id="bt-h">Did the ranking work? One-day-ahead check, last 90 days</h2><p class="hint" id="bt-note"></p></div>
+    <div class="card-head"><h2 id="bt-h">Did it work? One-day-ahead check on breakdown days, last 90 days</h2><p class="hint" id="bt-note"></p></div>
     <div id="bt-summary" class="stats"></div>
-    <div class="tablewrap"><table id="bt-table"><caption class="sr">Most recent days: predicted top 2 equipment families versus what actually failed</caption>
-      <thead><tr><th>Date</th><th>Mill</th><th>Predicted top 2</th><th>Actual breakdown</th><th>Result</th></tr></thead><tbody></tbody></table></div>
+    <div class="tablewrap"><table id="bt-table"><caption class="sr">Most recent breakdown days: predicted type shares and equipment versus what happened</caption>
+      <thead><tr><th>Date</th><th>Mill</th><th>Predicted type shares</th><th>Actual types</th><th>Equipment check (electrical / mechanical days)</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section class="card" aria-labelledby="track-h">
     <div class="card-head"><h2 id="track-h">Live tracking of published forecasts</h2><p class="hint">Each day&rsquo;s forecast is saved and compared with what happened</p></div>
     <p id="track-summary" class="lead"></p>
     <div class="tablewrap"><table id="track-table"><caption class="sr">Published forecasts and their outcomes</caption>
-      <thead><tr><th>Forecast for</th><th>Mill</th><th>Horizon</th><th>Chance</th><th>Predicted top 2</th><th>Outcome</th></tr></thead><tbody></tbody></table></div>
+      <thead><tr><th>Forecast for</th><th>Mill</th><th>Horizon</th><th>Predicted type shares</th><th>Predicted equipment</th><th>Outcome</th></tr></thead><tbody></tbody></table></div>
   </section>
 </main>
 
 <footer>
   <p id="quality"></p>
-  <p>Data source: Google Sheet tab &ldquo;VRM Breakdown&rdquo;, refreshed daily by GitHub Actions. Duplicate entries are removed; shutdown days and days with no log are left out of training.</p>
+  <p>Data source: Google Sheet tab &ldquo;VRM Breakdown&rdquo;, refreshed daily by GitHub Actions. Duplicate entries are removed; planned down time, shutdown days and days with no log are not counted as breakdowns.</p>
 </footer>
 <div id="tip" class="tip" role="tooltip" hidden></div>
 <script src="app.js"></script>

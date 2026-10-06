@@ -2,72 +2,117 @@
  "meta": {
   "window": "2026-07-09 to 2026-10-06",
   "horizon_days": 1,
-  "note": "Out-of-sample: models were fitted only on data before the window."
+  "note": "Out-of-sample: fitted only on data before the window; only days with a breakdown are scored."
  },
  "summary": {
   "VRM-1": {
-   "days": 78,
-   "breakdown_days": 32,
+   "breakdown_days": 74,
+   "predicted_mix": {
+    "Electrical": 0.239,
+    "Mechanical": 0.132,
+    "Other": 0.629
+   },
+   "actual_mix": {
+    "Electrical": 0.194,
+    "Mechanical": 0.176,
+    "Other": 0.63
+   },
+   "top_type_hit_rate": 0.919,
+   "em_days_scored": 32,
    "top2_hit_rate": 0.656,
-   "baseline_top2_hit_rate": 0.438,
-   "roc_auc": 0.487,
-   "breakdown_rate": 0.41
+   "baseline_top2_hit_rate": 0.438
   },
   "VRM-2": {
-   "days": 64,
-   "breakdown_days": 23,
+   "breakdown_days": 61,
+   "predicted_mix": {
+    "Electrical": 0.13,
+    "Mechanical": 0.199,
+    "Other": 0.671
+   },
+   "actual_mix": {
+    "Electrical": 0.119,
+    "Mechanical": 0.214,
+    "Other": 0.667
+   },
+   "top_type_hit_rate": 0.918,
+   "em_days_scored": 23,
    "top2_hit_rate": 0.478,
-   "baseline_top2_hit_rate": 0.217,
-   "roc_auc": 0.723,
-   "breakdown_rate": 0.359
+   "baseline_top2_hit_rate": 0.217
   }
  },
  "rows": [
   {
    "date": "2026-10-06",
-   "mill": "VRM-2",
-   "em_probability": 0.465,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
-   ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
-   "date": "2026-10-06",
    "mill": "VRM-1",
-   "em_probability": 0.448,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-05",
    "mill": "VRM-2",
-   "em_probability": 0.449,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-05",
    "mill": "VRM-1",
-   "em_probability": 0.475,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Compressor"
    ],
@@ -75,49 +120,77 @@
   },
   {
    "date": "2026-10-04",
-   "mill": "VRM-2",
-   "em_probability": 0.403,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
-   ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
-   "date": "2026-10-04",
    "mill": "VRM-1",
-   "em_probability": 0.431,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-03",
    "mill": "VRM-2",
-   "em_probability": 0.444,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-03",
    "mill": "VRM-1",
-   "em_probability": 0.393,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Compressor",
     "Fan",
@@ -128,72 +201,147 @@
   {
    "date": "2026-10-02",
    "mill": "VRM-2",
-   "em_probability": 0.473,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-02",
    "mill": "VRM-1",
-   "em_probability": 0.413,
-   "predicted": [
-    "Fan",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-01",
    "mill": "VRM-2",
-   "em_probability": 0.471,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-10-01",
    "mill": "VRM-1",
-   "em_probability": 0.452,
-   "predicted": [
-    "Fan",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-30",
    "mill": "VRM-2",
-   "em_probability": 0.463,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-30",
    "mill": "VRM-1",
-   "em_probability": 0.492,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Fan",
     "Belt Conveyor / Weigh Feeder"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -202,24 +350,51 @@
   {
    "date": "2026-09-29",
    "mill": "VRM-2",
-   "em_probability": 0.45,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-29",
    "mill": "VRM-1",
-   "em_probability": 0.508,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bucket Elevator"
    ],
@@ -228,48 +403,99 @@
   {
    "date": "2026-09-28",
    "mill": "VRM-2",
-   "em_probability": 0.443,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-28",
    "mill": "VRM-1",
-   "em_probability": 0.495,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-26",
    "mill": "VRM-2",
-   "em_probability": 0.428,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-26",
    "mill": "VRM-1",
-   "em_probability": 0.416,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -278,36 +504,77 @@
   {
    "date": "2026-09-24",
    "mill": "VRM-2",
-   "em_probability": 0.41,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-24",
    "mill": "VRM-1",
-   "em_probability": 0.477,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-23",
    "mill": "VRM-1",
-   "em_probability": 0.512,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter",
     "Gearbox / Lube"
@@ -317,12 +584,27 @@
   {
    "date": "2026-09-22",
    "mill": "VRM-2",
-   "em_probability": 0.395,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Other equipment"
    ],
@@ -331,24 +613,52 @@
   {
    "date": "2026-09-22",
    "mill": "VRM-1",
-   "em_probability": 0.528,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-21",
    "mill": "VRM-2",
-   "em_probability": 0.379,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder",
     "Other equipment"
@@ -356,98 +666,150 @@
    "top2_hit": true
   },
   {
-   "date": "2026-09-21",
-   "mill": "VRM-1",
-   "em_probability": 0.516,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
-   ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
    "date": "2026-09-20",
    "mill": "VRM-2",
-   "em_probability": 0.374,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
-   "date": "2026-09-20",
-   "mill": "VRM-1",
-   "em_probability": 0.473,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "actual_types": [
+    "Other"
    ],
-   "actual_breakdown": false,
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-19",
    "mill": "VRM-2",
-   "em_probability": 0.375,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-19",
    "mill": "VRM-1",
-   "em_probability": 0.489,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-18",
    "mill": "VRM-2",
-   "em_probability": 0.377,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-18",
    "mill": "VRM-1",
-   "em_probability": 0.513,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-17",
    "mill": "VRM-2",
-   "em_probability": 0.403,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Feeders / Gates / Dampers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
@@ -456,12 +818,28 @@
   {
    "date": "2026-09-17",
    "mill": "VRM-1",
-   "em_probability": 0.525,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan",
     "Gearbox / Lube"
@@ -471,60 +849,124 @@
   {
    "date": "2026-09-16",
    "mill": "VRM-2",
-   "em_probability": 0.405,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-15",
    "mill": "VRM-1",
-   "em_probability": 0.527,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-14",
    "mill": "VRM-2",
-   "em_probability": 0.404,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-14",
    "mill": "VRM-1",
-   "em_probability": 0.519,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-13",
    "mill": "VRM-2",
-   "em_probability": 0.372,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Feeders / Gates / Dampers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -533,12 +975,29 @@
   {
    "date": "2026-09-13",
    "mill": "VRM-1",
-   "em_probability": 0.43,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan",
     "Hydraulics / Rollers",
@@ -549,24 +1008,52 @@
   {
    "date": "2026-09-12",
    "mill": "VRM-2",
-   "em_probability": 0.375,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-12",
    "mill": "VRM-1",
-   "em_probability": 0.44,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter"
    ],
@@ -575,12 +1062,28 @@
   {
    "date": "2026-09-11",
    "mill": "VRM-1",
-   "em_probability": 0.461,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Other equipment"
    ],
@@ -589,12 +1092,28 @@
   {
    "date": "2026-09-10",
    "mill": "VRM-1",
-   "em_probability": 0.469,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Other equipment"
    ],
@@ -603,12 +1122,29 @@
   {
    "date": "2026-09-07",
    "mill": "VRM-1",
-   "em_probability": 0.519,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter",
     "Main Motor"
@@ -618,12 +1154,28 @@
   {
    "date": "2026-09-06",
    "mill": "VRM-1",
-   "em_probability": 0.448,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter"
    ],
@@ -632,72 +1184,148 @@
   {
    "date": "2026-09-05",
    "mill": "VRM-2",
-   "em_probability": 0.346,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-05",
    "mill": "VRM-1",
-   "em_probability": 0.461,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-04",
    "mill": "VRM-2",
-   "em_probability": 0.363,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-04",
    "mill": "VRM-1",
-   "em_probability": 0.476,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-03",
    "mill": "VRM-2",
-   "em_probability": 0.367,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-03",
    "mill": "VRM-1",
-   "em_probability": 0.501,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -706,132 +1334,268 @@
   {
    "date": "2026-09-02",
    "mill": "VRM-2",
-   "em_probability": 0.363,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-02",
    "mill": "VRM-1",
-   "em_probability": 0.504,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-01",
    "mill": "VRM-2",
-   "em_probability": 0.369,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-09-01",
    "mill": "VRM-1",
-   "em_probability": 0.499,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-30",
    "mill": "VRM-2",
-   "em_probability": 0.345,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-30",
    "mill": "VRM-1",
-   "em_probability": 0.444,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-29",
    "mill": "VRM-2",
-   "em_probability": 0.355,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-29",
    "mill": "VRM-1",
-   "em_probability": 0.451,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-28",
    "mill": "VRM-2",
-   "em_probability": 0.368,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-27",
    "mill": "VRM-2",
-   "em_probability": 0.392,
-   "predicted": [
-    "Feeders / Gates / Dampers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-27",
    "mill": "VRM-1",
-   "em_probability": 0.505,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -840,72 +1604,100 @@
   {
    "date": "2026-08-26",
    "mill": "VRM-1",
-   "em_probability": 0.48,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-25",
    "mill": "VRM-2",
-   "em_probability": 0.39,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-25",
    "mill": "VRM-1",
-   "em_probability": 0.474,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
-   "date": "2026-08-24",
-   "mill": "VRM-1",
-   "em_probability": 0.458,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "actual_types": [
+    "Other"
    ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
-   "date": "2026-08-23",
-   "mill": "VRM-1",
-   "em_probability": 0.433,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
-   ],
-   "actual_breakdown": false,
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-22",
    "mill": "VRM-1",
-   "em_probability": 0.447,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -914,72 +1706,148 @@
   {
    "date": "2026-08-21",
    "mill": "VRM-1",
-   "em_probability": 0.449,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-20",
    "mill": "VRM-2",
-   "em_probability": 0.424,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-20",
    "mill": "VRM-1",
-   "em_probability": 0.461,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-19",
    "mill": "VRM-2",
-   "em_probability": 0.383,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-19",
    "mill": "VRM-1",
-   "em_probability": 0.461,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-18",
    "mill": "VRM-1",
-   "em_probability": 0.481,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -988,84 +1856,172 @@
   {
    "date": "2026-08-17",
    "mill": "VRM-2",
-   "em_probability": 0.412,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-17",
    "mill": "VRM-1",
-   "em_probability": 0.486,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-16",
    "mill": "VRM-1",
-   "em_probability": 0.421,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-15",
    "mill": "VRM-1",
-   "em_probability": 0.422,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-14",
    "mill": "VRM-2",
-   "em_probability": 0.427,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-14",
    "mill": "VRM-1",
-   "em_probability": 0.461,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-13",
    "mill": "VRM-2",
-   "em_probability": 0.426,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Hydraulics / Rollers",
     "Belt Conveyor / Weigh Feeder"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Feeders / Gates / Dampers"
    ],
@@ -1074,24 +2030,53 @@
   {
    "date": "2026-08-13",
    "mill": "VRM-1",
-   "em_probability": 0.494,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-12",
    "mill": "VRM-2",
-   "em_probability": 0.414,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube",
     "HAG"
@@ -1101,24 +2086,53 @@
   {
    "date": "2026-08-12",
    "mill": "VRM-1",
-   "em_probability": 0.504,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-11",
    "mill": "VRM-2",
-   "em_probability": 0.403,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube",
     "Hydraulics / Rollers"
@@ -1128,74 +2142,131 @@
   {
    "date": "2026-08-11",
    "mill": "VRM-1",
-   "em_probability": 0.503,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bucket Elevator"
    ],
    "top2_hit": false
   },
   {
-   "date": "2026-08-10",
-   "mill": "VRM-2",
-   "em_probability": 0.386,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
-   ],
-   "actual_breakdown": false,
-   "actual_families": [],
-   "top2_hit": null
-  },
-  {
    "date": "2026-08-09",
    "mill": "VRM-2",
-   "em_probability": 0.382,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-09",
    "mill": "VRM-1",
-   "em_probability": 0.54,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-08",
    "mill": "VRM-2",
-   "em_probability": 0.374,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-08",
    "mill": "VRM-1",
-   "em_probability": 0.531,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter",
     "Belt Conveyor / Weigh Feeder"
@@ -1205,12 +2276,28 @@
   {
    "date": "2026-08-07",
    "mill": "VRM-1",
-   "em_probability": 0.481,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
@@ -1219,12 +2306,28 @@
   {
    "date": "2026-08-06",
    "mill": "VRM-1",
-   "em_probability": 0.383,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -1233,12 +2336,28 @@
   {
    "date": "2026-08-05",
    "mill": "VRM-2",
-   "em_probability": 0.438,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Hydraulics / Rollers",
     "Belt Conveyor / Weigh Feeder"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Feeders / Gates / Dampers"
    ],
@@ -1247,12 +2366,28 @@
   {
    "date": "2026-08-05",
    "mill": "VRM-1",
-   "em_probability": 0.378,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -1261,24 +2396,52 @@
   {
    "date": "2026-08-04",
    "mill": "VRM-2",
-   "em_probability": 0.43,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-04",
    "mill": "VRM-1",
-   "em_probability": 0.385,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -1287,48 +2450,100 @@
   {
    "date": "2026-08-03",
    "mill": "VRM-2",
-   "em_probability": 0.437,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-03",
    "mill": "VRM-1",
-   "em_probability": 0.393,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-02",
    "mill": "VRM-2",
-   "em_probability": 0.447,
-   "predicted": [
-    "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-08-02",
    "mill": "VRM-1",
-   "em_probability": 0.417,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan",
     "Hydraulics / Rollers"
@@ -1338,12 +2553,28 @@
   {
    "date": "2026-08-01",
    "mill": "VRM-2",
-   "em_probability": 0.438,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -1352,12 +2583,29 @@
   {
    "date": "2026-08-01",
    "mill": "VRM-1",
-   "em_probability": 0.412,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter",
     "Main Motor"
@@ -1367,12 +2615,28 @@
   {
    "date": "2026-07-31",
    "mill": "VRM-2",
-   "em_probability": 0.461,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers",
     "Main Motor"
@@ -1382,12 +2646,28 @@
   {
    "date": "2026-07-31",
    "mill": "VRM-1",
-   "em_probability": 0.405,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan",
     "Main Motor"
@@ -1397,12 +2677,28 @@
   {
    "date": "2026-07-30",
    "mill": "VRM-2",
-   "em_probability": 0.447,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -1411,12 +2707,28 @@
   {
    "date": "2026-07-30",
    "mill": "VRM-1",
-   "em_probability": 0.409,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Fan"
    ],
@@ -1425,84 +2737,172 @@
   {
    "date": "2026-07-29",
    "mill": "VRM-2",
-   "em_probability": 0.488,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-29",
    "mill": "VRM-1",
-   "em_probability": 0.402,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-28",
    "mill": "VRM-2",
-   "em_probability": 0.482,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-28",
    "mill": "VRM-1",
-   "em_probability": 0.403,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-27",
    "mill": "VRM-2",
-   "em_probability": 0.495,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-27",
    "mill": "VRM-1",
-   "em_probability": 0.405,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-26",
    "mill": "VRM-2",
-   "em_probability": 0.428,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube",
     "Hydraulics / Rollers"
@@ -1512,24 +2912,52 @@
   {
    "date": "2026-07-26",
    "mill": "VRM-1",
-   "em_probability": 0.374,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-25",
    "mill": "VRM-2",
-   "em_probability": 0.46,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
@@ -1538,24 +2966,51 @@
   {
    "date": "2026-07-25",
    "mill": "VRM-1",
-   "em_probability": 0.382,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-24",
    "mill": "VRM-2",
-   "em_probability": 0.471,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Mill (process / monitoring)"
    ],
@@ -1564,12 +3019,29 @@
   {
    "date": "2026-07-23",
    "mill": "VRM-2",
-   "em_probability": 0.523,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder",
     "HAG"
@@ -1579,24 +3051,53 @@
   {
    "date": "2026-07-23",
    "mill": "VRM-1",
-   "em_probability": 0.399,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-22",
    "mill": "VRM-2",
-   "em_probability": 0.527,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
@@ -1605,36 +3106,75 @@
   {
    "date": "2026-07-22",
    "mill": "VRM-1",
-   "em_probability": 0.429,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-21",
    "mill": "VRM-1",
-   "em_probability": 0.433,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-20",
    "mill": "VRM-2",
-   "em_probability": 0.524,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube"
    ],
@@ -1643,12 +3183,28 @@
   {
    "date": "2026-07-20",
    "mill": "VRM-1",
-   "em_probability": 0.446,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers",
     "Mill (process / monitoring)"
@@ -1658,12 +3214,27 @@
   {
    "date": "2026-07-19",
    "mill": "VRM-2",
-   "em_probability": 0.501,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube"
    ],
@@ -1672,12 +3243,28 @@
   {
    "date": "2026-07-18",
    "mill": "VRM-2",
-   "em_probability": 0.5,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube"
    ],
@@ -1686,48 +3273,100 @@
   {
    "date": "2026-07-18",
    "mill": "VRM-1",
-   "em_probability": 0.366,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-17",
    "mill": "VRM-2",
-   "em_probability": 0.506,
-   "predicted": [
-    "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-17",
    "mill": "VRM-1",
-   "em_probability": 0.395,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-16",
    "mill": "VRM-2",
-   "em_probability": 0.485,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Hydraulics / Rollers"
    ],
@@ -1736,24 +3375,52 @@
   {
    "date": "2026-07-16",
    "mill": "VRM-1",
-   "em_probability": 0.446,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   },
   {
    "date": "2026-07-15",
    "mill": "VRM-2",
-   "em_probability": 0.468,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube"
    ],
@@ -1762,12 +3429,28 @@
   {
    "date": "2026-07-15",
    "mill": "VRM-1",
-   "em_probability": 0.457,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter"
    ],
@@ -1776,12 +3459,28 @@
   {
    "date": "2026-07-14",
    "mill": "VRM-2",
-   "em_probability": 0.456,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Gearbox / Lube"
    ],
@@ -1790,12 +3489,28 @@
   {
    "date": "2026-07-14",
    "mill": "VRM-1",
-   "em_probability": 0.433,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter"
    ],
@@ -1804,12 +3519,28 @@
   {
    "date": "2026-07-13",
    "mill": "VRM-2",
-   "em_probability": 0.464,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.13
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.199
+    },
+    {
+     "type": "Other",
+     "share": 0.671
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Hydraulics / Rollers",
     "Belt Conveyor / Weigh Feeder"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Electrical Panel / Power"
    ],
@@ -1818,12 +3549,28 @@
   {
    "date": "2026-07-13",
    "mill": "VRM-1",
-   "em_probability": 0.429,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Electrical Panel / Power"
    ],
@@ -1832,12 +3579,29 @@
   {
    "date": "2026-07-12",
    "mill": "VRM-1",
-   "em_probability": 0.411,
-   "predicted": [
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
+   ],
+   "actual_types": [
+    "Electrical",
+    "Mechanical",
+    "Other"
+   ],
+   "predicted_families": [
     "Fan",
     "Bag House / Bag Filter"
    ],
-   "actual_breakdown": true,
    "actual_families": [
     "Bag House / Bag Filter",
     "Compressor"
@@ -1847,12 +3611,24 @@
   {
    "date": "2026-07-09",
    "mill": "VRM-1",
-   "em_probability": 0.427,
-   "predicted": [
-    "Fan",
-    "Bag House / Bag Filter"
+   "predicted_types": [
+    {
+     "type": "Electrical",
+     "share": 0.239
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.132
+    },
+    {
+     "type": "Other",
+     "share": 0.629
+    }
    ],
-   "actual_breakdown": false,
+   "actual_types": [
+    "Other"
+   ],
+   "predicted_families": null,
    "actual_families": [],
    "top2_hit": null
   }

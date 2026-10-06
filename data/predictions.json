@@ -1,12 +1,8 @@
 {
  "meta": {
-  "generated_at": "2026-10-06 10:42 UTC",
+  "generated_at": "2026-10-06 11:07 UTC",
   "data_through": "2026-10-06",
-  "model_version": "v3 pooled-XGBoost + CatBoost/recency blend",
-  "risk_cutoffs": [
-   0.405,
-   0.429
-  ],
+  "model_version": "v4 type mix (E/M/Other) + CatBoost equipment",
   "rows_in_sheet": 7712,
   "duplicate_rows_removed": 2151
  },
@@ -16,18 +12,29 @@
    "horizon": 1,
    "forecast_date": "2026-10-07",
    "weekday": "Wed",
-   "em_probability": 0.429,
-   "risk_level": "Higher than usual",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.218
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.155
+    },
+    {
+     "type": "Other",
+     "share": 0.627
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.282,
-     "unconditional": 0.121
+     "conditional": 0.282
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.189,
-     "unconditional": 0.081
+     "conditional": 0.189
     }
    ]
   },
@@ -36,18 +43,29 @@
    "horizon": 2,
    "forecast_date": "2026-10-08",
    "weekday": "Thu",
-   "em_probability": 0.426,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.218
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.155
+    },
+    {
+     "type": "Other",
+     "share": 0.627
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.295,
-     "unconditional": 0.126
+     "conditional": 0.295
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.181,
-     "unconditional": 0.077
+     "conditional": 0.181
     }
    ]
   },
@@ -56,18 +74,29 @@
    "horizon": 3,
    "forecast_date": "2026-10-09",
    "weekday": "Fri",
-   "em_probability": 0.417,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.218
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.155
+    },
+    {
+     "type": "Other",
+     "share": 0.627
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.292,
-     "unconditional": 0.122
+     "conditional": 0.292
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.182,
-     "unconditional": 0.076
+     "conditional": 0.182
     }
    ]
   },
@@ -76,18 +105,29 @@
    "horizon": 4,
    "forecast_date": "2026-10-10",
    "weekday": "Sat",
-   "em_probability": 0.409,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.218
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.155
+    },
+    {
+     "type": "Other",
+     "share": 0.627
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.302,
-     "unconditional": 0.123
+     "conditional": 0.302
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179,
-     "unconditional": 0.073
+     "conditional": 0.179
     }
    ]
   },
@@ -96,18 +136,29 @@
    "horizon": 5,
    "forecast_date": "2026-10-11",
    "weekday": "Sun",
-   "em_probability": 0.396,
-   "risk_level": "Lower than usual",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.218
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.155
+    },
+    {
+     "type": "Other",
+     "share": 0.627
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.303,
-     "unconditional": 0.12
+     "conditional": 0.303
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179,
-     "unconditional": 0.071
+     "conditional": 0.179
     }
    ]
   },
@@ -116,18 +167,29 @@
    "horizon": 1,
    "forecast_date": "2026-10-07",
    "weekday": "Wed",
-   "em_probability": 0.415,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.125
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.196
+    },
+    {
+     "type": "Other",
+     "share": 0.678
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.216,
-     "unconditional": 0.09
+     "conditional": 0.216
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.165,
-     "unconditional": 0.068
+     "conditional": 0.165
     }
    ]
   },
@@ -136,18 +198,29 @@
    "horizon": 2,
    "forecast_date": "2026-10-08",
    "weekday": "Thu",
-   "em_probability": 0.415,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.125
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.196
+    },
+    {
+     "type": "Other",
+     "share": 0.678
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.207,
-     "unconditional": 0.086
+     "conditional": 0.207
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.164,
-     "unconditional": 0.068
+     "conditional": 0.164
     }
    ]
   },
@@ -156,18 +229,29 @@
    "horizon": 3,
    "forecast_date": "2026-10-09",
    "weekday": "Fri",
-   "em_probability": 0.415,
-   "risk_level": "Typical",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.125
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.196
+    },
+    {
+     "type": "Other",
+     "share": 0.678
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.205,
-     "unconditional": 0.085
+     "conditional": 0.205
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.169,
-     "unconditional": 0.07
+     "conditional": 0.169
     }
    ]
   },
@@ -176,18 +260,29 @@
    "horizon": 4,
    "forecast_date": "2026-10-10",
    "weekday": "Sat",
-   "em_probability": 0.395,
-   "risk_level": "Lower than usual",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.125
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.196
+    },
+    {
+     "type": "Other",
+     "share": 0.678
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.199,
-     "unconditional": 0.079
+     "conditional": 0.199
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.185,
-     "unconditional": 0.073
+     "conditional": 0.185
     }
    ]
   },
@@ -196,18 +291,29 @@
    "horizon": 5,
    "forecast_date": "2026-10-11",
    "weekday": "Sun",
-   "em_probability": 0.367,
-   "risk_level": "Lower than usual",
+   "types": [
+    {
+     "type": "Electrical",
+     "share": 0.125
+    },
+    {
+     "type": "Mechanical",
+     "share": 0.196
+    },
+    {
+     "type": "Other",
+     "share": 0.678
+    }
+   ],
+   "top_type": "Other",
    "families": [
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.195,
-     "unconditional": 0.071
+     "conditional": 0.195
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.193,
-     "unconditional": 0.071
+     "conditional": 0.193
     }
    ]
   }
@@ -219,360 +325,420 @@
      "date": "2026-08-08",
      "electrical": 1,
      "mechanical": 4,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-09",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-10",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-11",
      "electrical": 1,
      "mechanical": 0,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-12",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-13",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-14",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-15",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-16",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-17",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-18",
      "electrical": 1,
      "mechanical": 0,
+     "other": 2,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-19",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-20",
      "electrical": 0,
      "mechanical": 0,
+     "other": 5,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-21",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-22",
      "electrical": 0,
      "mechanical": 1,
+     "other": 2,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-23",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-24",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-25",
      "electrical": 0,
      "mechanical": 0,
+     "other": 5,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-26",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-27",
      "electrical": 1,
      "mechanical": 0,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-28",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-29",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-30",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-31",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-01",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-02",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-03",
      "electrical": 1,
      "mechanical": 0,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-04",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-05",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-06",
      "electrical": 0,
      "mechanical": 2,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-07",
      "electrical": 1,
      "mechanical": 2,
+     "other": 6,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-08",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-09",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-10",
      "electrical": 0,
      "mechanical": 1,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-11",
      "electrical": 0,
      "mechanical": 1,
+     "other": 1,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-12",
      "electrical": 0,
      "mechanical": 1,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-13",
      "electrical": 2,
      "mechanical": 1,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-14",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-15",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-16",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-17",
      "electrical": 1,
      "mechanical": 1,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-18",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-19",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-20",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-21",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-22",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-23",
      "electrical": 1,
      "mechanical": 1,
+     "other": 2,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-24",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-25",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-26",
      "electrical": 0,
      "mechanical": 2,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-27",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-28",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-29",
      "electrical": 1,
      "mechanical": 0,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-30",
      "electrical": 0,
      "mechanical": 1,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-01",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-02",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-03",
      "electrical": 3,
      "mechanical": 0,
+     "other": 2,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-04",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-05",
      "electrical": 0,
      "mechanical": 1,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-06",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     }
    ],
@@ -622,8 +788,12 @@
      "events": 1
     }
    ],
-   "rate_90d": 0.41,
-   "rate_365d": 0.416,
+   "mix_90d": {
+    "Electrical": 21,
+    "Mechanical": 19,
+    "Other": 68
+   },
+   "event_days_90d": 74,
    "breakdowns_90d": 56,
    "shutdown_days_90d": 0,
    "gap_days_30d": 5
@@ -634,360 +804,420 @@
      "date": "2026-08-08",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-09",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-10",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-11",
      "electrical": 2,
      "mechanical": 2,
+     "other": 2,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-12",
      "electrical": 1,
      "mechanical": 1,
+     "other": 4,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-13",
      "electrical": 0,
      "mechanical": 1,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-14",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-15",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-16",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-17",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-18",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-19",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-20",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-21",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-22",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-23",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-24",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-25",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-26",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-08-27",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-28",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-29",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-30",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-08-31",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-01",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-02",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-03",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-04",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-05",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-06",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-07",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-08",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-09",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-10",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-11",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "SHUTDOWN"
     },
     {
      "date": "2026-09-12",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-13",
      "electrical": 0,
      "mechanical": 1,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-14",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-15",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-16",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-17",
      "electrical": 1,
      "mechanical": 0,
+     "other": 3,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-18",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-19",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-20",
      "electrical": 0,
      "mechanical": 0,
+     "other": 4,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-21",
      "electrical": 2,
      "mechanical": 0,
+     "other": 1,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-22",
      "electrical": 1,
      "mechanical": 0,
+     "other": 0,
      "state": "E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-23",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-24",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-25",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-26",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-27",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "DATA_GAP"
     },
     {
      "date": "2026-09-28",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-29",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-09-30",
      "electrical": 0,
      "mechanical": 0,
+     "other": 2,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-01",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-02",
      "electrical": 0,
      "mechanical": 0,
+     "other": 3,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-03",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-04",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-05",
      "electrical": 0,
      "mechanical": 0,
+     "other": 1,
      "state": "NO_E_M_BREAKDOWN"
     },
     {
      "date": "2026-10-06",
      "electrical": 0,
      "mechanical": 0,
+     "other": 0,
      "state": "NO_E_M_BREAKDOWN"
     }
    ],
@@ -1029,8 +1259,12 @@
      "events": 1
     }
    ],
-   "rate_90d": 0.359,
-   "rate_365d": 0.385,
+   "mix_90d": {
+    "Electrical": 10,
+    "Mechanical": 18,
+    "Other": 56
+   },
+   "event_days_90d": 61,
    "breakdowns_90d": 42,
    "shutdown_days_90d": 10,
    "gap_days_30d": 4

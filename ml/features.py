@@ -157,3 +157,22 @@ def make_window_rows(d, W=5):
     F['target_date'] = tgt; F['state_t'] = ''; F['y'] = np.nan_to_num(y).astype(int); F['known'] = ~np.isnan(y); F['valid'] = valid & ~np.isnan(y)
     F['primary'] = None; F['all_reasons'] = None; F['origin'] = idx
     return F[F.known].copy()
+
+# ---------------- breakdown TYPE view: Electrical / Mechanical / Other ----------------
+TYPE_CLASSES = ['Electrical', 'Mechanical', 'Other']
+def _tmap(t):
+    t = str(t).strip()
+    return 'Electrical' if t == 'Electrical Breakdown' else 'Mechanical' if t == 'Mechanical Breakdown' else None if t == 'Planned Down Time' else 'Other'
+def type_daily(raw, daily):
+    """Per mill and day: which breakdown types occurred. 'Other' = every unplanned stop that is not electrical/mechanical
+    (others down time, utility, warehouse block, process setup, raw material). Planned down time and shutdown days are not breakdowns."""
+    out = {}
+    for m in MILLS:
+        g = raw[raw['Mill Name'] == m].copy(); g['T'] = g['Breakdown Type'].map(_tmap); g = g[g['T'].notna()]
+        cal = daily[m].index
+        cnt = g.pivot_table(index='Date', columns='T', values='Breakdown Type', aggfunc='size').reindex(cal).reindex(columns=TYPE_CLASSES).fillna(0)
+        t = pd.DataFrame(index=cal)
+        for c in TYPE_CLASSES: t['n_' + c] = cnt[c].where(~daily[m].shutdown, 0)
+        t['evt'] = (t[['n_' + c for c in TYPE_CLASSES]].sum(axis=1) > 0).astype(int)
+        out[m] = t
+    return out
