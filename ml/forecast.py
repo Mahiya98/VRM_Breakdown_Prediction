@@ -22,7 +22,7 @@ from catboost import CatBoostClassifier
 
 SRC, DROP, OUT = sys.argv[1:4]
 HL, BLEND = 120, 0.5
-VERSION = 'v5.1 overdue alerts + CatBoost equipment (top-3)'
+VERSION = 'v5.2 overdue alerts + CatBoost equipment (top-3) + cause analysis'
 TOP_K = 3
 OTHER = {'VRM-1': 'VRM-2', 'VRM-2': 'VRM-1'}
 META = ['target_date', 'state_t', 'y', 'known', 'valid', 'primary', 'all_reasons', 'origin']
@@ -67,6 +67,7 @@ iso = lambda d: str(pd.Timestamp(d).date())
 # ----------------------------------------------------------------
 em_raw = raw[raw['Breakdown Type'].isin(['Electrical Breakdown', 'Mechanical Breakdown'])].copy()
 em_raw['family'] = em_raw['Breakdwon Name'].map(FE.map_equip)
+em_raw['cause'] = em_raw['Reason'].map(FE.map_cause)
 today = last  # use last data date as reference
 
 MIN_EVENTS = 3  # need at least 3 events to compute meaningful gap stats
@@ -102,6 +103,10 @@ def compute_overdue_alerts(mill):
         e_count = int(fg_types.get('Electrical Breakdown', 0))
         m_count = int(fg_types.get('Mechanical Breakdown', 0))
 
+        # Top causes for this family
+        fg_causes = mg[mg['family'] == fam]['cause'].value_counts()
+        top_causes = [dict(cause=c, count=int(n)) for c, n in fg_causes.head(3).items()]
+
         alerts.append(dict(
             family=fam,
             total_events=n_events,
@@ -114,7 +119,8 @@ def compute_overdue_alerts(mill):
             mean_gap=round(mean_gap, 1) if mean_gap is not None else None,
             max_gap=round(max_gap, 1) if max_gap is not None else None,
             risk_score=risk_score,
-            overdue=overdue
+            overdue=overdue,
+            top_causes=top_causes
         ))
 
     # Sort: overdue first (by risk_score desc), then non-overdue by risk_score desc
@@ -148,6 +154,17 @@ def compute_type_alerts(mill):
             ))
     return type_alerts
 
+def compute_cause_profile(mill):
+    """For each equipment family in a mill, compute the cause distribution."""
+    mg = em_raw[em_raw['Mill Name'] == mill]
+    profiles = {}
+    for fam in mg['family'].unique():
+        fg = mg[mg['family'] == fam]
+        cause_counts = fg['cause'].value_counts()
+        total = cause_counts.sum()
+        profiles[fam] = [dict(cause=c, count=int(n), pct=round(n/total, 2)) for c, n in cause_counts.items()]
+    return profiles
+
 
 # ----------------------------------------------------------------
 # FORECAST D+1..D+5 (equipment families only, for E/M days)
@@ -155,6 +172,7 @@ def compute_type_alerts(mill):
 allr = pd.concat([r[r.valid] for r in ROWS.values()])
 p2f, classes = fit_stage2(allr, last + pd.Timedelta(days=1))
 now = last + pd.Timedelta(days=1)
+cause_profiles = {m: compute_cause_profile(m) for m in FE.MILLS}
 fcs = []
 for m in FE.MILLS:
     of = FE.origin_features(daily[m]).iloc[[-1]].copy()
@@ -166,8 +184,14 @@ for m in FE.MILLS:
         tgt = last + pd.Timedelta(days=h)
         x = of.copy(); x['h'] = h; x['tgt_dow'] = tgt.dayofweek; x['tgt_month'] = tgt.month; x['tgt_weekend'] = int(tgt.dayofweek >= 5)
         P = p2f(x, m)[0]; top = np.argsort(-P)[:TOP_K]
+        fam_list = []
+        for i in top:
+            fam_name = classes[i]
+            causes = cause_profiles.get(m, {}).get(fam_name, [])[:2]
+            fam_list.append(dict(family=fam_name, conditional=round(float(P[i]), 3),
+                                 likely_causes=[c['cause'] for c in causes]))
         fcs.append(dict(mill=m, horizon=h, forecast_date=iso(tgt), weekday=tgt.strftime('%a'),
-                        families=[dict(family=classes[i], conditional=round(float(P[i]), 3)) for i in top]))
+                        families=fam_list))
 
 # ----------------------------------------------------------------
 # OVERDUE ALERTS per mill
@@ -176,7 +200,8 @@ overdue_data = {}
 for m in FE.MILLS:
     overdue_data[m] = dict(
         equipment=compute_overdue_alerts(m),
-        types=compute_type_alerts(m)
+        types=compute_type_alerts(m),
+        cause_profiles=cause_profiles[m]
     )
 
 # ----------------------------------------------------------------
@@ -191,6 +216,7 @@ for m in FE.MILLS:
         daily=[dict(date=iso(i), electrical=int(t.loc[i, 'n_Electrical']), mechanical=int(t.loc[i, 'n_Mechanical']),
                     other=int(t.loc[i, 'n_Other']), state=rw.state) for i, rw in r60.iterrows()],
         families_90d=[dict(family=k, events=int(v)) for k, v in fam.items()],
+        causes_90d=[dict(cause=c, events=int(n)) for c, n in em_raw[(em_raw['Mill Name']==m) & (em_raw['Date']>=d.index[-90])]['cause'].value_counts().items()],
         mix_90d={k: int((r90['n_' + k] > 0).sum()) for k in TC},
         event_days_90d=int(r90.evt.sum()),
         breakdowns_90d=int(r90d.n_ev.sum()),

@@ -15,7 +15,7 @@ ml/fetch_sheet.py  ->  ml/forecast.py  ->  data/*.json  ->  index.html (GitHub P
 Each equipment family has a historical interval between E/M breakdowns. When the current gap (days since last failure) exceeds the 75th-percentile interval, that family is flagged **OVERDUE**. The risk score = current_gap / p75_gap — a score of 2.0× means the equipment has gone twice as long as usual without breaking.
 
 ### Equipment forecast (CatBoost ML)
-For the next 5 days, a CatBoost model (blended 50/50 with recency-weighted frequency) ranks the three most likely equipment families *if* an E/M breakdown occurs. Backtest: VRM-1 69% top-3 hit rate (vs 44% baseline), VRM-2 61% (vs 30% baseline).
+For the next 5 days, a CatBoost model (blended 50/50 with recency-weighted frequency) ranks the three most likely equipment families *if* an E/M breakdown occurs. For each predicted equipment, the dashboard also shows the **most likely cause** (e.g. vibration, jam/blockage, high temperature) based on historical cause distributions for that equipment. Backtest: VRM-1 69% top-3 hit rate (vs 44% baseline), VRM-2 61% (vs 30% baseline).
 
 ## Honest limits
 Breakdown history alone can tell you *which equipment is overdue* and *which is most likely to fail next*, but it cannot predict *which specific day* a breakdown will happen. Sensor data (vibration, temperature, pressure, run hours) would enable true day-ahead prediction. The dashboard's backtest and live-tracking sections show the real hit rates.

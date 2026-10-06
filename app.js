@@ -51,6 +51,9 @@
         detail += ' · ' + a.total_events + ' historical events';
         if (a.electrical_events > 0 || a.mechanical_events > 0) detail += ' (E:' + a.electrical_events + ' M:' + a.mechanical_events + ')';
         left.appendChild(el('div', 'alert-detail', detail));
+        if (a.top_causes && a.top_causes.length) {
+          left.appendChild(el('div', 'alert-detail cause-hint', 'Common causes: ' + a.top_causes.map(function(c) { return c.cause + ' (' + c.count + ')'; }).join(', ')));
+        }
 
         // Risk meter
         if (a.p75_gap != null) {
@@ -95,7 +98,11 @@
           var c = el('div', 'fam');
           c.appendChild(el('span', 'rank', (i + 1) + '.'));
           c.appendChild(el('b', null, x.family));
-          c.appendChild(el('small', null, pct(x.conditional) + ' likelihood'));
+          var info = pct(x.conditional) + ' likelihood';
+          c.appendChild(el('small', null, info));
+          if (x.likely_causes && x.likely_causes.length) {
+            c.appendChild(el('small', 'cause-hint', 'Likely: ' + x.likely_causes.join(', ')));
+          }
           fams.appendChild(c);
         });
         d.appendChild(fams);
@@ -151,6 +158,26 @@
       rows.forEach(function (r) {
         var row = el('div', 'fambar'); row.appendChild(el('span', null, r.family));
         var tr = el('div', 'track'), f = el('div', 'fill'); f.style.width = (r.events / max * 100) + '%'; tr.appendChild(f); row.appendChild(tr);
+        row.appendChild(el('span', 'n', String(r.events)));
+        wrap.appendChild(row);
+      });
+      root.appendChild(wrap);
+    });
+  }
+
+  // ---- Cause breakdown bar chart (90 days) ----
+  function renderCauses(p) {
+    var root = $('causes'); if (!root) return; root.replaceChildren();
+    ['VRM-1', 'VRM-2'].forEach(function (mill) {
+      var c = p.context[mill];
+      if (!c.causes_90d || !c.causes_90d.length) return;
+      var wrap = el('div');
+      wrap.appendChild(el('h3', null, mill + ' · cause breakdown'));
+      wrap.lastChild.style.cssText = 'font-size:14px;margin:0 0 6px';
+      var rows = c.causes_90d.slice(0, 8), max = Math.max.apply(null, rows.map(function (r) { return r.events; }).concat([1]));
+      rows.forEach(function (r) {
+        var row = el('div', 'fambar'); row.appendChild(el('span', null, r.cause));
+        var tr = el('div', 'track'), f = el('div', 'fill'); f.style.cssText = 'width:' + (r.events / max * 100) + '%;background:var(--m)'; tr.appendChild(f); row.appendChild(tr);
         row.appendChild(el('span', 'n', String(r.events)));
         wrap.appendChild(row);
       });
@@ -214,6 +241,7 @@
     renderForecast(p);
     renderHistory(p);
     renderFamilies(p);
+    renderCauses(p);
     renderBacktest(r[1]);
     renderTracking(r[2]);
     $('quality').textContent = p.meta.rows_in_sheet.toLocaleString() + ' rows read, ' + p.meta.duplicate_rows_removed.toLocaleString() + ' duplicate entries removed. VRM-1: ' + p.context['VRM-1'].gap_days_30d + ' day(s) with no log in the last 30; VRM-2: ' + p.context['VRM-2'].gap_days_30d + '.';
