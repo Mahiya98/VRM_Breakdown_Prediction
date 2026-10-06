@@ -1,6 +1,6 @@
 # VRM breakdown outlook
 
-Dashboard for the next 5 days of **Electrical, Mechanical & Other breakdowns** on VRM-1 and VRM-2.
+Dashboard for **equipment overdue alerts** and **equipment-family forecasts** on VRM-1 and VRM-2.
 
 ```
 Google Sheet (tab "VRM Breakdown")
@@ -10,12 +10,15 @@ ml/fetch_sheet.py  ->  ml/forecast.py  ->  data/*.json  ->  index.html (GitHub P
 ```
 
 ## What the model does
-* All breakdown types are used (Electrical, Mechanical, and Other — which includes utility outages, warehouse blocks, raw-material shortages, and in-process adjustments). Planned Down Time is excluded.
-* **Type forecast** predicts the share of Electrical / Mechanical / Other for each of D+1…D+5 using a recency-weighted frequency mix (half-life 120 days) per mill. Walk-forward CV confirmed this beats XGBoost, CatBoost, Random Forest and Logistic Regression on this data.
-* **Equipment forecast** ranks equipment families (Fan, Bag House, Belt Conveyor…) for Electrical and Mechanical days only (CatBoost blended 50/50 with recency-weighted frequency). "Other" breakdowns show no equipment.
+
+### Overdue alerts (statistical)
+Each equipment family has a historical interval between E/M breakdowns. When the current gap (days since last failure) exceeds the 75th-percentile interval, that family is flagged **OVERDUE**. The risk score = current_gap / p75_gap — a score of 2.0× means the equipment has gone twice as long as usual without breaking.
+
+### Equipment forecast (CatBoost ML)
+For the next 5 days, a CatBoost model (blended 50/50 with recency-weighted frequency) ranks the two most likely equipment families *if* an E/M breakdown occurs. Backtest: VRM-1 66% top-2 hit rate (vs 44% baseline), VRM-2 48% (vs 22% baseline).
 
 ## Honest limits
-Breakdown history alone predicts *which type* well (~92% top-hit rate) and *which equipment* better than chance, but the daily type mix stays close to each mill's usual pattern. Sensor, run-hour or maintenance data would improve it. The dashboard's backtest and live-tracking sections show the real hit rates.
+Breakdown history alone can tell you *which equipment is overdue* and *which is most likely to fail next*, but it cannot predict *which specific day* a breakdown will happen. Sensor data (vibration, temperature, pressure, run hours) would enable true day-ahead prediction. The dashboard's backtest and live-tracking sections show the real hit rates.
 
 ## Setup
 1. **Settings > Secrets and variables > Actions**: add `SHEET_ID` (the long id in the sheet URL) and either
