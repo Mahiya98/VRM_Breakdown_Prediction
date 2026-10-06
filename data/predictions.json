@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generated_at": "2026-10-06 11:07 UTC",
+  "generated_at": "2026-10-06 11:34 UTC",
   "data_through": "2026-10-06",
-  "model_version": "v4 type mix (E/M/Other) + CatBoost equipment",
+  "model_version": "v5 overdue alerts + CatBoost equipment",
   "rows_in_sheet": 7712,
   "duplicate_rows_removed": 2151
  },
@@ -12,21 +12,6 @@
    "horizon": 1,
    "forecast_date": "2026-10-07",
    "weekday": "Wed",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.218
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.155
-    },
-    {
-     "type": "Other",
-     "share": 0.627
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
@@ -43,21 +28,6 @@
    "horizon": 2,
    "forecast_date": "2026-10-08",
    "weekday": "Thu",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.218
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.155
-    },
-    {
-     "type": "Other",
-     "share": 0.627
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
@@ -74,21 +44,6 @@
    "horizon": 3,
    "forecast_date": "2026-10-09",
    "weekday": "Fri",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.218
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.155
-    },
-    {
-     "type": "Other",
-     "share": 0.627
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
@@ -105,21 +60,6 @@
    "horizon": 4,
    "forecast_date": "2026-10-10",
    "weekday": "Sat",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.218
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.155
-    },
-    {
-     "type": "Other",
-     "share": 0.627
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
@@ -136,21 +76,6 @@
    "horizon": 5,
    "forecast_date": "2026-10-11",
    "weekday": "Sun",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.218
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.155
-    },
-    {
-     "type": "Other",
-     "share": 0.627
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Fan",
@@ -167,21 +92,6 @@
    "horizon": 1,
    "forecast_date": "2026-10-07",
    "weekday": "Wed",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.125
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.196
-    },
-    {
-     "type": "Other",
-     "share": 0.678
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -198,21 +108,6 @@
    "horizon": 2,
    "forecast_date": "2026-10-08",
    "weekday": "Thu",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.125
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.196
-    },
-    {
-     "type": "Other",
-     "share": 0.678
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -229,21 +124,6 @@
    "horizon": 3,
    "forecast_date": "2026-10-09",
    "weekday": "Fri",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.125
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.196
-    },
-    {
-     "type": "Other",
-     "share": 0.678
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -260,21 +140,6 @@
    "horizon": 4,
    "forecast_date": "2026-10-10",
    "weekday": "Sat",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.125
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.196
-    },
-    {
-     "type": "Other",
-     "share": 0.678
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -291,21 +156,6 @@
    "horizon": 5,
    "forecast_date": "2026-10-11",
    "weekday": "Sun",
-   "types": [
-    {
-     "type": "Electrical",
-     "share": 0.125
-    },
-    {
-     "type": "Mechanical",
-     "share": 0.196
-    },
-    {
-     "type": "Other",
-     "share": 0.678
-    }
-   ],
-   "top_type": "Other",
    "families": [
     {
      "family": "Hydraulics / Rollers",
@@ -318,6 +168,452 @@
    ]
   }
  ],
+ "overdue": {
+  "VRM-1": {
+   "equipment": [
+    {
+     "family": "Classifier / Separator",
+     "total_events": 14,
+     "electrical_events": 3,
+     "mechanical_events": 24,
+     "last_date": "2024-10-09",
+     "days_since": 727,
+     "median_gap": 12.0,
+     "p75_gap": 21.0,
+     "mean_gap": 31.0,
+     "max_gap": 139.0,
+     "risk_score": 34.62,
+     "overdue": true
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "total_events": 35,
+     "electrical_events": 36,
+     "mechanical_events": 16,
+     "last_date": "2026-05-09",
+     "days_since": 150,
+     "median_gap": 20.0,
+     "p75_gap": 37.0,
+     "mean_gap": 28.3,
+     "max_gap": 114.0,
+     "risk_score": 4.05,
+     "overdue": true
+    },
+    {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "total_events": 66,
+     "electrical_events": 40,
+     "mechanical_events": 41,
+     "last_date": "2026-08-08",
+     "days_since": 59,
+     "median_gap": 9.0,
+     "p75_gap": 20.0,
+     "mean_gap": 16.5,
+     "max_gap": 110.0,
+     "risk_score": 2.95,
+     "overdue": true
+    },
+    {
+     "family": "Electrical Panel / Power",
+     "total_events": 19,
+     "electrical_events": 29,
+     "mechanical_events": 0,
+     "last_date": "2026-07-13",
+     "days_since": 85,
+     "median_gap": 40.5,
+     "p75_gap": 91.0,
+     "mean_gap": 57.2,
+     "max_gap": 223.0,
+     "risk_score": 0.93,
+     "overdue": false
+    },
+    {
+     "family": "Bag House / Bag Filter",
+     "total_events": 72,
+     "electrical_events": 50,
+     "mechanical_events": 50,
+     "last_date": "2026-09-23",
+     "days_since": 13,
+     "median_gap": 7.0,
+     "p75_gap": 17.0,
+     "mean_gap": 15.5,
+     "max_gap": 140.0,
+     "risk_score": 0.76,
+     "overdue": false
+    },
+    {
+     "family": "Main Motor",
+     "total_events": 6,
+     "electrical_events": 7,
+     "mechanical_events": 0,
+     "last_date": "2026-09-07",
+     "days_since": 29,
+     "median_gap": 37.0,
+     "p75_gap": 69.0,
+     "mean_gap": 96.0,
+     "max_gap": 336.0,
+     "risk_score": 0.42,
+     "overdue": false
+    },
+    {
+     "family": "Hydraulics / Rollers",
+     "total_events": 42,
+     "electrical_events": 8,
+     "mechanical_events": 47,
+     "last_date": "2026-09-30",
+     "days_since": 6,
+     "median_gap": 6.0,
+     "p75_gap": 20.0,
+     "mean_gap": 27.1,
+     "max_gap": 329.0,
+     "risk_score": 0.3,
+     "overdue": false
+    },
+    {
+     "family": "Other equipment",
+     "total_events": 4,
+     "electrical_events": 2,
+     "mechanical_events": 2,
+     "last_date": "2026-09-13",
+     "days_since": 23,
+     "median_gap": 2.0,
+     "p75_gap": 94.5,
+     "mean_gap": 63.3,
+     "max_gap": 187.0,
+     "risk_score": 0.24,
+     "overdue": false
+    },
+    {
+     "family": "Fan",
+     "total_events": 99,
+     "electrical_events": 120,
+     "mechanical_events": 1,
+     "last_date": "2026-10-03",
+     "days_since": 3,
+     "median_gap": 5.0,
+     "p75_gap": 13.0,
+     "mean_gap": 10.4,
+     "max_gap": 96.0,
+     "risk_score": 0.23,
+     "overdue": false
+    },
+    {
+     "family": "Gearbox / Lube",
+     "total_events": 16,
+     "electrical_events": 0,
+     "mechanical_events": 21,
+     "last_date": "2026-09-23",
+     "days_since": 13,
+     "median_gap": 25.0,
+     "p75_gap": 85.5,
+     "mean_gap": 63.3,
+     "max_gap": 214.0,
+     "risk_score": 0.15,
+     "overdue": false
+    },
+    {
+     "family": "Bucket Elevator",
+     "total_events": 25,
+     "electrical_events": 16,
+     "mechanical_events": 15,
+     "last_date": "2026-09-29",
+     "days_since": 7,
+     "median_gap": 26.5,
+     "p75_gap": 63.2,
+     "mean_gap": 46.7,
+     "max_gap": 199.0,
+     "risk_score": 0.11,
+     "overdue": false
+    },
+    {
+     "family": "Mill (process / monitoring)",
+     "total_events": 44,
+     "electrical_events": 63,
+     "mechanical_events": 9,
+     "last_date": "2026-10-03",
+     "days_since": 3,
+     "median_gap": 14.0,
+     "p75_gap": 34.5,
+     "mean_gap": 26.0,
+     "max_gap": 105.0,
+     "risk_score": 0.09,
+     "overdue": false
+    },
+    {
+     "family": "Compressor",
+     "total_events": 28,
+     "electrical_events": 22,
+     "mechanical_events": 9,
+     "last_date": "2026-10-05",
+     "days_since": 1,
+     "median_gap": 28.0,
+     "p75_gap": 54.0,
+     "mean_gap": 41.4,
+     "max_gap": 284.0,
+     "risk_score": 0.02,
+     "overdue": false
+    },
+    {
+     "family": "HAG",
+     "total_events": 1,
+     "electrical_events": 2,
+     "mechanical_events": 0,
+     "last_date": "2023-09-26",
+     "days_since": 1106,
+     "median_gap": null,
+     "p75_gap": null,
+     "mean_gap": null,
+     "max_gap": null,
+     "risk_score": 0,
+     "overdue": false
+    }
+   ],
+   "types": [
+    {
+     "type": "Electrical",
+     "total_events": 252,
+     "last_date": "2026-10-03",
+     "days_since": 3,
+     "median_gap": 2.0,
+     "p75_gap": 6.0,
+     "risk_score": 0.5,
+     "overdue": false
+    },
+    {
+     "type": "Mechanical",
+     "total_events": 161,
+     "last_date": "2026-10-05",
+     "days_since": 1,
+     "median_gap": 4.0,
+     "p75_gap": 9.0,
+     "risk_score": 0.11,
+     "overdue": false
+    }
+   ]
+  },
+  "VRM-2": {
+   "equipment": [
+    {
+     "family": "Bucket Elevator",
+     "total_events": 30,
+     "electrical_events": 14,
+     "mechanical_events": 26,
+     "last_date": "2026-05-03",
+     "days_since": 156,
+     "median_gap": 18.0,
+     "p75_gap": 44.0,
+     "mean_gap": 33.6,
+     "max_gap": 142.0,
+     "risk_score": 3.55,
+     "overdue": true
+    },
+    {
+     "family": "Bag House / Bag Filter",
+     "total_events": 21,
+     "electrical_events": 2,
+     "mechanical_events": 24,
+     "last_date": "2026-05-13",
+     "days_since": 146,
+     "median_gap": 6.5,
+     "p75_gap": 41.8,
+     "mean_gap": 37.9,
+     "max_gap": 185.0,
+     "risk_score": 3.5,
+     "overdue": true
+    },
+    {
+     "family": "Fan",
+     "total_events": 19,
+     "electrical_events": 19,
+     "mechanical_events": 4,
+     "last_date": "2026-04-26",
+     "days_since": 163,
+     "median_gap": 32.0,
+     "p75_gap": 72.8,
+     "mean_gap": 51.8,
+     "max_gap": 184.0,
+     "risk_score": 2.24,
+     "overdue": true
+    },
+    {
+     "family": "Feeders / Gates / Dampers",
+     "total_events": 55,
+     "electrical_events": 45,
+     "mechanical_events": 36,
+     "last_date": "2026-08-13",
+     "days_since": 54,
+     "median_gap": 9.0,
+     "p75_gap": 25.8,
+     "mean_gap": 19.9,
+     "max_gap": 118.0,
+     "risk_score": 2.1,
+     "overdue": true
+    },
+    {
+     "family": "Gearbox / Lube",
+     "total_events": 40,
+     "electrical_events": 11,
+     "mechanical_events": 43,
+     "last_date": "2026-08-12",
+     "days_since": 55,
+     "median_gap": 13.0,
+     "p75_gap": 28.0,
+     "mean_gap": 27.3,
+     "max_gap": 194.0,
+     "risk_score": 1.96,
+     "overdue": true
+    },
+    {
+     "family": "Compressor",
+     "total_events": 4,
+     "electrical_events": 3,
+     "mechanical_events": 1,
+     "last_date": "2026-04-27",
+     "days_since": 162,
+     "median_gap": 69.0,
+     "p75_gap": 119.0,
+     "mean_gap": 80.7,
+     "max_gap": 169.0,
+     "risk_score": 1.36,
+     "overdue": true
+    },
+    {
+     "family": "Main Motor",
+     "total_events": 18,
+     "electrical_events": 17,
+     "mechanical_events": 5,
+     "last_date": "2026-07-31",
+     "days_since": 67,
+     "median_gap": 26.0,
+     "p75_gap": 53.0,
+     "mean_gap": 50.7,
+     "max_gap": 259.0,
+     "risk_score": 1.26,
+     "overdue": true
+    },
+    {
+     "family": "Hydraulics / Rollers",
+     "total_events": 53,
+     "electrical_events": 4,
+     "mechanical_events": 83,
+     "last_date": "2026-09-13",
+     "days_since": 23,
+     "median_gap": 6.0,
+     "p75_gap": 26.2,
+     "mean_gap": 20.8,
+     "max_gap": 154.0,
+     "risk_score": 0.88,
+     "overdue": false
+    },
+    {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "total_events": 60,
+     "electrical_events": 53,
+     "mechanical_events": 36,
+     "last_date": "2026-09-21",
+     "days_since": 15,
+     "median_gap": 7.0,
+     "p75_gap": 20.5,
+     "mean_gap": 18.2,
+     "max_gap": 120.0,
+     "risk_score": 0.73,
+     "overdue": false
+    },
+    {
+     "family": "HAG",
+     "total_events": 18,
+     "electrical_events": 20,
+     "mechanical_events": 3,
+     "last_date": "2026-08-12",
+     "days_since": 55,
+     "median_gap": 13.0,
+     "p75_gap": 88.0,
+     "mean_gap": 62.1,
+     "max_gap": 283.0,
+     "risk_score": 0.62,
+     "overdue": false
+    },
+    {
+     "family": "Electrical Panel / Power",
+     "total_events": 8,
+     "electrical_events": 12,
+     "mechanical_events": 0,
+     "last_date": "2026-07-13",
+     "days_since": 85,
+     "median_gap": 76.0,
+     "p75_gap": 150.0,
+     "mean_gap": 120.7,
+     "max_gap": 415.0,
+     "risk_score": 0.57,
+     "overdue": false
+    },
+    {
+     "family": "Mill (process / monitoring)",
+     "total_events": 15,
+     "electrical_events": 8,
+     "mechanical_events": 15,
+     "last_date": "2026-07-24",
+     "days_since": 74,
+     "median_gap": 11.0,
+     "p75_gap": 172.0,
+     "mean_gap": 72.1,
+     "max_gap": 232.0,
+     "risk_score": 0.43,
+     "overdue": false
+    },
+    {
+     "family": "Other equipment",
+     "total_events": 2,
+     "electrical_events": 2,
+     "mechanical_events": 0,
+     "last_date": "2026-09-22",
+     "days_since": 14,
+     "median_gap": null,
+     "p75_gap": null,
+     "mean_gap": null,
+     "max_gap": null,
+     "risk_score": 0,
+     "overdue": false
+    },
+    {
+     "family": "Classifier / Separator",
+     "total_events": 1,
+     "electrical_events": 1,
+     "mechanical_events": 0,
+     "last_date": "2025-01-01",
+     "days_since": 643,
+     "median_gap": null,
+     "p75_gap": null,
+     "mean_gap": null,
+     "max_gap": null,
+     "risk_score": 0,
+     "overdue": false
+    }
+   ],
+   "types": [
+    {
+     "type": "Electrical",
+     "total_events": 155,
+     "last_date": "2026-09-22",
+     "days_since": 14,
+     "median_gap": 4.0,
+     "p75_gap": 9.0,
+     "risk_score": 1.56,
+     "overdue": true
+    },
+    {
+     "type": "Mechanical",
+     "total_events": 175,
+     "last_date": "2026-09-13",
+     "days_since": 23,
+     "median_gap": 3.0,
+     "p75_gap": 8.0,
+     "risk_score": 2.88,
+     "overdue": true
+    }
+   ]
+  }
+ },
  "context": {
   "VRM-1": {
    "daily": [

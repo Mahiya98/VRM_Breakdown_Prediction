@@ -10,7 +10,7 @@
 <header class="top">
   <div>
     <h1>VRM-1 &amp; VRM-2 breakdown outlook</h1>
-    <p class="sub">Electrical, mechanical or other breakdown &middot; next 5 days</p>
+    <p class="sub">Equipment overdue alerts &middot; next 5 days</p>
   </div>
   <p class="meta" id="meta" aria-live="polite">Loading&hellip;</p>
 </header>
@@ -18,10 +18,12 @@
 <main>
   <section class="note" aria-labelledby="note-h">
     <h2 id="note-h">How to read this</h2>
-    <p>Every forecast day is a breakdown day: the bars show how likely it is to be <strong>electrical</strong>, <strong>mechanical</strong> or <strong>other</strong> (utility, warehouse, process and unclassified stops). Days with no breakdown are not modelled. For electrical and mechanical, the two most likely equipment families are shown; for &ldquo;other&rdquo; no reason is given. The type shares follow each mill&rsquo;s recent mix, so treat them as a rough lean, not a firm call.</p>
+    <p>Each equipment family has a typical interval between breakdowns. When the current gap exceeds the 75th-percentile interval, that family is flagged <strong class="od">OVERDUE</strong> &mdash; it has gone longer than usual without a breakdown and deserves inspection. The <strong>risk score</strong> is how many times past the typical gap: 2.0&times; means twice as long as usual. Equipment families are ranked by urgency. The equipment forecast (next 5 days) ranks the two most likely families if an electrical or mechanical breakdown occurs.</p>
   </section>
 
-  <section id="forecast" class="grid2" aria-label="5-day forecast"></section>
+  <section id="overdue" class="grid2" aria-label="Overdue alerts"></section>
+
+  <section id="forecast" class="grid2" aria-label="5-day equipment forecast"></section>
 
   <section class="card" aria-labelledby="hist-h">
     <div class="card-head"><h2 id="hist-h">Last 60 days: breakdowns per day by type</h2>
@@ -35,17 +37,17 @@
   </section>
 
   <section class="card" aria-labelledby="bt-h">
-    <div class="card-head"><h2 id="bt-h">Did it work? One-day-ahead check on breakdown days, last 90 days</h2><p class="hint" id="bt-note"></p></div>
+    <div class="card-head"><h2 id="bt-h">Equipment accuracy: one-day-ahead backtest, last 90 days</h2><p class="hint" id="bt-note"></p></div>
     <div id="bt-summary" class="stats"></div>
-    <div class="tablewrap"><table id="bt-table"><caption class="sr">Most recent breakdown days: predicted type shares and equipment versus what happened</caption>
-      <thead><tr><th>Date</th><th>Mill</th><th>Predicted type shares</th><th>Actual types</th><th>Equipment check (electrical / mechanical days)</th></tr></thead><tbody></tbody></table></div>
+    <div class="tablewrap"><table id="bt-table"><caption class="sr">Most recent E/M breakdown days: predicted versus actual equipment</caption>
+      <thead><tr><th>Date</th><th>Mill</th><th>Actual types</th><th>Predicted equip</th><th>Actual equip</th><th>Hit?</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section class="card" aria-labelledby="track-h">
-    <div class="card-head"><h2 id="track-h">Live tracking of published forecasts</h2><p class="hint">Each day&rsquo;s forecast is saved and compared with what happened</p></div>
+    <div class="card-head"><h2 id="track-h">Live tracking of published forecasts</h2><p class="hint">Each day&rsquo;s equipment forecast is saved and compared with what happened</p></div>
     <p id="track-summary" class="lead"></p>
-    <div class="tablewrap"><table id="track-table"><caption class="sr">Published forecasts and their outcomes</caption>
-      <thead><tr><th>Forecast for</th><th>Mill</th><th>Horizon</th><th>Predicted type shares</th><th>Predicted equipment</th><th>Outcome</th></tr></thead><tbody></tbody></table></div>
+    <div class="tablewrap"><table id="track-table"><caption class="sr">Published equipment forecasts and their outcomes</caption>
+      <thead><tr><th>Forecast for</th><th>Mill</th><th>Horizon</th><th>Predicted equip</th><th>Actual equip</th><th>Outcome</th></tr></thead><tbody></tbody></table></div>
   </section>
 </main>
 

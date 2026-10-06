@@ -5,29 +5,13 @@
   "mill": "VRM-1",
   "horizon": 1,
   "forecast_date": "2026-10-07",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.218
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.155
-   },
-   {
-    "type": "Other",
-    "share": 0.627
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Fan",
    "Bag House / Bag Filter"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -35,29 +19,13 @@
   "mill": "VRM-1",
   "horizon": 2,
   "forecast_date": "2026-10-08",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.218
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.155
-   },
-   {
-    "type": "Other",
-    "share": 0.627
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Fan",
    "Bag House / Bag Filter"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -65,29 +33,13 @@
   "mill": "VRM-1",
   "horizon": 3,
   "forecast_date": "2026-10-09",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.218
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.155
-   },
-   {
-    "type": "Other",
-    "share": 0.627
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Fan",
    "Bag House / Bag Filter"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -95,29 +47,13 @@
   "mill": "VRM-1",
   "horizon": 4,
   "forecast_date": "2026-10-10",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.218
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.155
-   },
-   {
-    "type": "Other",
-    "share": 0.627
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Fan",
    "Bag House / Bag Filter"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -125,29 +61,13 @@
   "mill": "VRM-1",
   "horizon": 5,
   "forecast_date": "2026-10-11",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.218
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.155
-   },
-   {
-    "type": "Other",
-    "share": 0.627
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Fan",
    "Bag House / Bag Filter"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -155,29 +75,13 @@
   "mill": "VRM-2",
   "horizon": 1,
   "forecast_date": "2026-10-07",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.125
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.196
-   },
-   {
-    "type": "Other",
-    "share": 0.678
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
    "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -185,29 +89,13 @@
   "mill": "VRM-2",
   "horizon": 2,
   "forecast_date": "2026-10-08",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.125
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.196
-   },
-   {
-    "type": "Other",
-    "share": 0.678
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
    "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -215,29 +103,13 @@
   "mill": "VRM-2",
   "horizon": 3,
   "forecast_date": "2026-10-09",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.125
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.196
-   },
-   {
-    "type": "Other",
-    "share": 0.678
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
    "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -245,29 +117,13 @@
   "mill": "VRM-2",
   "horizon": 4,
   "forecast_date": "2026-10-10",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.125
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.196
-   },
-   {
-    "type": "Other",
-    "share": 0.678
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Belt Conveyor / Weigh Feeder",
    "Hydraulics / Rollers"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  },
  {
   "run_date": "2026-10-06",
@@ -275,28 +131,12 @@
   "mill": "VRM-2",
   "horizon": 5,
   "forecast_date": "2026-10-11",
-  "types": [
-   {
-    "type": "Electrical",
-    "share": 0.125
-   },
-   {
-    "type": "Mechanical",
-    "share": 0.196
-   },
-   {
-    "type": "Other",
-    "share": 0.678
-   }
-  ],
-  "top_type": "Other",
   "predicted": [
    "Hydraulics / Rollers",
    "Belt Conveyor / Weigh Feeder"
   ],
   "actual_status": "pending",
-  "actual_types": [],
   "actual_families": [],
-  "top_type_hit": null
+  "equip_hit": null
  }
 ]
