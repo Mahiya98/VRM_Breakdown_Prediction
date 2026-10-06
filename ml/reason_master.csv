@@ -1,0 +1,1039 @@
+This is for Adding or removing any value for dropdown. Don't Change anything without any concern of OPEX Team,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Code,Types,Breakdown,Breakdown Dropdown,,Code,Types,Reason,Reason Dropdown,,,,,,,
+E01,Belt Conveyor,"Belt Conveyor 641 BC-(1,3)","E01-Belt Conveyor 641 BC-(1,3)",,E01,Belt Conveyor,"Belt Speed Low Alarm
+","E01-Belt Speed Low Alarm
+",,,,,,,
+E01,Belt Conveyor,"Belt Conveyor 641 BC( 2,4,5,6,7,8)","E01-Belt Conveyor 641 BC( 2,4,5,6,7,8)",,E01,Belt Conveyor,Overload alarm(Motor Earth Fault),E01-Overload alarm(Motor Earth Fault),,,,,,,
+E01,Belt Conveyor,"Belt Conveyor 514 BC(9,10,11,12,13,14)","E01-Belt Conveyor 514 BC(9,10,11,12,13,14)",,E01,Belt Conveyor,Motor Change & Fitting,E01-Motor Change & Fitting,,,,,,,
+E01,Belt Conveyor,"Belt Conveyor 641 BC(701,601,611)","E01-Belt Conveyor 641 BC(701,601,611)",,E01,Belt Conveyor,(clinker hopper feeding belt) Motor problem,E01-(clinker hopper feeding belt) Motor problem,,,,,,,
+E01,Belt Conveyor,"Belt Conveyor 642 BC (610,611,701,)","E01-Belt Conveyor 642 BC (610,611,701,)",,E01,Belt Conveyor,overload Alarm,E01-overload Alarm,,,,,,,
+E01,Belt Conveyor,Belt Conveyor 410BC1,E01-Belt Conveyor 410BC1,,E01,Belt Conveyor,ZSS Alarm,E01-ZSS Alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 410BC3,E01-Belt Conveyor 410BC3,,E01,Bucket Elevator,Motion Detector Problem,E01-Motion Detector Problem,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 410BC4,E01-Belt Conveyor 410BC4,,E01,Bucket Elevator,remote operation not ok,E01-remote operation not ok,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 410BC6,E01-Belt Conveyor 410BC6,,E01,Bucket Elevator,Overload alarm,E01-Overload alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 410BC7,E01-Belt Conveyor 410BC7,,E01,Bucket Elevator,ZSS Alarm,E01-ZSS Alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512BC1,E01-Belt Conveyor 512BC1,,E01,Bucket Elevator,HSLM pump-1 run time exceed alarm,E01-HSLM pump-1 run time exceed alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512bc2,E01-Belt Conveyor 512bc2,,E01,Bucket Elevator,ZSS Problem,E01-ZSS Problem,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512bc3,E01-Belt Conveyor 512bc3,,E01,Bucket Elevator,Motion detector alarm & Limestone weigh feeder PLC card problem,E01-Motion detector alarm & Limestone weigh feeder PLC card problem,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 513BC1,E01-Belt Conveyor 513BC1,,E01,Bucket Elevator,BSS Alarm,E01-BSS Alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 611BC4,E01-Belt Conveyor 611BC4,,E01,Bucket Elevator,Motion Detector alarm,E01-Motion Detector alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 611BC5,E01-Belt Conveyor 611BC5,,E01,Bucket Elevator,Clinker group remot operation not ready,E01-Clinker group remot operation not ready,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 611BC6,E01-Belt Conveyor 611BC6,,E01,Bucket Elevator,Bucket Elevator Trip,E01-Bucket Elevator Trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512WF1,E01-Belt Conveyor 512WF1,,E01,Bag Filter,FN -1 Trip,E01-FN -1 Trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512WF2,E01-Belt Conveyor 512WF2,,E01,Bag Filter,Main Baghouse Cycle off then ID fan trip three times,E01-Main Baghouse Cycle off then ID fan trip three times,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512WF3,E01-Belt Conveyor 512WF3,,E01,Fan, (Overload alarm),E01- (Overload alarm),,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 512WF4,E01-Belt Conveyor 512WF4,,E01,Fan,Not ready,E01-Not ready,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 513WF1,E01-Belt Conveyor 513WF1,,E01,Fan, Not Healthy,E01- Not Healthy,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 212BC020,E01-Belt Conveyor 212BC020,,E01,Fan,( ID fan) trip,E01-( ID fan) trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 212BC050,E01-Belt Conveyor 212BC050,,E01,Fan,(HAG DA Fan Motor)Return Fault,E01-(HAG DA Fan Motor)Return Fault,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 212BC100,E01-Belt Conveyor 212BC100,,E01,Fan,clinker hopper feeding belt) Motor problem &  Trip,E01-clinker hopper feeding belt) Motor problem &  Trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 212BC150,E01-Belt Conveyor 212BC150,,E01,Fan,"ZSS alarm,HSLM Feeder Open","E01-ZSS alarm,HSLM Feeder Open",,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 213BC050,E01-Belt Conveyor 213BC050,,E01,Fan,ID fan cooling fan Stop,E01-ID fan cooling fan Stop,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 213BC100,E01-Belt Conveyor 213BC100,,E01,Fan,Stop without alarm,E01-Stop without alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 232BC150,E01-Belt Conveyor 232BC150,,E01,Fan,Wending temperature Error,E01-Wending temperature Error,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 232ST250,E01-Belt Conveyor 232ST250,,E01,Fan,motor bearing change,E01-motor bearing change,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 232BC450,E01-Belt Conveyor 232BC450,,E01,Fan,Compressure pressure low,E01-Compressure pressure low,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 242BC050,E01-Belt Conveyor 242BC050,,E01,Fan,cooling fan stop & LRS ready dely,E01-cooling fan stop & LRS ready dely,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 242BC150,E01-Belt Conveyor 242BC150,,E01,Fan,winding temp error,E01-winding temp error,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 242BC530,E01-Belt Conveyor 242BC530,,E01,Rotary Feeder,Motor Change,E01-Motor Change,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 242BC540,E01-Belt Conveyor 242BC540,,E01,Rotary Feeder,Run feedback missing,E01-Run feedback missing,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481BC010,E01-Belt Conveyor 481BC010,,E01,Rotary Feeder,Main bag house RA7 not run,E01-Main bag house RA7 not run,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481BC030,E01-Belt Conveyor 481BC030,,E01,Rotary Feeder,ZSS alarm,E01-ZSS alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481BC070,E01-Belt Conveyor 481BC070,,E01,Rotary Feeder,Motion detector alarm,E01-Motion detector alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481BC150,E01-Belt Conveyor 481BC150,,E01,Rotary Feeder,Trip then cycle off & system stop,E01-Trip then cycle off & system stop,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481BC400,E01-Belt Conveyor 481BC400,,E01,Air Slide,Limit fault,E01-Limit fault,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511BC500,E01-Belt Conveyor 511BC500,,E01,Compressor,Trip,E01-Trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511BC550,E01-Belt Conveyor 511BC550,,E01,Main Motor,Not Healthy,E01-Not Healthy,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511bc600,E01-Belt Conveyor 511bc600,,E01,Main Motor,Carbon Bursh Change,E01-Carbon Bursh Change,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 531BC010,E01-Belt Conveyor 531BC010,,E01,Main Motor,Maximum bearing temperature,E01-Maximum bearing temperature,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 531BC015,E01-Belt Conveyor 531BC015,,E01,Main Motor,LRS fualt,E01-LRS fualt,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 481ECOHopper Belt,E01-Belt Conveyor 481ECOHopper Belt,,E01,Main Motor,Bearing DE vibration low limit,E01-Bearing DE vibration low limit,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 531BC200,E01-Belt Conveyor 531BC200,,E01,Main Motor,Overload alarm,E01-Overload alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511WF150,E01-Belt Conveyor 511WF150,,E01,Main Motor,Chain lock alarm,E01-Chain lock alarm,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511WF250,E01-Belt Conveyor 511WF250,,E01,Main Motor,Mill Main Motor not start,E01-Mill Main Motor not start,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511WF350,E01-Belt Conveyor 511WF350,,E01,Main Motor,Emergency Feeder,E01-Emergency Feeder,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 511WF450,E01-Belt Conveyor 511WF450,,E01,Silo,Trip,E01-Trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 531WF270 (REJECT),E01-Belt Conveyor 531WF270 (REJECT),,E01,Mill,GB Lubrication trip,E01-GB Lubrication trip,,,,-,,,-
+E01,Belt Conveyor,Belt Conveyor 611 BC 4,E01-Belt Conveyor 611 BC 4,,E01,Mill,Inlet pressure Error then pressure maximum,E01-Inlet pressure Error then pressure maximum,,,,-,,,-
+E01,Seperator Rotor,531 SR 1 ( Classifier) ,E01-531 SR 1 ( Classifier) ,,E01,Mill,Feeder not healthy,E01-Feeder not healthy,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 611BE 02,E01-Bucket Elevator 611BE 02,,E01,Mill,NDE bearing temperature error,E01-NDE bearing temperature error,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 611BE 03,E01-Bucket Elevator 611BE 03,,E01,Mill,Server Problem,E01-Server Problem,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 641 BE 000,E01-Bucket Elevator 641 BE 000,,E01,Mill,Motor Problem(HSLM),E01-Motor Problem(HSLM),,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 642 BE 001,E01-Bucket Elevator 642 BE 001,,E01,Mill,"514FN1 Trip,513RA7 ZSS alarm,HSLM Feeder Open,514BE1 ZSS alarm","E01-514FN1 Trip,513RA7 ZSS alarm,HSLM Feeder Open,514BE1 ZSS alarm",,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 642 BE 000,E01-Bucket Elevator 642 BE 000,,E01,Mill,HSLM oil pump trip,E01-HSLM oil pump trip,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 531 BE 220,E01-Bucket Elevator 531 BE 220,,E01,Mill,HSLM pump run exceed time alarm,E01-HSLM pump run exceed time alarm,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 541 BE 220,E01-Bucket Elevator 541 BE 220,,E01,Mill,HSLM remote operation not ready,E01-HSLM remote operation not ready,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 541 BE 200,E01-Bucket Elevator 541 BE 200,,E01,Mill,remote operation not ready,E01-remote operation not ready,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 410 BE 1,E01-Bucket Elevator 410 BE 1,,E01,Mill,PLC program problem,E01-PLC program problem,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 410 BE 2,E01-Bucket Elevator 410 BE 2,,E01,Mill,LRS Problem,E01-LRS Problem,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 513 BE 1,E01-Bucket Elevator 513 BE 1,,E01,Mill,HAG Flame out Fault,E01-HAG Flame out Fault,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 514 BE 1,E01-Bucket Elevator 514 BE 1,,E01,Mill,Zss Sensor,E01-Zss Sensor,,,,-,,,-
+E01,Bucket Elevator,Bucket Elevator 242 BE 200,E01-Bucket Elevator 242 BE 200,,E01,Mill,Mill Inlet Temperature RTD Problem,E01-Mill Inlet Temperature RTD Problem,,,,-,,,-
+E01,Bag Filter,Bag Filter 502 B F,E01-Bag Filter 502 B F,,E01,Mill,pump motor abnormal sound,E01-pump motor abnormal sound,,,,-,,,-
+E01,Bag House,Main Bag House,E01-Main Bag House,,E01,Mill,pump motor abnormal sound,E01-pump motor abnormal sound,,,,-,,,-
+E01,Weigh Feeder,Weigh Feeder 512 WF 150,E01-Weigh Feeder 512 WF 150,,E01,Mill,Powerplant VCB problem,E01-Powerplant VCB problem,,,,-,,,-
+E01,Fan,"High Pressure Fan 611 FN (000,001,002,003)","E01-High Pressure Fan 611 FN (000,001,002,003)",,E01,Mill,Motor lube damage (oil station high pressure pump),E01-Motor lube damage (oil station high pressure pump),,,,-,,,-
+E01,Fan,ID Fan-1 611 FN 3,E01-ID Fan-1 611 FN 3,,E01,Mill,Showing local limit,E01-Showing local limit,,,,-,,,-
+E01,Fan,"Filter FAN ""611 FN (052,055,056,057,058,163)""","E01-Filter FAN ""611 FN (052,055,056,057,058,163)""",,E01,Mill,Automation work,E01-Automation work,,,,-,,,-
+E01,Fan,High Pressure Fan 642 HP 170,E01-High Pressure Fan 642 HP 170,,E01,Mill,PLC Panel Problem,E01-PLC Panel Problem,,,,-,,,-
+E01,Fan,High pressure fan 1 611 FN 1,E01-High pressure fan 1 611 FN 1,,E01,Mill,Incoming ACB burn,E01-Incoming ACB burn,,,,-,,,-
+E01,Fan,Bag Filter Fan 611 BF 000,E01-Bag Filter Fan 611 BF 000,,E01,Mill,DP Maximum,E01-DP Maximum,,,,-,,,-
+E01,Fan,"High Pressure Fan 611 FN (004,005)","E01-High Pressure Fan 611 FN (004,005)",,E01,Mill,Pressure lever shaft,E01-Pressure lever shaft,,,,-,,,-
+E01,Fan,"High Pressure Fan 611 FN (2,3,4)","E01-High Pressure Fan 611 FN (2,3,4)",,E01,Mill,Excess Mill Vibration,E01-Excess Mill Vibration,,,,-,,,-
+E01,Fan,High Pressure Fan 611 FN 006,E01-High Pressure Fan 611 FN 006,,E01,Weigh Feeder,Weigh Feeder Emergency Stop alarm,E01-Weigh Feeder Emergency Stop alarm,,,,-,,,-
+E01,Fan,Bag Filter Fan 611 BF160,E01-Bag Filter Fan 611 BF160,,E01,Weigh Feeder,Weigh Feeder weigh feeder HMI time out alarm,E01-Weigh Feeder weigh feeder HMI time out alarm,,,,-,,,-
+E01,Fan,High Pressure Fan 611 FN 162,E01-High Pressure Fan 611 FN 162,,E01,Weigh Feeder,weigh feeder Deviation Fault Alarm,E01-weigh feeder Deviation Fault Alarm,,,,-,,,-
+E01,Fan,High Pressure Fan 403 FN,E01-High Pressure Fan 403 FN,,E01,Weigh Feeder,weigh feeder Techo fault alarm,E01-weigh feeder Techo fault alarm,,,,-,,,-
+E01,Fan,High Pressure Fan 611 FN 005,E01-High Pressure Fan 611 FN 005,,E01,Weigh Feeder,Weigh Feeder PLC card problem,E01-Weigh Feeder PLC card problem,,,,-,,,-
+E01,Fan,High Pressure Fan 513 FN 2,E01-High Pressure Fan 513 FN 2,,E01,Weigh Feeder,Weigh Feeder Techo Adjustment,E01-Weigh Feeder Techo Adjustment,,,,-,,,-
+E01,Fan,High Pressure Fan 513 FN 1,E01-High Pressure Fan 513 FN 1,,E01,Weigh Feeder,Weigh Feeder Trip,E01-Weigh Feeder Trip,,,,-,,,-
+E01,Fan,High Pressure Fan 514 FN 3,E01-High Pressure Fan 514 FN 3,,E01,Weigh Feeder,Weigh Feeder Techo sensor Problem ,E01-Weigh Feeder Techo sensor Problem ,,,,-,,,-
+E01,Fan,High Pressure Fan 514 FN 1,E01-High Pressure Fan 514 FN 1,,E01,Weigh Feeder,Weigh Feeder Not showing MT,E01-Weigh Feeder Not showing MT,,,,-,,,-
+E01,Fan,High Pressure Fan 531 FN 560,E01-High Pressure Fan 531 FN 560,,E01,Weigh Feeder,Weigh Feeder Weigh feeder calibration,E01-Weigh Feeder Weigh feeder calibration,,,,-,,,-
+E01,Fan,High Pressure Fan 531 FN 087,E01-High Pressure Fan 531 FN 087,,E01,Weigh Feeder,belt track fault alarm,E01-belt track fault alarm,,,,-,,,-
+E01,Fan,Mill Seal Fan,E01-Mill Seal Fan,,E01,HY-110,HY-110 Emergency Alarm,E01-HY-110 Emergency Alarm,,,,-,,,-
+E01,Classifier,512 SR -1 (Classifier),E01-512 SR -1 (Classifier),,E01,HAG,HAG DCS Emergency alarm,E01-HAG DCS Emergency alarm,,,,-,,,-
+E01,Classifier,512 SR 1 M 01,E01-512 SR 1 M 01,,E01,HAG,HAG Ignition fault alarm ,E01-HAG Ignition fault alarm ,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 641 RF 136,E01-Rotary Feeder 641 RF 136,,E01,HAG,HAG Main motor LRS Problem,E01-HAG Main motor LRS Problem,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 641 RF 161,E01-Rotary Feeder 641 RF 161,,E01,Mill Monitoring,,E01-,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 642 RF 161,E01-Rotary Feeder 642 RF 161,,E01,LQ 145,water pump trip,E01-water pump trip,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 642 RF 136,E01-Rotary Feeder 642 RF 136,,E01,LQ 146,Gear oil inlet temperature maximum,E01-Gear oil inlet temperature maximum,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 531 RF 506,E01-Rotary Feeder 531 RF 506,,E01,Capacitor Bank,,E01-,,,,-,,,-
+E01,Rotary Feeder,Rotary Feeder 531 RF 503,E01-Rotary Feeder 531 RF 503,,E01,HSSW,,E01-,,,,-,,,-
+E01,Rotary Valve,512 RV 1,E01-512 RV 1,,E01,Magnetic Separator,,E01-,,,,-,,,-
+E01,Air Slide,"Air Slide Air Slide(50,51,52,53,54)","E01-Air Slide Air Slide(50,51,52,53,54)",,E01,HSMS,,E01-,,,,-,,,-
+E01,Compressor,Atlas Copco Compressor (GA 75),E01-Atlas Copco Compressor (GA 75),,E01,LQ 120/121,Lubrication Unit Not Ready,E01-Lubrication Unit Not Ready,,,,-,,,-
+E01,Compressor,Atlas Copco Compressor (GA 11),E01-Atlas Copco Compressor (GA 11),,E01,Main Motor,Main motor Emergency feeder open,E01-Main motor Emergency feeder open,,,,-,,,-
+E01,Main Motor,512 RM -1 ,E01-512 RM -1 ,,E01,Main Motor,Motor change,E01-Motor change,,,,-,,,-
+E01,Main Motor,531 MD 140 ( Main motor),E01-531 MD 140 ( Main motor),,E01,diverting gate,Cylinder Problem,E01-Cylinder Problem,,,,-,,,-
+E01,Silo,"Silo Rotary 611SR(1,2)","E01-Silo Rotary 611SR(1,2)",,E01,Gear Box,Gear box Problem,E01-Gear box Problem,,,,-,,,-
+E01,Silo,Cement Silo Level 611 SI 101.02,E01-Cement Silo Level 611 SI 101.02,,E01,HSLM,Counter Pressure Problem,E01-Counter Pressure Problem,,,,-,,,-
+E01,Weigh Feeder,Weigh Feeder 512 WF 150,E01-Weigh Feeder 512 WF 150,,E01,Capacitor Bank,Capacitor Bank Maintenance,E01-Capacitor Bank Maintenance,,,,-,,,-
+E01,Diverting gate,514MW-1,E01-514MW-1,,E01,Diverting gate,Not healthy,E01-Not healthy,,,,-,,,-
+E01,Hydraullic Tensioning Unit,HY - 110,E01-HY - 110,,E01,Bag House,Pulsing Problem,E01-Pulsing Problem,,,,-,,,-
+E01,HAG,HAG,E01-HAG,,E01,Weigh Feeder,Pulsing Problem,E01-Pulsing Problem,,,,-,,,-
+E01,HSSW,HSSW,E01-HSSW,,E01,Mill,VFD not ready,E01-VFD not ready,,,,-,,,-
+E01,Gear Lubrication,LQ 145,E01-LQ 145,,,,,,,,,-,,,-
+E01,Roller Lubrication,LQ 120/121,E01-LQ 120/121,,M01,Belt Conveyor,Belt joint problem,M01-Belt joint problem,,,,-,,,-
+E01,Capacitor Bank,Capacitor Bank,E01-Capacitor Bank,,M01,Belt Conveyor,Belt joint crack Then additive Hopper empty,M01-Belt joint crack Then additive Hopper empty,,,,-,,,-
+E01,Magnetic Separator,512 MS-1 ,E01-512 MS-1 ,,M01,Belt Conveyor,Belt side ,M01-Belt side ,,,,-,,,-
+E01,Magnetic Separator,531 MS 201,E01-531 MS 201,,M01,Belt Conveyor,guide rollar problem,M01-guide rollar problem,,,,-,,,-
+E01,Mill Monitoring,Mill Monitoring,E01-Mill Monitoring,,M01,Belt Conveyor,"ZSS Alarm , BSS Alarm and Belt side","M01-ZSS Alarm , BSS Alarm and Belt side",,,,-,,,-
+E01,HSLM,HSLM,E01-HSLM,,M01,Belt Conveyor,Chute leakage and maitenance,M01-Chute leakage and maitenance,,,,-,,,-
+E01,HSSW,HSSW,E01-HSSW,,M01,Bucket Elevator,head pulley liner plate change,M01-head pulley liner plate change,,,,-,,,-
+E01,Main Drive,531 MD 152 Separator,E01-531 MD 152 Separator,,M01,Bucket Elevator,Bucket Damage,M01-Bucket Damage,,,,-,,,-
+E01,Magnetic Separator,531 MS 011 ,E01-531 MS 011 ,,M01,Bag Filter,Main bagfilter cylinder hose pipe leakage & double pulsing then BSS &BLS alarm,M01-Main bagfilter cylinder hose pipe leakage & double pulsing then BSS &BLS alarm,,,,-,,,-
+E01,Linear Damper,510 LD 1,E01-510 LD 1,,M01,Bag Filter,"Main bagfilter cylinder hose pipe leakage then Main bagfilter cycle off,","M01-Main bagfilter cylinder hose pipe leakage then Main bagfilter cycle off,",,,,-,,,-
+E01,Linear Damper,510 LD 3,E01-510 LD 3,,M01,Bag Filter,Main Bag Filter DP Maximum,M01-Main Bag Filter DP Maximum,,,,-,,,-
+E01,Linear Damper,513 LD 2 (Recirculation damper) ,E01-513 LD 2 (Recirculation damper) ,,M01,Bag Filter,Main bag Filter DP Maximum then reject bucket trip,M01-Main bag Filter DP Maximum then reject bucket trip,,,,-,,,-
+E01,Magnetic Separator,512 SM -1,E01-512 SM -1,,M01,Bag Filter,Compressor pressure low and cylinder up problem,M01-Compressor pressure low and cylinder up problem,,,,-,,,-
+E01,Seperator Rotor,531 SR 1 ( Classifier) ,E01-531 SR 1 ( Classifier) ,,M01,Fan,"(ID FAN) motor (DE) bearing vibration maximum , motor DE bearing temperature high","M01-(ID FAN) motor (DE) bearing vibration maximum , motor DE bearing temperature high",,,,-,,,-
+E01,gear lubrication unit,531LQ14501 gear lubrication unit,E01-531LQ14501 gear lubrication unit,,M01,Fan,Classifre Bush broken,M01-Classifre Bush broken,,,,-,,,-
+E01,Hydraullic Tensioning Unit,531 HY 110,E01-531 HY 110,,M01,Fan,HSMS Oil Temp High &  Bush Broken,M01-HSMS Oil Temp High &  Bush Broken,,,,-,,,-
+E01,diverting gate,541 DG 255,E01-541 DG 255,,M01,Fan, coupling free,M01- coupling free,,,,-,,,-
+E01,diverting gate,541 DG 300 ,E01-541 DG 300 ,,M01,Fan,Classifire rubber bush damage,M01-Classifire rubber bush damage,,,,-,,,-
+E01,diverting gate,531 DG 050,E01-531 DG 050,,M01,Fan,"Z Damper trip then ID fan stop,
+ (Low pressure pump oil filter jam) trip ","M01-Z Damper trip then ID fan stop,
+ (Low pressure pump oil filter jam) trip ",,,,-,,,-
+E01,diverting gate,541 DG 110,E01-541 DG 110,,M01,Rotary Feeder,513RA-4 trip then main baghouse cycle off(Bush broken),M01-513RA-4 trip then main baghouse cycle off(Bush broken),,,,-,,,-
+E01,Gear Box,Gear Box,E01-Gear Box,,M01,Air Slide,Discharge chute Air slide jam & Canvas cloth change,M01-Discharge chute Air slide jam & Canvas cloth change,,,,-,,,-
+E01,Gear Box,FLS Gear Box,E01-FLS Gear Box,,M01,Air Slide,silo air slide canvas cloth change,M01-silo air slide canvas cloth change,,,,-,,,-
+E01,LT (Low Tension) switchgear,LT (Low Tension) switchgear,E01-LT (Low Tension) switchgear,,M01,Air Slide,(Reject Bucket) bottom chute jam,M01-(Reject Bucket) bottom chute jam,,,,-,,,-
+E01,MILL ,PLC Pannel,E01-PLC Pannel,,M01,Compressor,Compressor trip then Main Bag house DP Maximam,M01-Compressor trip then Main Bag house DP Maximam,,,,-,,,-
+E01,Mill,HSMS,E01-HSMS,,M01,Compressor,Mill vibration,M01-Mill vibration,,,,-,,,-
+E01,Mill,Master Roller,E01-Master Roller,,M01,Compressor,cylinder pin open,M01-cylinder pin open,,,,-,,,-
+E01,Grinding Aid System,Grinding Aid System,E01-Grinding Aid System,,M01,Compressor,Compressor trip then cycle off and ZSS Alarm,M01-Compressor trip then cycle off and ZSS Alarm,,,,-,,,-
+E01,Power Plant VCB,Power Plant VCB,E01-Power Plant VCB,,M01,Compressor,Compressor Trip then main Bag house cycle off,M01-Compressor Trip then main Bag house cycle off,,,,-,,,-
+E01,513 RA 25 ,513 RA 25 ,E01-513 RA 25 ,,M01,Compressor,HSSW pressure problem,M01-HSSW pressure problem,,,,-,,,-
+E01,513 RA 7 ,513 RA 7 ,E01-513 RA 7 ,,M01,Silo,Silo gate not working ,M01-Silo gate not working ,,,,-,,,-
+E01,531 LQ 145,531 LQ 145,E01-531 LQ 145,,M01,Silo,Compressor trip then main bag house DP maximum  ,M01-Compressor trip then main bag house DP maximum  ,,,,-,,,-
+E01,531 LQ 145,531 LQ 153,E01-531 LQ 153,,M01,Main Motor,Emergency Feeder,M01-Emergency Feeder,,,,-,,,-
+E01,Air Slide,541 AS 100,E01-541 AS 100,,M01,Mill,Master roller-3 Silicon tube adjustment,M01-Master roller-3 Silicon tube adjustment,,,,-,,,-
+E01,Mill,Auxillary Group,E01-Auxillary Group,,M01,Mill,Classifier drive trip,M01-Classifier drive trip,,,,-,,,-
+E01,Mill,E01-513RA19 ZSS alarm.,E01-E01-513RA19 ZSS alarm.,,,,,,,,,-,,,-
+E01,Mill,MILL,E01-MILL,,M01,Mill,Main motor check,M01-Main motor check,,,,-,,,-
+E01,ID Fan,513FN-2 M2(Cooling Fan).,E01-513FN-2 M2(Cooling Fan).,,,,,,,,,-,,,-
+E01,512 RM-1M05,Gearbox low pressure pump trip,E01-Gearbox low pressure pump trip,,,,,,,,,-,,,-
+E01,High Pressure Fan 541FN253,Overload Alarm,E01-Overload Alarm,,M01,Mill,Classifier coupling problem,M01-Classifier coupling problem,,,,-,,,-
+M01,Belt Conveyor,"Belt Conveyor 641 BC-(1,3)","M01-Belt Conveyor 641 BC-(1,3)",,M01,Mill,Ruber Coupling bush damage,M01-Ruber Coupling bush damage,,,,-,,,-
+M01,Belt Conveyor,"Belt Conveyor 641 BC( 2,4,5,6,7,8)","M01-Belt Conveyor 641 BC( 2,4,5,6,7,8)",,M01,Mill,Water Sprinkler nozzal damage & maintenance,M01-Water Sprinkler nozzal damage & maintenance,,,,-,,,-
+M01,Belt Conveyor,"Belt Conveyor 514 BC(9,10,11,12,13,14)","M01-Belt Conveyor 514 BC(9,10,11,12,13,14)",,M01,Mill,"Z Damper)trip then ID fan stop,
+                                                             ","M01-Z Damper)trip then ID fan stop,
+                                                             ",,,,-,,,-
+M01,Belt Conveyor,"Belt Conveyor 641 BC(701,601,611)","M01-Belt Conveyor 641 BC(701,601,611)",,M01,Mill,Low pressure pump oil filter jam) trip,M01-Low pressure pump oil filter jam) trip,,,,-,,,-
+M01,Belt Conveyor,"Belt Conveyor 642 BC (610,611,701,)","M01-Belt Conveyor 642 BC (610,611,701,)",,M01,Mill,Classifier gear box oil seal change,M01-Classifier gear box oil seal change,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 410BC1,M01-Belt Conveyor 410BC1,,M01,Mill,Main Motor Basement Maintenance,M01-Main Motor Basement Maintenance,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 410BC3,M01-Belt Conveyor 410BC3,,M01,Mill,Gear box lubrication unit oil temperature high alarm,M01-Gear box lubrication unit oil temperature high alarm,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 410BC4,M01-Belt Conveyor 410BC4,,M01,Mill,Gear box Oil Staion Pump problem      ,M01-Gear box Oil Staion Pump problem      ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 410BC6,M01-Belt Conveyor 410BC6,,M01,Mill,Compressor trip Then cycle off ,M01-Compressor trip Then cycle off ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 410BC7,M01-Belt Conveyor 410BC7,,M01,Mill,HSSW pressure problem ,M01-HSSW pressure problem ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512BC1,M01-Belt Conveyor 512BC1,,M01,Mill,Mill Seal Air Fan problem,M01-Mill Seal Air Fan problem,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512bc2,M01-Belt Conveyor 512bc2,,M01,Mill,motor gearbox cuppling rubber bush broken,M01-motor gearbox cuppling rubber bush broken,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512bc3,M01-Belt Conveyor 512bc3,,M01,Mill,Separator bush damage,M01-Separator bush damage,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 513BC1,M01-Belt Conveyor 513BC1,,M01,Mill,Gear box oil filter block,M01-Gear box oil filter block,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 611BC4,M01-Belt Conveyor 611BC4,,M01,Mill,automation work by electrical & Mechnical maintenance team                     ,M01-automation work by electrical & Mechnical maintenance team                     ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 611BC5,M01-Belt Conveyor 611BC5,,M01,Mill,DP Maximum,M01-DP Maximum,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 611BC6,M01-Belt Conveyor 611BC6,,M01,Mill,Z Damper trip,M01-Z Damper trip,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512WF1,M01-Belt Conveyor 512WF1,,M01,Mill,Pressure lever shaft,M01-Pressure lever shaft,,,,-E01-531FN560 ID Fan overload,,,-E01-531FN560 ID Fan overload
+M01,Belt Conveyor,Belt Conveyor 512WF2,M01-Belt Conveyor 512WF2,,M01,Mill,Excess Mill Vibration,M01-Excess Mill Vibration,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512WF3,M01-Belt Conveyor 512WF3,,M01,Weigh Feeder,Gypsum guide belt change,M01-Gypsum guide belt change,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 512WF4,M01-Belt Conveyor 512WF4,,M01,HY-110,M01 Conditioning Pump trip,M01-M01 Conditioning Pump trip,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 513WF1,M01-Belt Conveyor 513WF1,,M01,HY-110,Hydraulic Tension pressure down (170 Bar),M01-Hydraulic Tension pressure down (170 Bar),,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 212BC020,M01-Belt Conveyor 212BC020,,M01,HAG,HAG is not run by Gas( Flame out fault alarm),M01-HAG is not run by Gas( Flame out fault alarm),,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 212BC050,M01-Belt Conveyor 212BC050,,M01,LQ 145,Thrustpad- Oil Pressure low,M01-Thrustpad- Oil Pressure low,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 212BC100,M01-Belt Conveyor 212BC100,,M01,LQ 145,Water circulation pressure low then  outlet temp high,M01-Water circulation pressure low then  outlet temp high,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 212BC150,M01-Belt Conveyor 212BC150,,M01,LQ 145,Gear oil outlet temperature high,M01-Gear oil outlet temperature high,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 213BC050,M01-Belt Conveyor 213BC050,,M01,LQ 145,"Mill gear lube, in operation not ready","M01-Mill gear lube, in operation not ready",,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 213BC100,M01-Belt Conveyor 213BC100,,M01,HSSW,HSSW remote operation not ready,M01-HSSW remote operation not ready,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 232BC150,M01-Belt Conveyor 232BC150,,M01,HSSW,HSSW Hydrolic pump  run time alarm,M01-HSSW Hydrolic pump  run time alarm,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 232ST250,M01-Belt Conveyor 232ST250,,M01,Magnetic Separator, trip,M01- trip,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 232BC450,M01-Belt Conveyor 232BC450,,M01,Magnetic Separator,trip for temperature high ,M01-trip for temperature high ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 242BC050,M01-Belt Conveyor 242BC050,,M01,Magnetic Separator,trip then belt side problem,M01-trip then belt side problem,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 242BC150,M01-Belt Conveyor 242BC150,,M01,HSMS,Bush Broken,M01-Bush Broken,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 242BC530,M01-Belt Conveyor 242BC530,,M01,HSMS,HSMS Oil Temp High,M01-HSMS Oil Temp High,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 242BC540,M01-Belt Conveyor 242BC540,,M01,HSLM,HSLM oil tank level low,M01-HSLM oil tank level low,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC010,M01-Belt Conveyor 481BC010,,M01,HSLM,oil tank level low,M01-oil tank level low,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC030,M01-Belt Conveyor 481BC030,,M01,Main Motor,Main motor Emergency feeder open,M01-Main motor Emergency feeder open,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC070,M01-Belt Conveyor 481BC070,,M01,Main Motor,Bearing change,M01-Bearing change,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC150,M01-Belt Conveyor 481BC150,,M01,Main Motor,Motor change,M01-Motor change,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC400,M01-Belt Conveyor 481BC400,,M01,diverting gate,Cylinder Problem,M01-Cylinder Problem,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511BC500,M01-Belt Conveyor 511BC500,,M01,Gear Box,Gear box Problem,M01-Gear box Problem,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511BC550,M01-Belt Conveyor 511BC550,,M01,HSLM,Counter Pressure Problem,M01-Counter Pressure Problem,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511bc600,M01-Belt Conveyor 511bc600,,M01,Capacitor Bank,Capacitor Bank Maintenance,M01-Capacitor Bank Maintenance,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 531BC010,M01-Belt Conveyor 531BC010,,M01,Weigh Feeder,pulley re-align,M01-pulley re-align,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 531BC015,M01-Belt Conveyor 531BC015,,M01,Mill,Mill skip chamber Discharge chut jam,M01-Mill skip chamber Discharge chut jam,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481ECOHopper Belt,M01-Belt Conveyor 481ECOHopper Belt,,M01,Mill,roller silicon tube damage,M01-roller silicon tube damage,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 531BC200,M01-Belt Conveyor 531BC200,,M01,Air Slide,Air Slide Jam,M01-Air Slide Jam,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511WF150,M01-Belt Conveyor 511WF150,,,,,,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511WF250,M01-Belt Conveyor 511WF250,,R01,Raw Material ,Slag Storage Empty,R01-Slag Storage Empty,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511WF350,M01-Belt Conveyor 511WF350,,R01,Raw Material ,Gypsam Storage Empty,R01-Gypsam Storage Empty,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 511WF450,M01-Belt Conveyor 511WF450,,R01,Raw Material ,Clinker Storage Empty ,R01-Clinker Storage Empty ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 531WF270 (REJECT),M01-Belt Conveyor 531WF270 (REJECT),,R01,Raw Material ,Lime Stone Storge Empty ,R01-Lime Stone Storge Empty ,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 611 BC 4,M01-Belt Conveyor 611 BC 4,,,,,-,,,,-,,,-
+M01,Seperator Rotor,531 SR 1 ( Classifier) ,M01-531 SR 1 ( Classifier) ,,W01,Warehouse Block, PCC Cement Silo full,W01- PCC Cement Silo full,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 611BE 02,M01-Bucket Elevator 611BE 02,,W01,Warehouse Block,Cement Silo full,W01-Cement Silo full,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 611BE 03,M01-Bucket Elevator 611BE 03,,W01,Warehouse Block,OPC Cement Silo  full,W01-OPC Cement Silo  full,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 641 BE 000,M01-Bucket Elevator 641 BE 000,,,,,-,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 642 BE 001,M01-Bucket Elevator 642 BE 001,,I01,Process,Mill Vibration,I01-Mill Vibration,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 642 BE 000,M01-Bucket Elevator 642 BE 000,,I01,Process, Mill monitoring Alarm,I01- Mill monitoring Alarm,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 531 BE 220,M01-Bucket Elevator 531 BE 220,,I01,Process,Belt Conveyor,I01-Belt Conveyor,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 541 BE 220,M01-Bucket Elevator 541 BE 220,,I01,Process,Mill Heatup,I01-Mill Heatup,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 541 BE 200,M01-Bucket Elevator 541 BE 200,,I01,Process,System ready ,I01-System ready ,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 410 BE 1,M01-Bucket Elevator 410 BE 1,,,,,-,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 410 BE 2,M01-Bucket Elevator 410 BE 2,,U01,Electricity ,REB Shoutdown,U01-REB Shoutdown,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 513 BE 1,M01-Bucket Elevator 513 BE 1,,U01,Electricity ,Gas Pressure Low,U01-Gas Pressure Low,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 514 BE 1,M01-Bucket Elevator 514 BE 1,,U01,Electricity ,Power Plant Requirement,U01-Power Plant Requirement,,,,-,,,-
+M01,Bucket Elevator,Bucket Elevator 242 BE 200,M01-Bucket Elevator 242 BE 200,,U01,Electricity ,Engine Trip,U01-Engine Trip,,,,-,,,-
+M01,Bag Filter,Bag Filter 502 B F,M01-Bag Filter 502 B F,,U01,Electricity ,Power plant REB VCB Problem,U01-Power plant REB VCB Problem,,,,-,,,-
+M01,Bag House,Main Bag House,M01-Main Bag House,,O01,Other Down Time,System ready & mill heat up,O01-System ready & mill heat up,,,,-,,,-
+M01,Weigh Feeder,Weigh Feeder 512 WF 150,M01-Weigh Feeder 512 WF 150,,O01,Other Down Time,Mill Inside check & water sprinkler clean,O01-Mill Inside check & water sprinkler clean,,,,-,,,-
+M01,Fan,"High Pressure Fan 611 FN (000,001,002,003)","M01-High Pressure Fan 611 FN (000,001,002,003)",,O01,Other Down Time,Local Stop Push Button,O01-Local Stop Push Button,,,,-,,,-
+M01,Fan,ID Fan-1 611 FN 3,M01-ID Fan-1 611 FN 3,,O01,Other Down Time,Suddenly mill vibration,O01-Suddenly mill vibration,,,,-,,,-
+M01,Fan,"Filter FAN ""611 FN (052,055,056,057,058,163)""","M01-Filter FAN ""611 FN (052,055,056,057,058,163)""",,O01,Other Down Time,Material Flow Unbalance then Mill Vibration,O01-Material Flow Unbalance then Mill Vibration,,,,-,,,-
+M01,Fan,High Pressure Fan 642 HP 170,M01-High Pressure Fan 642 HP 170,,O01,Other Down Time,Overload,O01-Overload,,,,-,,,-
+M01,Fan,High pressure fan 1 611 FN 1,M01-High pressure fan 1 611 FN 1,,O01,Other Down Time,HP Pump-3 trip,O01-HP Pump-3 trip,,,,-,,,-
+M01,Fan,Bag Filter Fan 611 BF 000,M01-Bag Filter Fan 611 BF 000,,O01,Other Down Time,Trip then Mill in side check & clean,O01-Trip then Mill in side check & clean,,,,-,,,-
+M01,Fan,"High Pressure Fan 611 FN (004,005)","M01-High Pressure Fan 611 FN (004,005)",,O01,Other Down Time,Zero Calibration and Drop Test,O01-Zero Calibration and Drop Test,,,,-,,,-
+M01,Fan,"High Pressure Fan 611 FN (2,3,4)","M01-High Pressure Fan 611 FN (2,3,4)",,O01,Other Down Time,"Feed Stop Without Alarm,Mill Vibration","O01-Feed Stop Without Alarm,Mill Vibration",,,,-,,,-
+M01,Fan,High Pressure Fan 611 FN 006,M01-High Pressure Fan 611 FN 006,,O01,Other Down Time,Suddenly mill vibration,O01-Suddenly mill vibration,,,,-,,,-
+M01,Fan,Bag Filter Fan 611 BF160,M01-Bag Filter Fan 611 BF160,,O01,Other Down Time,Mill Vibration,O01-Mill Vibration,,,,-,,,-
+M01,Fan,High Pressure Fan 611 FN 162,M01-High Pressure Fan 611 FN 162,,O01,Other Down Time, Jam,O01- Jam,,,,-,,,-
+M01,Fan,High Pressure Fan 403 FN,M01-High Pressure Fan 403 FN,,O01,Other Down Time,ZSS alarm then main bag house Cycle off,O01-ZSS alarm then main bag house Cycle off,,,,-,,,-
+M01,Fan,High Pressure Fan 611 FN 005,M01-High Pressure Fan 611 FN 005,,O01,Other Down Time,Mill skip chamber Discharge chut jam,O01-Mill skip chamber Discharge chut jam,,,,-,,,-
+M01,Fan,High Pressure Fan 513 FN 2,M01-High Pressure Fan 513 FN 2,,O01,Other Down Time,Sull Air Comp temp high and main bag house cycle off ,O01-Sull Air Comp temp high and main bag house cycle off ,,,,-,,,-
+M01,Fan,High Pressure Fan 513 FN 1,M01-High Pressure Fan 513 FN 1,,O01,Other Down Time,Mill Vibration Feed start delay due to Compressor trip with high temperature the Bag House pressure fault then ID fan & Main Motor trip,O01-Mill Vibration Feed start delay due to Compressor trip with high temperature the Bag House pressure fault then ID fan & Main Motor trip,,,,-,,,-
+M01,Fan,High Pressure Fan 514 FN 3,M01-High Pressure Fan 514 FN 3,,O01,Other Down Time,HSSW Remote Operation Not ok,O01-HSSW Remote Operation Not ok,,,,-,,,-
+M01,Fan,High Pressure Fan 514 FN 1,M01-High Pressure Fan 514 FN 1,,O01,Other Down Time,HSMS Remote Operation Not ok,O01-HSMS Remote Operation Not ok,,,,-,,,-
+M01,Fan,High Pressure Fan 531 FN 560,M01-High Pressure Fan 531 FN 560,,O01,Other Down Time,Mill Monitoring Alarm,O01-Mill Monitoring Alarm,,,,-,,,-
+M01,Fan,High Pressure Fan 531 FN 087,M01-High Pressure Fan 531 FN 087,,O01,Other Down Time,main bag house pressure fault,O01-main bag house pressure fault,,,,-,,,-
+M01,Fan,Mill Seal Fan,M01-Mill Seal Fan,,O01,Other Down Time,Main Motor Drive side Bearing Vibration Maximum,O01-Main Motor Drive side Bearing Vibration Maximum,,,,-,,,-
+M01,Classifier,512 SR -1 (Classifier),M01-512 SR -1 (Classifier),,O01,Other Down Time, Clinker hopper flashing and discharge chute jam,O01- Clinker hopper flashing and discharge chute jam,,,,-,,,-
+M01,Classifier,512 SR 1 M 01,M01-512 SR 1 M 01,,O01,Other Down Time,Clinker hopper flashing,O01-Clinker hopper flashing,,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 641 RF 136,M01-Rotary Feeder 641 RF 136,,O01,Other Down Time,"Main motor bearing vibration DE maximum & feed
+ stard dely  Overload alarm","O01-Main motor bearing vibration DE maximum & feed
+ stard dely  Overload alarm",,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 641 RF 161,M01-Rotary Feeder 641 RF 161,,O01,Other Down Time,Main bag house cycle off then Id fan & Main motor trip,O01-Main bag house cycle off then Id fan & Main motor trip,,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 642 RF 161,M01-Rotary Feeder 642 RF 161,,O01,Other Down Time,Thurstpad pressure low,O01-Thurstpad pressure low,,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 642 RF 136,M01-Rotary Feeder 642 RF 136,,O01,Other Down Time,Compressor stop due to without Alarm then total system trip,O01-Compressor stop due to without Alarm then total system trip,,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 531 RF 506,M01-Rotary Feeder 531 RF 506,,O01,Other Down Time,Compressor Trip then Main Bag house cycle off				,O01-Compressor Trip then Main Bag house cycle off				,,,,-,,,-
+M01,Rotary Feeder,Rotary Feeder 531 RF 503,M01-Rotary Feeder 531 RF 503,,O01,Other Down Time,Damper Not Open then HAG is Not Runing,O01-Damper Not Open then HAG is Not Runing,,,,-,,,-
+M01,Rotary Valve,512 RV 1,M01-512 RV 1,,O01,Other Down Time,Bag house DP high( valve are closed) ,O01-Bag house DP high( valve are closed) ,,,,-,,,-
+M01,Air Slide,"Air Slide Air Slide(50,51,52,53,54)","M01-Air Slide Air Slide(50,51,52,53,54)",,O01,Other Down Time,Main Motor allignment,O01-Main Motor allignment,,,,-,,,-
+M01,Compressor,Atlas Copco Compressor (GA 75),M01-Atlas Copco Compressor (GA 75),,O01,Other Down Time,National Issue,O01-National Issue,,,,-,,,-
+M01,Compressor,Atlas Copco Compressor (GA 11),M01-Atlas Copco Compressor (GA 11),,O01,Other Down Time,Roller Callibration,O01-Roller Callibration,,,,-,,,-
+M01,Main Motor,512 RM -1 ,M01-512 RM -1 ,,O01,Other Down Time, Separtor lube pump Stop without alarm,O01- Separtor lube pump Stop without alarm,,,,-,,,-
+M01,Main Motor,531 MD 140 ( Main motor),M01-531 MD 140 ( Main motor),,O01,Other Down Time,Air slide jam,O01-Air slide jam,,,,-,,,-
+M01,Silo,"Silo Rotary 611SR(1,2)","M01-Silo Rotary 611SR(1,2)",,O01,Other Down Time,531 BC 015,O01-531 BC 015,,,,-,,,-
+M01,Silo,Cement Silo Level 611 SI 101.02,M01-Cement Silo Level 611 SI 101.02,,O01,Other Down Time,Discharge Chute jam,O01-Discharge Chute jam,,,,-,,,-
+M01,Weigh Feeder,Weigh Feeder 512 WF 150,M01-Weigh Feeder 512 WF 150,,O01,Other Down Time,belt speed low,O01-belt speed low,,,,-,,,-
+M01,Hydraullic Tensioning Unit,HY - 110,M01-HY - 110,,O01,Other Down Time,motion detector alarm,O01-motion detector alarm,,,,-,,,-
+M01,HAG,HAG,M01-HAG,,O01,Other Down Time,mill heatup,O01-mill heatup,,,,-,,,-
+M01,HSSW,HSSW,M01-HSSW,,O01,Other Down Time,bottom side jam,O01-bottom side jam,,,,-,,,-
+M01,Gear Lubrication,LQ 145,M01-LQ 145,,O01,Other Down Time,Thrustpad- Oil Pressure low,O01-Thrustpad- Oil Pressure low,,,,-,,,-
+M01,Roller Lubrication,LQ 120/121,M01-LQ 120/121,,O01,Other Down Time,trip,O01-trip,,,,-,,,-
+M01,Capacitor Bank,Capacitor Bank,M01-Capacitor Bank,,O01,Other Down Time,"ZSS Alarm , BSS Alarm and Belt side","O01-ZSS Alarm , BSS Alarm and Belt side",,,,-,,,-
+M01,Magnetic Separator,512 MS-1 ,M01-512 MS-1 ,,O01,Other Down Time,mill heatup,O01-mill heatup,,,,-,,,-
+M01,Magnetic Separator,531 MS 201,M01-531 MS 201,,O01,Other Down Time,Hopper Percentage Low,O01-Hopper Percentage Low,,,,-,,,-
+M01,Mill Monitoring,Mill Monitoring,M01-Mill Monitoring,,O01,Other Down Time,Gear Box Vibration,O01-Gear Box Vibration,,,,-,,,-
+M01,HSLM,HSLM,M01-HSLM,,O01,Other Down Time,Low Feed Rate,O01-Low Feed Rate,,,,-,,,-
+M01,HSSW,HSSW,M01-HSSW,,O01,Other Down Time,HSLM counter pressure not ok,O01-HSLM counter pressure not ok,,,,-,,,-
+M01,Main Drive,531 MD 152 Separator,M01-531 MD 152 Separator,,O01,Other Down Time,remote operation not ready,O01-remote operation not ready,,,,-,,,-
+M01,Magnetic Separator,531 MS 011 ,M01-531 MS 011 ,,O01,Other Down Time,emergency stop,O01-emergency stop,,,,-,,,-
+M01,Linear Damper,510 LD 1,M01-510 LD 1,,O01,Other Down Time,High Temperature Trip,O01-High Temperature Trip,,,,-,,,-
+M01,Linear Damper,510 LD 3,M01-510 LD 3,,O01,Other Down Time,Inlet pressure low alarm,O01-Inlet pressure low alarm,,,,-,,,-
+M01,Linear Damper,513 LD 2 (Recirculation damper) ,M01-513 LD 2 (Recirculation damper) ,,O01,Other Down Time,Coupling Problem,O01-Coupling Problem,,,,-,,,-
+M01,Magnetic Separator,512 SM -1,M01-512 SM -1,,O01,Other Down Time,Water sprinkler pump stop without alarm,O01-Water sprinkler pump stop without alarm,,,,-,,,-
+M01,Seperator Rotor,531 SR 1 ( Classifier) ,M01-531 SR 1 ( Classifier) ,,O01,Other Down Time,Runtime Alarm,O01-Runtime Alarm,,,,-,,,-
+M01,gear lubrication unit,531LQ14501 gear lubrication unit,M01-531LQ14501 gear lubrication unit,,O01,Other Down Time,Silo Gate Change,O01-Silo Gate Change,,,,-,,,-
+M01,Hydraullic Tensioning Unit,531 HY 110,M01-531 HY 110,,O01,Other Down Time,fan stop without alarm.,O01-fan stop without alarm.,,,,-,,,-
+M01,diverting gate,541 DG 255,M01-541 DG 255,,O01,Other Down Time,gear oil outlet temp,O01-gear oil outlet temp,,,,-,,,-
+M01,diverting gate,541 DG 300 ,M01-541 DG 300 ,,O01,Other Down Time,Mill Basement Scanning,O01-Mill Basement Scanning,,,,-,,,-
+M01,diverting gate,531 DG 050,M01-531 DG 050,,O01,Other Down Time,High Temperature Trip,O01-High Temperature Trip,,,,-,,,-
+M01,diverting gate,541 DG 110,M01-541 DG 110,,O01,Other Down Time,Oil High Temperature Trip,O01-Oil High Temperature Trip,,,,-,,,-
+M01,Gear Box,Gear Box,M01-Gear Box,,O01,Other Down Time,Motor Trip,O01-Motor Trip,,,,-,,,-
+M01,Gear Box,FLS Gear Box,M01-FLS Gear Box,,O01,Other Down Time,Bag Filter Cycle Off,O01-Bag Filter Cycle Off,,,,-,,,-
+M01,LT (Low Tension) switchgear,LT (Low Tension) switchgear,M01-LT (Low Tension) switchgear,,O01,Other Down Time,Gear lubrication unit operation interlock,O01-Gear lubrication unit operation interlock,,,,-,,,-
+M01,MILL ,PLC Pannel,M01-PLC Pannel,,O01,Other Down Time,HAG Flame out Fault Alarm,O01-HAG Flame out Fault Alarm,,,,-,,,-
+M01,Mill,HSMS,M01-HSMS,,O01,Other Down Time,lifting pressure not stable,O01-lifting pressure not stable,,,,-,,,-
+M01,Mill,Master Roller,M01-Master Roller,,O01,Other Down Time,stop without alarm,O01-stop without alarm,,,,-,,,-
+M01,Grinding Aid System,Grinding Aid System,M01-Grinding Aid System,,,,,-,,,,-,,,-
+M01,Power Plant VCB,Power Plant VCB,M01-Power Plant VCB,,P01,Planned DT,Schedule Maintenance ( Mechanical ),P01-Schedule Maintenance ( Mechanical ),,,,-,,,-
+M01,513 RA 25 ,513 RA 25 ,M01-513 RA 25 ,,P01,Planned DT,Schedule Maintenance ( Electrical ),P01-Schedule Maintenance ( Electrical ),,,,-,,,-
+M01,513 RA 7 ,513 RA 7 ,M01-513 RA 7 ,,,,,-,,,,-,,,-
+M01,531 LQ 145,531 LQ 145,M01-531 LQ 145,,M01,Mill,531RF085(Rotary) return fault alalrm(Jam),M01-531RF085(Rotary) return fault alalrm(Jam),,,,-,,,-
+M01,531 LQ 145,531 LQ 153,M01-531 LQ 153,,E01,E01-Main Bag House,531RF506 Motion detector alarm.,E01-531RF506 Motion detector alarm.,,,,-,,,-
+M01,Air Slide,541 AS 100,M01-541 AS 100,,I01,In Process Setup/ Adjustment,Scrip chamber & Slag hopper Cleaning,I01-Scrip chamber & Slag hopper Cleaning,,,,-,,,-
+M01,Mill,Auxillary Group,M01-Auxillary Group,,M01,LQ 145,Thrustpad pair low pressure alarm.(Mechanical Breakdown),M01-Thrustpad pair low pressure alarm.(Mechanical Breakdown),,,,-,,,-
+M01,Mill,MILL,M01-MILL,,E01,Rotary Feeder,513RA19 ZSS alarm.,E01-513RA19 ZSS alarm.,,,,-,,,-
+M01,Mill,MILL,M01- Water sprinkler nozzle maintenance,,M01,Mill,M01- Water sprinkler nozzle maintenance,M01-M01- Water sprinkler nozzle maintenance,,,,-,,,-
+,Gearbox,Gearbox(Oil station) maintenance by Mechanical team.,-Gearbox(Oil station) maintenance by Mechanical team.,,O01,Other Down Time,Thrustpad pressure low alarm.,O01-Thrustpad pressure low alarm.,,,,-,,,-
+O01,Belt Conveyor,"Belt Conveyor 641 BC-(1,3)","O01-Belt Conveyor 641 BC-(1,3)",,M01,Mill,Roller no 1 displaced from collar.,M01-Roller no 1 displaced from collar.,,,,-,,,-
+O01,Belt Conveyor,"Belt Conveyor 641 BC( 2,4,5,6,7,8)","O01-Belt Conveyor 641 BC( 2,4,5,6,7,8)",,O01,LQ 145,Thrustpad Tilting supervision alarm.,O01-Thrustpad Tilting supervision alarm.,,,,-,,,-
+O01,Belt Conveyor,"Belt Conveyor 514 BC(9,10,11,12,13,14)","O01-Belt Conveyor 514 BC(9,10,11,12,13,14)",,O01,LQ 145,"Mill gear lube, in operation not ready","O01-Mill gear lube, in operation not ready",,,,-,,,-
+O01,Belt Conveyor,"Belt Conveyor 641 BC(701,601,611)","O01-Belt Conveyor 641 BC(701,601,611)",,M01,Mill,Dam ring height reduction,M01-Dam ring height reduction,,,,-,,,-
+O01,Belt Conveyor,"Belt Conveyor 642 BC (610,611,701,)","O01-Belt Conveyor 642 BC (610,611,701,)",,I01,Weigh Feeder,Clinker hopper chute jam.,I01-Clinker hopper chute jam.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 410BC1,O01-Belt Conveyor 410BC1,,I01,Mill,Mill inside cooling and roller calibration.,I01-Mill inside cooling and roller calibration.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 410BC3,O01-Belt Conveyor 410BC3,,I01,In Process Setup/ Adjustment,531 BE 220( Reject Bucket) Chute jam                                ,I01-531 BE 220( Reject Bucket) Chute jam                                ,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 410BC4,O01-Belt Conveyor 410BC4,,M01,Compressor,Compressore pressure low and compressore maintenance ,M01-Compressore pressure low and compressore maintenance ,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 410BC6,O01-Belt Conveyor 410BC6,,E01,Bag Filter,Main bagfilter cycle off without alarm.,E01-Main bagfilter cycle off without alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 410BC7,O01-Belt Conveyor 410BC7,,M01,531RF503,Rotary shaft Problem.,M01-Rotary shaft Problem.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512BC1,O01-Belt Conveyor 512BC1,,U01,Powerplant Requirement,REB Restriction,U01-REB Restriction,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512bc2,O01-Belt Conveyor 512bc2,,M01,,541DG300 pneumatic gate problem stopped in mid position.,M01-541DG300 pneumatic gate problem stopped in mid position.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512bc3,O01-Belt Conveyor 512bc3,,M01,Gearbox,Gearbox(Oil station) maintenance by Mechanical team.,M01-Gearbox(Oil station) maintenance by Mechanical team.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 513BC1,O01-Belt Conveyor 513BC1,,O01,541FN101,Overload alarm Then airslide jam,O01-Overload alarm Then airslide jam,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 611BC4,O01-Belt Conveyor 611BC4,,M01,,Rotary Jam.,M01-Rotary Jam.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 611BC5,O01-Belt Conveyor 611BC5,,I01,Roller Lubrication Unit,Time out alarm.,I01-Time out alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 611BC6,O01-Belt Conveyor 611BC6,,M01,Gear Box Lubrication Unit, Check & filter change by mechnical team,M01- Check & filter change by mechnical team,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512WF1,O01-Belt Conveyor 512WF1,,O01,Gear Box Lubrication Unit,Gearbox lubracation unit Stop without alarm.,O01-Gearbox lubracation unit Stop without alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512WF2,O01-Belt Conveyor 512WF2,,M01,Gear Box Lubrication Unit,Gearbox lubracation unit Check,M01-Gearbox lubracation unit Check,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512WF3,O01-Belt Conveyor 512WF3,,M01,Sullair Compressor,Temperature high.,M01-Temperature high.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 512WF4,O01-Belt Conveyor 512WF4,,O01,531RF085,jam than Motion detector alarm .,O01-jam than Motion detector alarm .,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 513WF1,O01-Belt Conveyor 513WF1,,I01,531 LQ120/121,Oil Conditioning stop alarm.,I01-Oil Conditioning stop alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 212BC020,O01-Belt Conveyor 212BC020,,M01,511WF150,Roller problem than belt slip fault alarm.,M01-Roller problem than belt slip fault alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 212BC050,O01-Belt Conveyor 212BC050,,E01,541FN253,Overload alarm.,E01-Overload alarm.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 212BC100,O01-Belt Conveyor 212BC100,,M01,,Dam ring bolt broken,M01-Dam ring bolt broken,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 212BC150,O01-Belt Conveyor 212BC150,,M01,481BE200,481BE200 Maintenance by Mechanical Team.,M01-481BE200 Maintenance by Mechanical Team.,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 213BC050,O01-Belt Conveyor 213BC050,,O01,Mill,Inspection by RENK specialist,O01-Inspection by RENK specialist,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 213BC100,O01-Belt Conveyor 213BC100,,M01,512RV1,ZSS Alarm,M01-ZSS Alarm,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 232BC150,O01-Belt Conveyor 232BC150,,I01,512RV1,ZSS Alarm,I01-ZSS Alarm,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 232ST250,O01-Belt Conveyor 232ST250,,I01,Process,Air Slide jam then BSS Alam,I01-Air Slide jam then BSS Alam,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 232BC450,O01-Belt Conveyor 232BC450,,E01,,Recirculation damper Fluctuation,E01-Recirculation damper Fluctuation,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 242BC050,O01-Belt Conveyor 242BC050,,M01,514 RA16,Gearbox Problem,M01-Gearbox Problem,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 242BC150,O01-Belt Conveyor 242BC150,,I01,512 BC2,512 BC -2 Jam then zss alarm,I01-512 BC -2 Jam then zss alarm,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 242BC530,O01-Belt Conveyor 242BC530,,I01,510 LI-1,(Clinker Hopper) Chute jam ,I01-(Clinker Hopper) Chute jam ,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 242BC540,O01-Belt Conveyor 242BC540,,M01,531HY110 Roller 3,  cylinder seal change ,M01-  cylinder seal change ,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481BC010,O01-Belt Conveyor 481BC010,,E01,Transformer,2500KV Transformer trip,E01-2500KV Transformer trip,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481BC030,O01-Belt Conveyor 481BC030,,E01,Sullair compressure,Sullair compressure Perssure fall,E01-Sullair compressure Perssure fall,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481BC070,O01-Belt Conveyor 481BC070,,M01,safety gate,Safety gate connector problem,M01-Safety gate connector problem,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481BC150,O01-Belt Conveyor 481BC150,,I01,Jam,Jam than ZSS alarm,I01-Jam than ZSS alarm,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481BC400,O01-Belt Conveyor 481BC400,,O01,Holiday,-Holiday,O01--Holiday,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511BC500,O01-Belt Conveyor 511BC500,,E01,,Alignment,E01-Alignment,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511BC550,O01-Belt Conveyor 511BC550,,E01,514DG1,514DG1 Gate tripped,E01-514DG1 Gate tripped,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511bc600,O01-Belt Conveyor 511bc600,,E01,Not run,Not run,E01-Not run,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 531BC010,O01-Belt Conveyor 531BC010,,I01,Pressure fault,Pressure fault,I01-Pressure fault,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 531BC015,O01-Belt Conveyor 531BC015,,O01,DOE,Department of Environment,O01-Department of Environment,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 481ECOHopper Belt,O01-Belt Conveyor 481ECOHopper Belt,,I01,BSS,BSS Alarm,I01-BSS Alarm,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 531BC200,O01-Belt Conveyor 531BC200,,M01,531HY110,Hydralic oil low,M01-Hydralic oil low,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511WF150,O01-Belt Conveyor 511WF150,,M01,Rocker Arm,Rocker Arm PIN Housing Maintenance,M01-Rocker Arm PIN Housing Maintenance,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511WF250,O01-Belt Conveyor 511WF250,,E01,Bucket,481BE-200 Return Fault,E01-481BE-200 Return Fault,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511WF350,O01-Belt Conveyor 511WF350,,E01,Weigh Feeded,512 WF-04 Not Running,E01-512 WF-04 Not Running,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 511WF450,O01-Belt Conveyor 511WF450,,M01,M01-Position Gate Problem,M01-Position Gate Problem,M01-M01-Position Gate Problem,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 531WF270 (REJECT),O01-Belt Conveyor 531WF270 (REJECT),,M01,Main Motor LRS,Gearbox stuck,M01-Gearbox stuck,,,,-,,,-
+O01,Belt Conveyor,Belt Conveyor 611 BC 4,O01-Belt Conveyor 611 BC 4,,O01,water sprinkler,jam then cleaning,O01-jam then cleaning,,,,-,,,-
+O01,Seperator Rotor,531 SR 1 ( Classifier) ,O01-531 SR 1 ( Classifier) ,,I01,Calibration,Calibration,I01-Calibration,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 611BE 02,O01-Bucket Elevator 611BE 02,,U01,Electricity ,System ready ,U01-System ready ,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 611BE 03,O01-Bucket Elevator 611BE 03,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 641 BE 000,O01-Bucket Elevator 641 BE 000,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 642 BE 001,O01-Bucket Elevator 642 BE 001,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 642 BE 000,O01-Bucket Elevator 642 BE 000,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 531 BE 220,O01-Bucket Elevator 531 BE 220,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 541 BE 220,O01-Bucket Elevator 541 BE 220,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 541 BE 200,O01-Bucket Elevator 541 BE 200,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 410 BE 1,O01-Bucket Elevator 410 BE 1,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 410 BE 2,O01-Bucket Elevator 410 BE 2,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 513 BE 1,O01-Bucket Elevator 513 BE 1,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 514 BE 1,O01-Bucket Elevator 514 BE 1,,,,,-,,,,-,,,-
+O01,Bucket Elevator,Bucket Elevator 242 BE 200,O01-Bucket Elevator 242 BE 200,,,,,-,,,,-,,,-
+O01,Bag Filter,Bag Filter 502 B F,O01-Bag Filter 502 B F,,,,,-,,,,-,,,-
+O01,Bag House,Main Bag House,O01-Main Bag House,,,,,-,,,,-,,,-
+O01,Weigh Feeder,Weigh Feeder 512 WF 150,O01-Weigh Feeder 512 WF 150,,,,,-,,,,-,,,-
+O01,Fan,"High Pressure Fan 611 FN (000,001,002,003)","O01-High Pressure Fan 611 FN (000,001,002,003)",,,,,-,,,,-,,,-
+O01,Fan,ID Fan-1 611 FN 3,O01-ID Fan-1 611 FN 3,,,,,-,,,,-,,,-
+O01,Fan,"Filter FAN ""611 FN (052,055,056,057,058,163)""","O01-Filter FAN ""611 FN (052,055,056,057,058,163)""",,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 642 HP 170,O01-High Pressure Fan 642 HP 170,,,,,-,,,,-,,,-
+O01,Fan,High pressure fan 1 611 FN 1,O01-High pressure fan 1 611 FN 1,,,,,-,,,,-,,,-
+O01,Fan,Bag Filter Fan 611 BF 000,O01-Bag Filter Fan 611 BF 000,,,,,-,,,,-,,,-
+O01,Fan,"High Pressure Fan 611 FN (004,005)","O01-High Pressure Fan 611 FN (004,005)",,,,,-,,,,-,,,-
+O01,Fan,"High Pressure Fan 611 FN (2,3,4)","O01-High Pressure Fan 611 FN (2,3,4)",,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 611 FN 006,O01-High Pressure Fan 611 FN 006,,,,,-,,,,-,,,-
+O01,Fan,Bag Filter Fan 611 BF160,O01-Bag Filter Fan 611 BF160,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 611 FN 162,O01-High Pressure Fan 611 FN 162,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 403 FN,O01-High Pressure Fan 403 FN,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 611 FN 005,O01-High Pressure Fan 611 FN 005,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 513 FN 2,O01-High Pressure Fan 513 FN 2,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 513 FN 1,O01-High Pressure Fan 513 FN 1,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 514 FN 3,O01-High Pressure Fan 514 FN 3,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 514 FN 1,O01-High Pressure Fan 514 FN 1,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 531 FN 560,O01-High Pressure Fan 531 FN 560,,,,,-,,,,-,,,-
+O01,Fan,High Pressure Fan 531 FN 087,O01-High Pressure Fan 531 FN 087,,,,,-,,,,-,,,-
+O01,Fan,Mill Seal Fan,O01-Mill Seal Fan,,,,,-,,,,-,,,-
+O01,Classifier,512 SR -1 (Classifier),O01-512 SR -1 (Classifier),,,,,-,,,,-,,,-
+O01,Classifier,512 SR 1 M 01,O01-512 SR 1 M 01,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 641 RF 136,O01-Rotary Feeder 641 RF 136,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 641 RF 161,O01-Rotary Feeder 641 RF 161,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 642 RF 161,O01-Rotary Feeder 642 RF 161,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 642 RF 136,O01-Rotary Feeder 642 RF 136,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 531 RF 506,O01-Rotary Feeder 531 RF 506,,,,,-,,,,-,,,-
+O01,Rotary Feeder,Rotary Feeder 531 RF 503,O01-Rotary Feeder 531 RF 503,,,,,-,,,,-,,,-
+O01,Rotary Valve,512 RV 1,O01-512 RV 1,,,,,-,,,,-,,,-
+O01,Air Slide,"Air Slide Air Slide(50,51,52,53,54)","O01-Air Slide Air Slide(50,51,52,53,54)",,,,,-,,,,-,,,-
+O01,Compressor,Atlas Copco Compressor (GA 75),O01-Atlas Copco Compressor (GA 75),,,,,-,,,,-,,,-
+O01,Compressor,Atlas Copco Compressor (GA 11),O01-Atlas Copco Compressor (GA 11),,,,,-,,,,-,,,-
+O01,Main Motor,512 RM -1 ,O01-512 RM -1 ,,,,,-,,,,-,,,-
+O01,Main Motor,531 MD 140 ( Main motor),O01-531 MD 140 ( Main motor),,,,,-,,,,-,,,-
+O01,Silo,"Silo Rotary 611SR(1,2)","O01-Silo Rotary 611SR(1,2)",,,,,-,,,,-,,,-
+O01,Silo,Cement Silo Level 611 SI 101.02,O01-Cement Silo Level 611 SI 101.02,,,,,-,,,,-,,,-
+O01,Weigh Feeder,Weigh Feeder 512 WF 150,O01-Weigh Feeder 512 WF 150,,,,,-,,,,-,,,-
+O01,Hydraullic Tensioning Unit,HY - 110,O01-HY - 110,,,,,-,,,,-,,,-
+O01,HAG,HAG,O01-HAG,,,,,-,,,,-,,,-
+O01,HSSW,HSSW,O01-HSSW,,,,,-,,,,-,,,-
+O01,Gear Lubrication,LQ 145,O01-LQ 145,,,,,-,,,,-,,,-
+O01,Roller Lubrication,LQ 120/121,O01-LQ 120/121,,,,,-,,,,-,,,-
+O01,Capacitor Bank,Capacitor Bank,O01-Capacitor Bank,,,,,-,,,,-,,,-
+O01,Magnetic Separator,512 MS-1 ,O01-512 MS-1 ,,,,,-,,,,-,,,-
+O01,Magnetic Separator,531 MS 201,O01-531 MS 201,,,,,-,,,,-,,,-
+O01,Mill Monitoring,Mill Vibration,O01-Mill Vibration,,,,,-,,,,-,,,-
+O01,HSLM,HSLM,O01-HSLM,,,,,-,,,,-,,,-
+O01,HSSW,HSSW,O01-HSSW,,,,,-,,,,-,,,-
+O01,Main Drive,531 MD 152 Separator,O01-531 MD 152 Separator,,,,,-,,,,-,,,-
+O01,Magnetic Separator,531 MS 011 ,O01-531 MS 011 ,,,,,-,,,,-,,,-
+O01,Linear Damper,510 LD 1,O01-510 LD 1,,,,,-,,,,-,,,-
+O01,Linear Damper,510 LD 3,O01-510 LD 3,,,,,-,,,,-,,,-
+O01,Linear Damper,513 LD 2 (Recirculation damper) ,O01-513 LD 2 (Recirculation damper) ,,,,,-,,,,-,,,-
+O01,Magnetic Separator,512 SM -1,O01-512 SM -1,,,,,-,,,,-,,,-
+O01,Seperator Rotor,531 SR 1 ( Classifier) ,O01-531 SR 1 ( Classifier) ,,,,,-,,,,-,,,-
+O01,gear lubrication unit,531LQ14501 gear lubrication unit,O01-531LQ14501 gear lubrication unit,,,,,-,,,,-,,,-
+O01,Hydraullic Tensioning Unit,531 HY 110,O01-531 HY 110,,,,,-,,,,-,,,-
+O01,diverting gate,541 DG 255,O01-541 DG 255,,,,,-,,,,-,,,-
+O01,diverting gate,541 DG 300 ,O01-541 DG 300 ,,,,,-,,,,-,,,-
+O01,diverting gate,531 DG 050,O01-531 DG 050,,,,,-,,,,-,,,-
+O01,diverting gate,541 DG 110,O01-541 DG 110,,,,,-,,,,-,,,-
+O01,Gear Box,Gear Box,O01-Gear Box,,,,,-,,,,-,,,-
+O01,Gear Box,FLS Gear Box,O01-FLS Gear Box,,,,,-,,,,-,,,-
+O01,LT (Low Tension) switchgear,LT (Low Tension) switchgear,O01-LT (Low Tension) switchgear,,,,,-,,,,-,,,-
+O01,MILL ,PLC Pannel,O01-PLC Pannel,,,,,-,,,,-,,,-
+O01,Mill,HSMS,O01-HSMS,,,,,-,,,,-,,,-
+O01,Mill,Master Roller,O01-Master Roller,,,,,-,,,,-,,,-
+O01,Grinding Aid System,Grinding Aid System,O01-Grinding Aid System,,,,,-,,,,-,,,-
+O01,Power Plant VCB,Power Plant VCB,O01-Power Plant VCB,,,,,-,,,,-,,,-
+O01,513 RA 25 ,513 RA 25 ,O01-513 RA 25 ,,,,,-,,,,-,,,-
+O01,513 RA 7 ,513 RA 7 ,O01-513 RA 7 ,,,,,-,,,,-,,,-
+O01,531 LQ 145,531 LQ 145,O01-531 LQ 145,,,,,-,,,,-,,,-
+O01,531 LQ 145,531 LQ 153,O01-531 LQ 153,,,,,-,,,,-,,,-
+O01,Air Slide,541 AS 100,O01-541 AS 100,,,,,-,,,,-,,,-
+O01,Mill,Auxillary Group,O01-Auxillary Group,,,,,-,,,,-,,,-
+O01,Mill,MILL,O01-MILL,,,,,-,,,,-,,,-
+O01,541FN101,Overload alarm Then airslide jam,O01-Overload alarm Then airslide jam,,,,,-,,,,-,,,-
+W01,Warehouse Block,Silo Full,W01-Silo Full,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+R01,Raw Material ,Slag Storage Empty,R01-Slag Storage Empty,,,,,-,,,,-,,,-
+R01,Raw Material ,Gypsam Storage Empty,R01-Gypsam Storage Empty,,,,,-,,,,-,,,-
+R01,Raw Material ,Slag Storage Empty,R01-Slag Storage Empty,,,,,-,,,,-,,,-
+R01,Raw Material ,Clinker Storage Empty ,R01-Clinker Storage Empty ,,,,,-,,,,-,,,-
+R01,Raw Material ,Lime Stone Storge Empty ,R01-Lime Stone Storge Empty ,,,,,-,,,,-,,,-
+,,,-,,,,,-,,,,-,,,-
+W01,Warehouse Block,Cement silo full ,W01-Cement silo full ,,,,,-,,,,-,,,-
+W01,Warehouse Block, PCC Cement Silo full,W01- PCC Cement Silo full,,,,,-,,,,-,,,-
+W01,Warehouse Block,OPC Silo almost full,W01-OPC Silo almost full,,,,,-,,,,-,,,-
+,,,-,,,,,-,,,,-,,,-
+U01,Utility (Electricity),REB Shoutdown,U01-REB Shoutdown,,,,,-,,,,-,,,-
+U01,Utility (Electricity),Gas Pressure Low,U01-Gas Pressure Low,,,,,-,,,,-,,,-
+U01,Utility (Electricity),Power Plant Requirement,U01-Power Plant Requirement,,,,,-,,,,-,,,-
+U01,Utility (Electricity),Engine Trip,U01-Engine Trip,,,,,-,,,,-,,,-
+U01,Utility (Electricity),Due to REB Shoutdown,U01-Due to REB Shoutdown,,,,,-,,,,-,,,-
+P01,Planned Downtime,Schedule Maintenance ( Mechanical ),P01-Schedule Maintenance ( Mechanical ),,,,,-,,,,-,,,-
+P01,Planned Downtime,Schedule Maintenance ( Electrical ),P01-Schedule Maintenance ( Electrical ),,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+P01,Planned Downtime,Schedule Maintenance ( Electrical ),P01-Schedule Maintenance ( Electrical ),,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,Mill Vibration,I01-Mill Vibration,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,I01-Clinker Hopper,I01-I01-Clinker Hopper,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,I01- Roller calibration.,I01-I01- Roller calibration.,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,I01-Scrip chamber ,I01-I01-Scrip chamber ,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,I01-531 BE 220( Reject Bucket)                                 ,I01-I01-531 BE 220( Reject Bucket)                                 ,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+E01,Electrical,531 LD 565 (Recirculation damper),E01-531 LD 565 (Recirculation damper),,,,,-,,,,-,,,-
+M01,Mechanical,531 LD 565 (Recirculation damper),M01-531 LD 565 (Recirculation damper),,,,,-,,,,-,,,-
+O01,Other,531 LD 565 (Recirculation damper),O01-531 LD 565 (Recirculation damper),,M01,M01-Diaphramgh Lick,M01-Diaphramgh Lick,M01-M01-Diaphramgh Lick,,,,-,,,-
+,,,-,,,,,-,,,,-,,,-
+O01,Other,Gearbox Lubrication Unit,O01-Gearbox Lubrication Unit,,,,,-,,,,-,,,-
+M01,Mechanical,Gearbox Lubrication Unit,M01-Gearbox Lubrication Unit,,,,,-,,,,-,,,-
+I01,In Process Setup/ Adjustment,Roller Lubrication Unit,I01-Roller Lubrication Unit,,,,,-,,,,-,,,-
+M01,Gearbox Lubrication Unit Check.,Gearbox Lubrication Unit,M01-Gearbox Lubrication Unit,,,,,-,,,,-,,,-
+M01,Temperature high.,Sullair Compressor,M01-Sullair Compressor,,,,,-,,,,-,,,-
+M01,Belt Conveyor,Belt Conveyor 481BC030,M01-Belt Conveyor 481BC030,,,,,-,,,,-,,,-
+U01,Power Plant VCB,Power Plant VCB,U01-Power Plant VCB,,,,,-,,,,-,,,-
+O01,jam than Motion detector alarm .,531RF085,O01-531RF085,,,,,-,,,,-,,,-
+I01,Oil Conditioning stop alarm.,531 LQ120/121,I01-531 LQ120/121,,,,,-,,,,-,,,-
+E01,High Pressure Fan,High Pressure Fan 541FN253,E01-High Pressure Fan 541FN253,,,,,-,,,,-,,,-
+M01,,481BE200,M01-481BE200,,,,,-,,,,-,,,-
+I01,Process,512 RV 1,I01-512 RV 1,,,,,-,,,,-,,,-
+I01,Process,514 BE 1 BSS Alarm,I01-514 BE 1 BSS Alarm,,,,,-,,,,-,,,-
+M01,514 RA16,,M01-,,,,,-,,,,-,,,-
+E01,514 RA16,,E01-,,,,,-,,,,-,,,-
+I01,512 BC2,512 BC -2,I01-512 BC -2,,,,,-,,,,-,,,-
+I01,510 LI-1,510 LI-1,I01-510 LI-1,,,,,-,,,,-,,,-
+M01,531HY110 Roller 3,531HY110 Roller 3,M01-531HY110 Roller 3,,,,,-,,,,-,,,-
+E01,Transformer,2500KV Transformer ,E01-2500KV Transformer ,,,,,-,,,,-,,,-
+E01,Sullair Compressure,Sullair compressure Perssure fall,E01-Sullair compressure Perssure fall,,,,,-,,,,-,,,-
+I01,512 BC1,512 BC1,I01-512 BC1,,,,,-,,,,-,,,-
+O01,Holiday,Holiday,O01-Holiday,,,,,-,,,,-,,,-
+E01,Techo sensor,Techo sensor,E01-Techo sensor,,,,,-,,,,-,,,-
+E01,514DG1,514DG1 Gate tripped,E01-514DG1 Gate tripped,,,,,-,,,,-,,,-
+E01,514 FN-7,514 FN-7,E01-514 FN-7,,,,,-,,,,-,,,-
+I01,Main Bag house,Main Bag house,I01- Main Bag house,,,,,-,,,,-,,,-
+O01,Factory visit,Factory visit,O01- Factory visit,,,,,-,,,,-,,,-
+I01,512 BC3,512 BC3,I01- 512 BC3,,,,,-,,,,-,,,-
+M01,Rocker Arm,Rocker Arm,M01-Rocker Arm,,,,,-,,,,-,,,-
+E01,Bucket,481BE-200 Return Fault,E01-481BE-200 Return Fault,,,,,-,,,,-,,,-
+E01,Weigh Feeder,512 WF-04 Not Running,E01-512 WF-04 Not Running,,,,,-,,,,-,,,-
+M01,531 LD565,531 LD565,M01-Position Gate Problem,,,,,-,,,,-,,,-
+M01,Main motor LRS,Main motor LRS,M01-Main motor LRS,,,,,-,,,,-,,,-
+E01,High Pressure Fan 541FN251,Trip,E01-High Pressure Fan 541FN251,,,,,-,,,,-,,,-
+O01,High Pressure Fan 541FN251,Airslide Jam,O01-541 AS ,,,,,-,,,,-,,,-
+E01,531FN560,531FN560 ,E01-531FN560 ,,,,E01-531FN560 ID Fan overload,-E01-531FN560 ID Fan overload,,,,-,,,-
+O01,water sprinkler ,water sprinkler ,O01-water sprinkler ,,,,,-,,,,-,,,-
+I01,Weigh Feeder,Weigh Feeder,I01-Weigh Feeder,,,,,-,,,,-,,,-
+E01,513LD-5,513LD-5,E01-513LD-5 Limit problem,,,,,-,,,,-,,,-
+M01,481BC400,481BC400,M01-481BC400 guide belt change,,,,,-,,,,-,,,-
+M01,Mechanical,Soleniod Valve Changed,M01-Main Bag House,,,,,-,,,,-,,,-
+O01,O01- 510LI-2 ,510LI-2,O01- 510LI-2 Gypsum hopper empty,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,-,,,-
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,
+,,,,,,,,-,,,,,,,

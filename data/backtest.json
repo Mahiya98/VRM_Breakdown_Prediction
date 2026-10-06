@@ -1,0 +1,1860 @@
+{
+ "meta": {
+  "window": "2026-07-09 to 2026-10-06",
+  "horizon_days": 1,
+  "note": "Out-of-sample: models were fitted only on data before the window."
+ },
+ "summary": {
+  "VRM-1": {
+   "days": 78,
+   "breakdown_days": 32,
+   "top2_hit_rate": 0.656,
+   "baseline_top2_hit_rate": 0.438,
+   "roc_auc": 0.487,
+   "breakdown_rate": 0.41
+  },
+  "VRM-2": {
+   "days": 64,
+   "breakdown_days": 23,
+   "top2_hit_rate": 0.478,
+   "baseline_top2_hit_rate": 0.217,
+   "roc_auc": 0.723,
+   "breakdown_rate": 0.359
+  }
+ },
+ "rows": [
+  {
+   "date": "2026-10-06",
+   "mill": "VRM-2",
+   "em_probability": 0.465,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-06",
+   "mill": "VRM-1",
+   "em_probability": 0.448,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-05",
+   "mill": "VRM-2",
+   "em_probability": 0.449,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-05",
+   "mill": "VRM-1",
+   "em_probability": 0.475,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Compressor"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-10-04",
+   "mill": "VRM-2",
+   "em_probability": 0.403,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-04",
+   "mill": "VRM-1",
+   "em_probability": 0.431,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-03",
+   "mill": "VRM-2",
+   "em_probability": 0.444,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-03",
+   "mill": "VRM-1",
+   "em_probability": 0.393,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Compressor",
+    "Fan",
+    "Mill (process / monitoring)"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-10-02",
+   "mill": "VRM-2",
+   "em_probability": 0.473,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-02",
+   "mill": "VRM-1",
+   "em_probability": 0.413,
+   "predicted": [
+    "Fan",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-01",
+   "mill": "VRM-2",
+   "em_probability": 0.471,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-10-01",
+   "mill": "VRM-1",
+   "em_probability": 0.452,
+   "predicted": [
+    "Fan",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-30",
+   "mill": "VRM-2",
+   "em_probability": 0.463,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-30",
+   "mill": "VRM-1",
+   "em_probability": 0.492,
+   "predicted": [
+    "Fan",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-29",
+   "mill": "VRM-2",
+   "em_probability": 0.45,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-29",
+   "mill": "VRM-1",
+   "em_probability": 0.508,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bucket Elevator"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-28",
+   "mill": "VRM-2",
+   "em_probability": 0.443,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-28",
+   "mill": "VRM-1",
+   "em_probability": 0.495,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-26",
+   "mill": "VRM-2",
+   "em_probability": 0.428,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-26",
+   "mill": "VRM-1",
+   "em_probability": 0.416,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-24",
+   "mill": "VRM-2",
+   "em_probability": 0.41,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-24",
+   "mill": "VRM-1",
+   "em_probability": 0.477,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-23",
+   "mill": "VRM-1",
+   "em_probability": 0.512,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter",
+    "Gearbox / Lube"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-22",
+   "mill": "VRM-2",
+   "em_probability": 0.395,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Other equipment"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-22",
+   "mill": "VRM-1",
+   "em_probability": 0.528,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-21",
+   "mill": "VRM-2",
+   "em_probability": 0.379,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder",
+    "Other equipment"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-21",
+   "mill": "VRM-1",
+   "em_probability": 0.516,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-20",
+   "mill": "VRM-2",
+   "em_probability": 0.374,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-20",
+   "mill": "VRM-1",
+   "em_probability": 0.473,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-19",
+   "mill": "VRM-2",
+   "em_probability": 0.375,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-19",
+   "mill": "VRM-1",
+   "em_probability": 0.489,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-18",
+   "mill": "VRM-2",
+   "em_probability": 0.377,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-18",
+   "mill": "VRM-1",
+   "em_probability": 0.513,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-17",
+   "mill": "VRM-2",
+   "em_probability": 0.403,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-17",
+   "mill": "VRM-1",
+   "em_probability": 0.525,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan",
+    "Gearbox / Lube"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-16",
+   "mill": "VRM-2",
+   "em_probability": 0.405,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-15",
+   "mill": "VRM-1",
+   "em_probability": 0.527,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-14",
+   "mill": "VRM-2",
+   "em_probability": 0.404,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-14",
+   "mill": "VRM-1",
+   "em_probability": 0.519,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-13",
+   "mill": "VRM-2",
+   "em_probability": 0.372,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-13",
+   "mill": "VRM-1",
+   "em_probability": 0.43,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan",
+    "Hydraulics / Rollers",
+    "Other equipment"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-12",
+   "mill": "VRM-2",
+   "em_probability": 0.375,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-12",
+   "mill": "VRM-1",
+   "em_probability": 0.44,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-11",
+   "mill": "VRM-1",
+   "em_probability": 0.461,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Other equipment"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-10",
+   "mill": "VRM-1",
+   "em_probability": 0.469,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Other equipment"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-09-07",
+   "mill": "VRM-1",
+   "em_probability": 0.519,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter",
+    "Main Motor"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-06",
+   "mill": "VRM-1",
+   "em_probability": 0.448,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-05",
+   "mill": "VRM-2",
+   "em_probability": 0.346,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-05",
+   "mill": "VRM-1",
+   "em_probability": 0.461,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-04",
+   "mill": "VRM-2",
+   "em_probability": 0.363,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-04",
+   "mill": "VRM-1",
+   "em_probability": 0.476,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-03",
+   "mill": "VRM-2",
+   "em_probability": 0.367,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-03",
+   "mill": "VRM-1",
+   "em_probability": 0.501,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-09-02",
+   "mill": "VRM-2",
+   "em_probability": 0.363,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-02",
+   "mill": "VRM-1",
+   "em_probability": 0.504,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-01",
+   "mill": "VRM-2",
+   "em_probability": 0.369,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Feeders / Gates / Dampers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-09-01",
+   "mill": "VRM-1",
+   "em_probability": 0.499,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-30",
+   "mill": "VRM-2",
+   "em_probability": 0.345,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-30",
+   "mill": "VRM-1",
+   "em_probability": 0.444,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-29",
+   "mill": "VRM-2",
+   "em_probability": 0.355,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-29",
+   "mill": "VRM-1",
+   "em_probability": 0.451,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-28",
+   "mill": "VRM-2",
+   "em_probability": 0.368,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-27",
+   "mill": "VRM-2",
+   "em_probability": 0.392,
+   "predicted": [
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-27",
+   "mill": "VRM-1",
+   "em_probability": 0.505,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-26",
+   "mill": "VRM-1",
+   "em_probability": 0.48,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-25",
+   "mill": "VRM-2",
+   "em_probability": 0.39,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-25",
+   "mill": "VRM-1",
+   "em_probability": 0.474,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-24",
+   "mill": "VRM-1",
+   "em_probability": 0.458,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-23",
+   "mill": "VRM-1",
+   "em_probability": 0.433,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-22",
+   "mill": "VRM-1",
+   "em_probability": 0.447,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-21",
+   "mill": "VRM-1",
+   "em_probability": 0.449,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-20",
+   "mill": "VRM-2",
+   "em_probability": 0.424,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-20",
+   "mill": "VRM-1",
+   "em_probability": 0.461,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-19",
+   "mill": "VRM-2",
+   "em_probability": 0.383,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-19",
+   "mill": "VRM-1",
+   "em_probability": 0.461,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-18",
+   "mill": "VRM-1",
+   "em_probability": 0.481,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-17",
+   "mill": "VRM-2",
+   "em_probability": 0.412,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-17",
+   "mill": "VRM-1",
+   "em_probability": 0.486,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-16",
+   "mill": "VRM-1",
+   "em_probability": 0.421,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-15",
+   "mill": "VRM-1",
+   "em_probability": 0.422,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-14",
+   "mill": "VRM-2",
+   "em_probability": 0.427,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-14",
+   "mill": "VRM-1",
+   "em_probability": 0.461,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-13",
+   "mill": "VRM-2",
+   "em_probability": 0.426,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Feeders / Gates / Dampers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-13",
+   "mill": "VRM-1",
+   "em_probability": 0.494,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-12",
+   "mill": "VRM-2",
+   "em_probability": 0.414,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube",
+    "HAG"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-12",
+   "mill": "VRM-1",
+   "em_probability": 0.504,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-11",
+   "mill": "VRM-2",
+   "em_probability": 0.403,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube",
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-11",
+   "mill": "VRM-1",
+   "em_probability": 0.503,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bucket Elevator"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-10",
+   "mill": "VRM-2",
+   "em_probability": 0.386,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-09",
+   "mill": "VRM-2",
+   "em_probability": 0.382,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-09",
+   "mill": "VRM-1",
+   "em_probability": 0.54,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-08",
+   "mill": "VRM-2",
+   "em_probability": 0.374,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-08",
+   "mill": "VRM-1",
+   "em_probability": 0.531,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-07",
+   "mill": "VRM-1",
+   "em_probability": 0.481,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-06",
+   "mill": "VRM-1",
+   "em_probability": 0.383,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-05",
+   "mill": "VRM-2",
+   "em_probability": 0.438,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Feeders / Gates / Dampers"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-08-05",
+   "mill": "VRM-1",
+   "em_probability": 0.378,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-04",
+   "mill": "VRM-2",
+   "em_probability": 0.43,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-04",
+   "mill": "VRM-1",
+   "em_probability": 0.385,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-03",
+   "mill": "VRM-2",
+   "em_probability": 0.437,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-03",
+   "mill": "VRM-1",
+   "em_probability": 0.393,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-02",
+   "mill": "VRM-2",
+   "em_probability": 0.447,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-08-02",
+   "mill": "VRM-1",
+   "em_probability": 0.417,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan",
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-01",
+   "mill": "VRM-2",
+   "em_probability": 0.438,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-08-01",
+   "mill": "VRM-1",
+   "em_probability": 0.412,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter",
+    "Main Motor"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-31",
+   "mill": "VRM-2",
+   "em_probability": 0.461,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers",
+    "Main Motor"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-31",
+   "mill": "VRM-1",
+   "em_probability": 0.405,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan",
+    "Main Motor"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-30",
+   "mill": "VRM-2",
+   "em_probability": 0.447,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-30",
+   "mill": "VRM-1",
+   "em_probability": 0.409,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Fan"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-29",
+   "mill": "VRM-2",
+   "em_probability": 0.488,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-29",
+   "mill": "VRM-1",
+   "em_probability": 0.402,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-28",
+   "mill": "VRM-2",
+   "em_probability": 0.482,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-28",
+   "mill": "VRM-1",
+   "em_probability": 0.403,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-27",
+   "mill": "VRM-2",
+   "em_probability": 0.495,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-27",
+   "mill": "VRM-1",
+   "em_probability": 0.405,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-26",
+   "mill": "VRM-2",
+   "em_probability": 0.428,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube",
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-26",
+   "mill": "VRM-1",
+   "em_probability": 0.374,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-25",
+   "mill": "VRM-2",
+   "em_probability": 0.46,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-25",
+   "mill": "VRM-1",
+   "em_probability": 0.382,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-24",
+   "mill": "VRM-2",
+   "em_probability": 0.471,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Mill (process / monitoring)"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-23",
+   "mill": "VRM-2",
+   "em_probability": 0.523,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder",
+    "HAG"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-23",
+   "mill": "VRM-1",
+   "em_probability": 0.399,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-22",
+   "mill": "VRM-2",
+   "em_probability": 0.527,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-22",
+   "mill": "VRM-1",
+   "em_probability": 0.429,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-21",
+   "mill": "VRM-1",
+   "em_probability": 0.433,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-20",
+   "mill": "VRM-2",
+   "em_probability": 0.524,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-20",
+   "mill": "VRM-1",
+   "em_probability": 0.446,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers",
+    "Mill (process / monitoring)"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-19",
+   "mill": "VRM-2",
+   "em_probability": 0.501,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-18",
+   "mill": "VRM-2",
+   "em_probability": 0.5,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-18",
+   "mill": "VRM-1",
+   "em_probability": 0.366,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-17",
+   "mill": "VRM-2",
+   "em_probability": 0.506,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-17",
+   "mill": "VRM-1",
+   "em_probability": 0.395,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-16",
+   "mill": "VRM-2",
+   "em_probability": 0.485,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Hydraulics / Rollers"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-16",
+   "mill": "VRM-1",
+   "em_probability": 0.446,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  },
+  {
+   "date": "2026-07-15",
+   "mill": "VRM-2",
+   "em_probability": 0.468,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-15",
+   "mill": "VRM-1",
+   "em_probability": 0.457,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-14",
+   "mill": "VRM-2",
+   "em_probability": 0.456,
+   "predicted": [
+    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Gearbox / Lube"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-14",
+   "mill": "VRM-1",
+   "em_probability": 0.433,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-13",
+   "mill": "VRM-2",
+   "em_probability": 0.464,
+   "predicted": [
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Electrical Panel / Power"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-13",
+   "mill": "VRM-1",
+   "em_probability": 0.429,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Electrical Panel / Power"
+   ],
+   "top2_hit": false
+  },
+  {
+   "date": "2026-07-12",
+   "mill": "VRM-1",
+   "em_probability": 0.411,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": true,
+   "actual_families": [
+    "Bag House / Bag Filter",
+    "Compressor"
+   ],
+   "top2_hit": true
+  },
+  {
+   "date": "2026-07-09",
+   "mill": "VRM-1",
+   "em_probability": 0.427,
+   "predicted": [
+    "Fan",
+    "Bag House / Bag Filter"
+   ],
+   "actual_breakdown": false,
+   "actual_families": [],
+   "top2_hit": null
+  }
+ ]
+}
