@@ -186,18 +186,26 @@
   }
 
   // ---- Backtest (equipment accuracy on E/M days) ----
+  var RANGE = { from: '', to: '' };
+  function inRange(d) { return (!RANGE.from || d >= RANGE.from) && (!RANGE.to || d <= RANGE.to); }
   function renderBacktest(b) {
     $('bt-note').textContent = b.meta.window + ' · ' + b.meta.note;
     var s = $('bt-summary'); s.replaceChildren();
+    var full = !RANGE.from && !RANGE.to;
+    var rows = b.rows.filter(function (r) { return inRange(r.date); });
     ['VRM-1', 'VRM-2'].forEach(function (m) {
       var x = b.summary[m], st = el('div', 'stat');
-      st.appendChild(el('div', 'k', m + ' · equipment top-3 accuracy (' + x.em_days_scored + ' E/M days of ' + x.breakdown_days + ' total)'));
-      st.appendChild(el('div', 'v', x.top2_hit_rate == null ? 'n/a' : pct(x.top2_hit_rate)));
-      st.appendChild(el('div', 's', 'vs ' + (x.baseline_top2_hit_rate == null ? 'n/a' : pct(x.baseline_top2_hit_rate)) + ' baseline (always pick the 3 most common families)'));
+      var scored = rows.filter(function (r) { return r.mill === m && r.top2_hit !== null && r.top2_hit !== undefined; });
+      var hits = scored.filter(function (r) { return r.top2_hit; }).length;
+      st.appendChild(el('div', 'k', m + ' · equipment top-3 accuracy (' + scored.length + ' E/M days scored' + (full ? ' of ' + x.breakdown_days + ' breakdown days' : ' in selected dates') + ')'));
+      st.appendChild(el('div', 'v', scored.length ? pct(hits / scored.length) + ' (' + hits + '/' + scored.length + ')' : 'n/a'));
+      st.appendChild(el('div', 's', full ? 'vs ' + (x.baseline_top2_hit_rate == null ? 'n/a' : pct(x.baseline_top2_hit_rate)) + ' baseline (always pick the 3 most common families)' : 'Baseline is only computed for the full window'));
       s.appendChild(st);
     });
     var tb = document.querySelector('#bt-table tbody'); tb.replaceChildren();
-    b.rows.filter(function (r) { return r.predicted_families != null; }).slice(0, 28).forEach(function (r) {
+    var shown = rows.filter(function (r) { return r.predicted_families != null; });
+    if (!shown.length) { var er = el('tr'); var ec = el('td', 'na', 'No scored breakdown days in the selected dates.'); ec.colSpan = 6; er.appendChild(ec); tb.appendChild(er); }
+    shown.forEach(function (r) {
       var tr = el('tr');
       tr.appendChild(el('td', null, fmtDate(r.date)));
       tr.appendChild(el('td', null, r.mill));
@@ -212,14 +220,15 @@
   }
 
   // ---- Live tracking ----
-  function renderTracking(h) {
+  function renderTracking(hAll) {
+    var h = hAll.filter(function (e) { return inRange(e.forecast_date); });
     var done = h.filter(function (e) { return e.equip_hit !== null && e.equip_hit !== undefined; });
     var hits = done.filter(function (e) { return e.equip_hit; }).length;
     $('track-summary').textContent = done.length
       ? 'Equipment prediction: ' + hits + ' of ' + done.length + ' scored E/M days had the right equipment in the top 3 (' + pct(hits / done.length) + ').'
-      : 'Tracking started with the first published forecast. Results appear here as each forecast day passes.';
+      : (hAll.length ? 'No published forecasts in the selected dates.' : 'Tracking started with the first published forecast. Results appear here as each forecast day passes.');
     var tb = document.querySelector('#track-table tbody'); tb.replaceChildren();
-    h.slice().sort(function (a, b) { return a.forecast_date < b.forecast_date ? 1 : a.forecast_date > b.forecast_date ? -1 : a.mill < b.mill ? -1 : 1; }).slice(0, 40).forEach(function (e) {
+    h.slice().sort(function (a, b) { return a.forecast_date < b.forecast_date ? 1 : a.forecast_date > b.forecast_date ? -1 : a.mill < b.mill ? -1 : 1; }).forEach(function (e) {
       var tr = el('tr');
       [fmtDate(e.forecast_date), e.mill, 'D+' + e.horizon, e.predicted ? e.predicted.join(', ') : '–', e.actual_families ? e.actual_families.join(', ') : '–'].forEach(function (c) { tr.appendChild(el('td', null, c)); });
       var o;
@@ -233,6 +242,29 @@
     });
   }
 
+  // ---- Date filter ----
+  function setupFilter(b, h) {
+    var from = $('f-from'), to = $('f-to');
+    var dates = b.rows.map(function (r) { return r.date; }).concat(h.map(function (e) { return e.forecast_date; })).sort();
+    var min = dates[0], max = dates[dates.length - 1];
+    var end = b.rows.map(function (r) { return r.date; }).sort().pop();
+    from.min = to.min = min; from.max = to.max = max;
+    function apply() {
+      RANGE.from = from.value; RANGE.to = to.value;
+      if (RANGE.from && RANGE.to && RANGE.from > RANGE.to) { var t = RANGE.from; RANGE.from = to.value = RANGE.to; RANGE.to = from.value = t; }
+      var lbl = $('f-label');
+      lbl.textContent = (RANGE.from || RANGE.to) ? 'Showing ' + (RANGE.from ? fmtDate(RANGE.from) : 'start') + ' to ' + (RANGE.to ? fmtDate(RANGE.to) : 'latest') : 'Showing all dates (' + fmtDate(min) + ' to ' + fmtDate(max) + ')';
+      renderBacktest(b); renderTracking(h);
+    }
+    function preset(days) {
+      var d = new Date(end + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() - (days - 1));
+      from.value = days ? d.toISOString().slice(0, 10) : ''; to.value = days ? end : ''; apply();
+    }
+    from.addEventListener('change', apply); to.addEventListener('change', apply);
+    [['f-7', 7], ['f-30', 30], ['f-all', 0]].forEach(function (p) { $(p[0]).addEventListener('click', function () { preset(p[1]); }); });
+    apply();
+  }
+
   // ---- Load and render ----
   Promise.all([load('predictions'), load('backtest'), load('prediction_history')]).then(function (r) {
     var p = r[0];
@@ -242,8 +274,7 @@
     renderHistory(p);
     renderFamilies(p);
     renderCauses(p);
-    renderBacktest(r[1]);
-    renderTracking(r[2]);
+    setupFilter(r[1], r[2]);
     $('quality').textContent = p.meta.rows_in_sheet.toLocaleString() + ' rows read, ' + p.meta.duplicate_rows_removed.toLocaleString() + ' duplicate entries removed. VRM-1: ' + p.context['VRM-1'].gap_days_30d + ' day(s) with no log in the last 30; VRM-2: ' + p.context['VRM-2'].gap_days_30d + '.';
   }).catch(function (e) { $('meta').textContent = 'Could not load forecast data (' + e.message + '). Run the GitHub Action or open this page through GitHub Pages.'; });
 })();

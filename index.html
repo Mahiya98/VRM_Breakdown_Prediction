@@ -41,6 +41,18 @@
     <div id="causes" class="grid2"></div>
   </section>
 
+  <section class="card filter" aria-label="Date filter for predictions and real data">
+    <div class="filter-row">
+      <label for="f-from">From <input type="date" id="f-from"></label>
+      <label for="f-to">To <input type="date" id="f-to"></label>
+      <button type="button" id="f-7">Last 7 days</button>
+      <button type="button" id="f-30">Last 30 days</button>
+      <button type="button" id="f-all">All dates</button>
+    </div>
+    <p class="hint" id="f-label" aria-live="polite"></p>
+    <p class="hint">The date range applies to the accuracy backtest and the live tracking tables below (predicted equipment vs what really failed).</p>
+  </section>
+
   <section class="card" aria-labelledby="bt-h">
     <div class="card-head"><h2 id="bt-h">Equipment accuracy: one-day-ahead backtest, last 90 days</h2><p class="hint" id="bt-note"></p></div>
     <div id="bt-summary" class="stats"></div>

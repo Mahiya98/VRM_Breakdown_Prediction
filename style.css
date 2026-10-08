@@ -90,3 +90,10 @@ th{position:sticky;top:0;background:var(--card);font-weight:600;color:var(--text
 .sr{position:absolute;left:-9999px}
 footer{max-width:1180px;margin:0 auto;padding:0 16px 32px}
 .tip{position:fixed;z-index:10;pointer-events:none;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.18);max-width:240px}
+
+.filter-row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.filter-row label{font-size:13px;color:var(--text2);display:flex;gap:6px;align-items:center}
+.filter-row input,.filter-row button{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--text)}
+.filter-row button{cursor:pointer}
+.filter-row button:hover{border-color:var(--e)}
+.filter-row :focus-visible{outline:2px solid var(--e);outline-offset:1px}
