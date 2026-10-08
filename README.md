@@ -37,3 +37,11 @@ python ml/forecast.py breakdown.csv ml/reason_master.csv data
 python -m http.server   # open http://localhost:8000
 ```
 `ml/reason_master.csv` is the Dropdown Data tab (closed set of reasons).
+
+## Trying different equipment groups
+`ml/trial.py` re-runs the equipment model with a changed grouping and compares accuracy on the same rolling backtest (4 windows of 45 days, each predicted by a model trained only on earlier data).
+```
+python ml/trial.py breakdown.csv ml/reason_master.csv            # runs every ml/trials/*.json
+python ml/trial.py breakdown.csv ml/reason_master.csv ml/trials/my_idea.json
+```
+A trial is a small JSON file: `split` a group into several, `merge` groups, `drop` a group, or give a full `rules` list (see `ml/trials/finer_v1.json`). The table reports top-1 / top-3 hit rate with a 95% interval, the "3 most common groups" baseline, and **lift** over that baseline. Judge by lift: more groups make the task harder, so a raw hit rate alone is misleading. To adopt a winner, copy its rules into `EQUIP_RULES` in `ml/features.py`.

@@ -1,0 +1,6 @@
+{"name": "coarser_v1", "description": "Merge small related groups (about 10 groups).",
+ "ops": [
+  {"merge": ["HAG", "Classifier / Separator", "Main Motor"], "as": "Mill auxiliaries"},
+  {"merge": ["Compressor", "Electrical Panel / Power"], "as": "Utilities / Electrical"},
+  {"merge": ["Belt Conveyor / Weigh Feeder", "Bucket Elevator"], "as": "Material handling"}
+ ]}

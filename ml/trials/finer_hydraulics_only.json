@@ -1,0 +1,2 @@
+{"name": "finer_hydraulics_only", "description": "Only split Hydraulics / Rollers (to see which split helps).",
+ "ops": [{"split": "Hydraulics / Rollers", "into": [["Master Roller", "master roller|roller"], ["Rocker Arm / Thrustpad", "rocker|thrustpad"], ["Hydraulic Station", "hsms|hslm|hssw|hy ?-? ?110|hydr"]]}]}

@@ -1,0 +1,7 @@
+{"name": "finer_v1", "description": "Split Fan, Belt/Weigh feeder, Hydraulics and Feeders into specific equipment (about 21 groups).",
+ "ops": [
+  {"split": "Fan", "into": [["Cooling Fan", "cooling"], ["ID Fan", "\\bid fan"], ["HP Fan 513", "513 ?fn"], ["Fan 531/541", "531 ?fn|541 ?fn"]]},
+  {"split": "Belt Conveyor / Weigh Feeder", "into": [["Weigh Feeder", "weigh|\\bwf\\b|wf ?-?\\d|\\d{3} ?wf"], ["Belt Conveyor", "belt|\\bbc ?-?\\d|bc\\d"]]},
+  {"split": "Hydraulics / Rollers", "into": [["Master Roller", "master roller|roller"], ["Rocker Arm / Thrustpad", "rocker|thrustpad"], ["Hydraulic Station", "hsms|hslm|hssw|hy ?-? ?110|hydr"]]},
+  {"split": "Feeders / Gates / Dampers", "into": [["Rotary Feeder / Valve", "rotary|\\brf ?\\d|rf\\d|\\brv\\b|rv ?\\d"], ["Dampers / Gates / Slides", "damper|\\bdg ?\\d|dg\\d|gate|air slide|\\bld ?-?\\d"]]}
+ ]}
