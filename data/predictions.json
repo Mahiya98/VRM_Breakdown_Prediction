@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generated_at": "2026-10-06 11:55 UTC",
+  "generated_at": "2026-10-08 06:42 UTC",
   "data_through": "2026-10-06",
-  "model_version": "v5.1 overdue alerts + CatBoost equipment (top-3)",
+  "model_version": "v5.2 overdue alerts + CatBoost equipment (top-3) + cause analysis",
   "rows_in_sheet": 7712,
   "duplicate_rows_removed": 2151
  },
@@ -15,15 +15,27 @@
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.282
+     "conditional": 0.282,
+     "likely_causes": [
+      "Trip / overload / stop",
+      "High temperature"
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.189
+     "conditional": 0.189,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Mechanical wear / damage"
+     ]
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.097
+     "conditional": 0.097,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     }
    ]
   },
@@ -35,15 +47,27 @@
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.295
+     "conditional": 0.295,
+     "likely_causes": [
+      "Trip / overload / stop",
+      "High temperature"
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.181
+     "conditional": 0.181,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Mechanical wear / damage"
+     ]
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.089
+     "conditional": 0.089,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     }
    ]
   },
@@ -55,15 +79,27 @@
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.292
+     "conditional": 0.292,
+     "likely_causes": [
+      "Trip / overload / stop",
+      "High temperature"
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.182
+     "conditional": 0.182,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Mechanical wear / damage"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.097
+     "conditional": 0.097,
+     "likely_causes": [
+      "High temperature",
+      "Pressure / lube / oil / hydraulic"
+     ]
     }
    ]
   },
@@ -75,15 +111,27 @@
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.302
+     "conditional": 0.302,
+     "likely_causes": [
+      "Trip / overload / stop",
+      "High temperature"
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179
+     "conditional": 0.179,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Mechanical wear / damage"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.098
+     "conditional": 0.098,
+     "likely_causes": [
+      "High temperature",
+      "Pressure / lube / oil / hydraulic"
+     ]
     }
    ]
   },
@@ -95,15 +143,27 @@
    "families": [
     {
      "family": "Fan",
-     "conditional": 0.303
+     "conditional": 0.303,
+     "likely_causes": [
+      "Trip / overload / stop",
+      "High temperature"
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179
+     "conditional": 0.179,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Mechanical wear / damage"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.097
+     "conditional": 0.097,
+     "likely_causes": [
+      "High temperature",
+      "Pressure / lube / oil / hydraulic"
+     ]
     }
    ]
   },
@@ -115,15 +175,27 @@
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.216
+     "conditional": 0.216,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.165
+     "conditional": 0.165,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Pressure / lube / oil / hydraulic"
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.146
+     "conditional": 0.146,
+     "likely_causes": [
+      "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "Control / PLC / communication"
+     ]
     }
    ]
   },
@@ -135,15 +207,27 @@
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.207
+     "conditional": 0.207,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.164
+     "conditional": 0.164,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Pressure / lube / oil / hydraulic"
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.157
+     "conditional": 0.157,
+     "likely_causes": [
+      "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "Control / PLC / communication"
+     ]
     }
    ]
   },
@@ -155,15 +239,27 @@
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.205
+     "conditional": 0.205,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.169
+     "conditional": 0.169,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Pressure / lube / oil / hydraulic"
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.161
+     "conditional": 0.161,
+     "likely_causes": [
+      "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "Control / PLC / communication"
+     ]
     }
    ]
   },
@@ -175,15 +271,27 @@
    "families": [
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.199
+     "conditional": 0.199,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.185
+     "conditional": 0.185,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Pressure / lube / oil / hydraulic"
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.169
+     "conditional": 0.169,
+     "likely_causes": [
+      "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "Control / PLC / communication"
+     ]
     }
    ]
   },
@@ -195,15 +303,27 @@
    "families": [
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.195
+     "conditional": 0.195,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Pressure / lube / oil / hydraulic"
+     ]
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.193
+     "conditional": 0.193,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.176
+     "conditional": 0.176,
+     "likely_causes": [
+      "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "Control / PLC / communication"
+     ]
     }
    ]
   }
@@ -223,7 +343,21 @@
      "mean_gap": 31.0,
      "max_gap": 139.0,
      "risk_score": 34.62,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 16
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 5
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 4
+      }
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
@@ -237,7 +371,21 @@
      "mean_gap": 28.3,
      "max_gap": 114.0,
      "risk_score": 4.05,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 17
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 13
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 10
+      }
+     ]
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -251,7 +399,21 @@
      "mean_gap": 16.5,
      "max_gap": 110.0,
      "risk_score": 2.95,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 35
+      },
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 28
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 10
+      }
+     ]
     },
     {
      "family": "Electrical Panel / Power",
@@ -265,7 +427,21 @@
      "mean_gap": 57.2,
      "max_gap": 223.0,
      "risk_score": 0.93,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Control / PLC / communication",
+       "count": 22
+      },
+      {
+       "cause": "Power / electrical fault",
+       "count": 5
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 1
+      }
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
@@ -279,7 +455,21 @@
      "mean_gap": 15.5,
      "max_gap": 140.0,
      "risk_score": 0.76,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Bag house DP / cycle off",
+       "count": 60
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 13
+      },
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 11
+      }
+     ]
     },
     {
      "family": "Main Motor",
@@ -293,7 +483,21 @@
      "mean_gap": 96.0,
      "max_gap": 336.0,
      "risk_score": 0.42,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Power / electrical fault",
+       "count": 4
+      },
+      {
+       "cause": "High temperature",
+       "count": 2
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 1
+      }
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
@@ -307,7 +511,21 @@
      "mean_gap": 27.1,
      "max_gap": 329.0,
      "risk_score": 0.3,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "High temperature",
+       "count": 26
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 12
+      },
+      {
+       "cause": "Control / PLC / communication",
+       "count": 12
+      }
+     ]
     },
     {
      "family": "Other equipment",
@@ -321,7 +539,21 @@
      "mean_gap": 63.3,
      "max_gap": 187.0,
      "risk_score": 0.24,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 2
+      },
+      {
+       "cause": "High temperature",
+       "count": 1
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 1
+      }
+     ]
     },
     {
      "family": "Fan",
@@ -335,7 +567,21 @@
      "mean_gap": 10.4,
      "max_gap": 96.0,
      "risk_score": 0.23,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 110
+      },
+      {
+       "cause": "High temperature",
+       "count": 5
+      },
+      {
+       "cause": "Control / PLC / communication",
+       "count": 2
+      }
+     ]
     },
     {
      "family": "Gearbox / Lube",
@@ -349,7 +595,21 @@
      "mean_gap": 63.3,
      "max_gap": 214.0,
      "risk_score": 0.15,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 13
+      },
+      {
+       "cause": "High temperature",
+       "count": 4
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "Bucket Elevator",
@@ -363,7 +623,21 @@
      "mean_gap": 46.7,
      "max_gap": 199.0,
      "risk_score": 0.11,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 19
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 5
+      },
+      {
+       "cause": "Jam / blockage",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "Mill (process / monitoring)",
@@ -377,7 +651,21 @@
      "mean_gap": 26.0,
      "max_gap": 105.0,
      "risk_score": 0.09,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 18
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 14
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 14
+      }
+     ]
     },
     {
      "family": "Compressor",
@@ -391,7 +679,21 @@
      "mean_gap": 41.4,
      "max_gap": 284.0,
      "risk_score": 0.02,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Bag house DP / cycle off",
+       "count": 14
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 12
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "HAG",
@@ -405,7 +707,13 @@
      "mean_gap": null,
      "max_gap": null,
      "risk_score": 0,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 2
+      }
+     ]
     }
    ],
    "types": [
@@ -429,7 +737,377 @@
      "risk_score": 0.11,
      "overdue": false
     }
-   ]
+   ],
+   "cause_profiles": {
+    "Mill (process / monitoring)": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 18,
+      "pct": 0.25
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 14,
+      "pct": 0.19
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 14,
+      "pct": 0.19
+     },
+     {
+      "cause": "Vibration",
+      "count": 10,
+      "pct": 0.14
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 8,
+      "pct": 0.11
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 6,
+      "pct": 0.08
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 1,
+      "pct": 0.01
+     },
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "Electrical Panel / Power": [
+     {
+      "cause": "Control / PLC / communication",
+      "count": 22,
+      "pct": 0.76
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 5,
+      "pct": 0.17
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 1,
+      "pct": 0.03
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 1,
+      "pct": 0.03
+     }
+    ],
+    "Bucket Elevator": [
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 19,
+      "pct": 0.61
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 5,
+      "pct": 0.16
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 3,
+      "pct": 0.1
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 2,
+      "pct": 0.06
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.06
+     }
+    ],
+    "Belt Conveyor / Weigh Feeder": [
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 35,
+      "pct": 0.43
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 28,
+      "pct": 0.35
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 10,
+      "pct": 0.12
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 5,
+      "pct": 0.06
+     },
+     {
+      "cause": "Other cause",
+      "count": 2,
+      "pct": 0.02
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "Hydraulics / Rollers": [
+     {
+      "cause": "High temperature",
+      "count": 26,
+      "pct": 0.47
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 12,
+      "pct": 0.22
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 12,
+      "pct": 0.22
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 4,
+      "pct": 0.07
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 1,
+      "pct": 0.02
+     }
+    ],
+    "Bag House / Bag Filter": [
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 60,
+      "pct": 0.6
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 13,
+      "pct": 0.13
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 11,
+      "pct": 0.11
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 10,
+      "pct": 0.1
+     },
+     {
+      "cause": "Other cause",
+      "count": 5,
+      "pct": 0.05
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "Compressor": [
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 14,
+      "pct": 0.45
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 12,
+      "pct": 0.39
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 3,
+      "pct": 0.1
+     },
+     {
+      "cause": "High temperature",
+      "count": 1,
+      "pct": 0.03
+     },
+     {
+      "cause": "Compressor / air",
+      "count": 1,
+      "pct": 0.03
+     }
+    ],
+    "Feeders / Gates / Dampers": [
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 17,
+      "pct": 0.33
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 13,
+      "pct": 0.25
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 10,
+      "pct": 0.19
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 5,
+      "pct": 0.1
+     },
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 4,
+      "pct": 0.08
+     },
+     {
+      "cause": "Compressor / air",
+      "count": 2,
+      "pct": 0.04
+     },
+     {
+      "cause": "Other cause",
+      "count": 1,
+      "pct": 0.02
+     }
+    ],
+    "Gearbox / Lube": [
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 13,
+      "pct": 0.62
+     },
+     {
+      "cause": "High temperature",
+      "count": 4,
+      "pct": 0.19
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 3,
+      "pct": 0.14
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 1,
+      "pct": 0.05
+     }
+    ],
+    "Classifier / Separator": [
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 16,
+      "pct": 0.59
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 5,
+      "pct": 0.19
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 4,
+      "pct": 0.15
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.07
+     }
+    ],
+    "Fan": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 110,
+      "pct": 0.91
+     },
+     {
+      "cause": "High temperature",
+      "count": 5,
+      "pct": 0.04
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.02
+     },
+     {
+      "cause": "Compressor / air",
+      "count": 1,
+      "pct": 0.01
+     },
+     {
+      "cause": "Other cause",
+      "count": 1,
+      "pct": 0.01
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 1,
+      "pct": 0.01
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "HAG": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 2,
+      "pct": 1.0
+     }
+    ],
+    "Main Motor": [
+     {
+      "cause": "Power / electrical fault",
+      "count": 4,
+      "pct": 0.57
+     },
+     {
+      "cause": "High temperature",
+      "count": 2,
+      "pct": 0.29
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 1,
+      "pct": 0.14
+     }
+    ],
+    "Other equipment": [
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 2,
+      "pct": 0.5
+     },
+     {
+      "cause": "High temperature",
+      "count": 1,
+      "pct": 0.25
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 1,
+      "pct": 0.25
+     }
+    ]
+   }
   },
   "VRM-2": {
    "equipment": [
@@ -445,7 +1123,21 @@
      "mean_gap": 33.6,
      "max_gap": 142.0,
      "risk_score": 3.55,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 14
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 14
+      },
+      {
+       "cause": "Jam / blockage",
+       "count": 6
+      }
+     ]
     },
     {
      "family": "Bag House / Bag Filter",
@@ -459,7 +1151,21 @@
      "mean_gap": 37.9,
      "max_gap": 185.0,
      "risk_score": 3.5,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Bag house DP / cycle off",
+       "count": 21
+      },
+      {
+       "cause": "Jam / blockage",
+       "count": 2
+      },
+      {
+       "cause": "Other cause",
+       "count": 2
+      }
+     ]
     },
     {
      "family": "Fan",
@@ -473,7 +1179,21 @@
      "mean_gap": 51.8,
      "max_gap": 184.0,
      "risk_score": 2.24,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 13
+      },
+      {
+       "cause": "Vibration",
+       "count": 2
+      },
+      {
+       "cause": "Control / PLC / communication",
+       "count": 2
+      }
+     ]
     },
     {
      "family": "Feeders / Gates / Dampers",
@@ -487,7 +1207,21 @@
      "mean_gap": 19.9,
      "max_gap": 118.0,
      "risk_score": 2.1,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 17
+      },
+      {
+       "cause": "Control / PLC / communication",
+       "count": 16
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 15
+      }
+     ]
     },
     {
      "family": "Gearbox / Lube",
@@ -501,7 +1235,21 @@
      "mean_gap": 27.3,
      "max_gap": 194.0,
      "risk_score": 1.96,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 30
+      },
+      {
+       "cause": "High temperature",
+       "count": 15
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 5
+      }
+     ]
     },
     {
      "family": "Compressor",
@@ -515,7 +1263,17 @@
      "mean_gap": 80.7,
      "max_gap": 169.0,
      "risk_score": 1.36,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 3
+      },
+      {
+       "cause": "Bag house DP / cycle off",
+       "count": 1
+      }
+     ]
     },
     {
      "family": "Main Motor",
@@ -529,7 +1287,21 @@
      "mean_gap": 50.7,
      "max_gap": 259.0,
      "risk_score": 1.26,
-     "overdue": true
+     "overdue": true,
+     "top_causes": [
+      {
+       "cause": "Control / PLC / communication",
+       "count": 9
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 4
+      },
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "Hydraulics / Rollers",
@@ -543,7 +1315,21 @@
      "mean_gap": 20.8,
      "max_gap": 154.0,
      "risk_score": 0.88,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 50
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 30
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
@@ -557,7 +1343,21 @@
      "mean_gap": 18.2,
      "max_gap": 120.0,
      "risk_score": 0.73,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 40
+      },
+      {
+       "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+       "count": 26
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 12
+      }
+     ]
     },
     {
      "family": "HAG",
@@ -571,7 +1371,21 @@
      "mean_gap": 62.1,
      "max_gap": 283.0,
      "risk_score": 0.62,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 18
+      },
+      {
+       "cause": "Power / electrical fault",
+       "count": 3
+      },
+      {
+       "cause": "Control / PLC / communication",
+       "count": 1
+      }
+     ]
     },
     {
      "family": "Electrical Panel / Power",
@@ -585,7 +1399,21 @@
      "mean_gap": 120.7,
      "max_gap": 415.0,
      "risk_score": 0.57,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Control / PLC / communication",
+       "count": 7
+      },
+      {
+       "cause": "Power / electrical fault",
+       "count": 3
+      },
+      {
+       "cause": "Trip / overload / stop",
+       "count": 2
+      }
+     ]
     },
     {
      "family": "Mill (process / monitoring)",
@@ -599,7 +1427,21 @@
      "mean_gap": 72.1,
      "max_gap": 232.0,
      "risk_score": 0.43,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Mechanical wear / damage",
+       "count": 8
+      },
+      {
+       "cause": "Other cause",
+       "count": 3
+      },
+      {
+       "cause": "Pressure / lube / oil / hydraulic",
+       "count": 3
+      }
+     ]
     },
     {
      "family": "Other equipment",
@@ -613,7 +1455,13 @@
      "mean_gap": null,
      "max_gap": null,
      "risk_score": 0,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Trip / overload / stop",
+       "count": 2
+      }
+     ]
     },
     {
      "family": "Classifier / Separator",
@@ -627,7 +1475,13 @@
      "mean_gap": null,
      "max_gap": null,
      "risk_score": 0,
-     "overdue": false
+     "overdue": false,
+     "top_causes": [
+      {
+       "cause": "Control / PLC / communication",
+       "count": 1
+      }
+     ]
     }
    ],
    "types": [
@@ -651,7 +1505,377 @@
      "risk_score": 2.88,
      "overdue": true
     }
-   ]
+   ],
+   "cause_profiles": {
+    "Belt Conveyor / Weigh Feeder": [
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 40,
+      "pct": 0.45
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 26,
+      "pct": 0.29
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 12,
+      "pct": 0.13
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 6,
+      "pct": 0.07
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 2,
+      "pct": 0.02
+     },
+     {
+      "cause": "Other cause",
+      "count": 2,
+      "pct": 0.02
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "Bucket Elevator": [
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 14,
+      "pct": 0.35
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 14,
+      "pct": 0.35
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 6,
+      "pct": 0.15
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 4,
+      "pct": 0.1
+     },
+     {
+      "cause": "Vibration",
+      "count": 1,
+      "pct": 0.02
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 1,
+      "pct": 0.02
+     }
+    ],
+    "Electrical Panel / Power": [
+     {
+      "cause": "Control / PLC / communication",
+      "count": 7,
+      "pct": 0.58
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 3,
+      "pct": 0.25
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 2,
+      "pct": 0.17
+     }
+    ],
+    "Feeders / Gates / Dampers": [
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 17,
+      "pct": 0.21
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 16,
+      "pct": 0.2
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 15,
+      "pct": 0.19
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 13,
+      "pct": 0.16
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 8,
+      "pct": 0.1
+     },
+     {
+      "cause": "Other cause",
+      "count": 6,
+      "pct": 0.07
+     },
+     {
+      "cause": "High temperature",
+      "count": 4,
+      "pct": 0.05
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 1,
+      "pct": 0.01
+     },
+     {
+      "cause": "Compressor / air",
+      "count": 1,
+      "pct": 0.01
+     }
+    ],
+    "Gearbox / Lube": [
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 30,
+      "pct": 0.56
+     },
+     {
+      "cause": "High temperature",
+      "count": 15,
+      "pct": 0.28
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 5,
+      "pct": 0.09
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 3,
+      "pct": 0.06
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 1,
+      "pct": 0.02
+     }
+    ],
+    "Hydraulics / Rollers": [
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 50,
+      "pct": 0.57
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 30,
+      "pct": 0.34
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 3,
+      "pct": 0.03
+     },
+     {
+      "cause": "High temperature",
+      "count": 2,
+      "pct": 0.02
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.02
+     }
+    ],
+    "Fan": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 13,
+      "pct": 0.57
+     },
+     {
+      "cause": "Vibration",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "High temperature",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 2,
+      "pct": 0.09
+     }
+    ],
+    "Bag House / Bag Filter": [
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 21,
+      "pct": 0.81
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 2,
+      "pct": 0.08
+     },
+     {
+      "cause": "Other cause",
+      "count": 2,
+      "pct": 0.08
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 1,
+      "pct": 0.04
+     }
+    ],
+    "Main Motor": [
+     {
+      "cause": "Control / PLC / communication",
+      "count": 9,
+      "pct": 0.41
+     },
+     {
+      "cause": "Trip / overload / stop",
+      "count": 4,
+      "pct": 0.18
+     },
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 3,
+      "pct": 0.14
+     },
+     {
+      "cause": "High temperature",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 1,
+      "pct": 0.05
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 1,
+      "pct": 0.05
+     }
+    ],
+    "HAG": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 18,
+      "pct": 0.78
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 3,
+      "pct": 0.13
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 1,
+      "pct": 0.04
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 1,
+      "pct": 0.04
+     }
+    ],
+    "Mill (process / monitoring)": [
+     {
+      "cause": "Mechanical wear / damage",
+      "count": 8,
+      "pct": 0.35
+     },
+     {
+      "cause": "Other cause",
+      "count": 3,
+      "pct": 0.13
+     },
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 3,
+      "pct": 0.13
+     },
+     {
+      "cause": "Control / PLC / communication",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "High temperature",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Jam / blockage",
+      "count": 2,
+      "pct": 0.09
+     },
+     {
+      "cause": "Power / electrical fault",
+      "count": 1,
+      "pct": 0.04
+     }
+    ],
+    "Classifier / Separator": [
+     {
+      "cause": "Control / PLC / communication",
+      "count": 1,
+      "pct": 1.0
+     }
+    ],
+    "Compressor": [
+     {
+      "cause": "Pressure / lube / oil / hydraulic",
+      "count": 3,
+      "pct": 0.75
+     },
+     {
+      "cause": "Bag house DP / cycle off",
+      "count": 1,
+      "pct": 0.25
+     }
+    ],
+    "Other equipment": [
+     {
+      "cause": "Trip / overload / stop",
+      "count": 2,
+      "pct": 1.0
+     }
+    ]
+   }
   }
  },
  "context": {
@@ -1124,6 +2348,44 @@
      "events": 1
     }
    ],
+   "causes_90d": [
+    {
+     "cause": "Trip / overload / stop",
+     "events": 16
+    },
+    {
+     "cause": "Mechanical wear / damage",
+     "events": 12
+    },
+    {
+     "cause": "Bag house DP / cycle off",
+     "events": 9
+    },
+    {
+     "cause": "High temperature",
+     "events": 8
+    },
+    {
+     "cause": "Pressure / lube / oil / hydraulic",
+     "events": 4
+    },
+    {
+     "cause": "Power / electrical fault",
+     "events": 3
+    },
+    {
+     "cause": "Control / PLC / communication",
+     "events": 2
+    },
+    {
+     "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+     "events": 1
+    },
+    {
+     "cause": "Compressor / air",
+     "events": 1
+    }
+   ],
    "mix_90d": {
     "Electrical": 21,
     "Mechanical": 19,
@@ -1592,6 +2854,36 @@
     },
     {
      "family": "Main Motor",
+     "events": 1
+    }
+   ],
+   "causes_90d": [
+    {
+     "cause": "Pressure / lube / oil / hydraulic",
+     "events": 22
+    },
+    {
+     "cause": "Trip / overload / stop",
+     "events": 6
+    },
+    {
+     "cause": "Mechanical wear / damage",
+     "events": 6
+    },
+    {
+     "cause": "Safety sensor alarm (ZSS/BSS/motion/limit)",
+     "events": 4
+    },
+    {
+     "cause": "Jam / blockage",
+     "events": 2
+    },
+    {
+     "cause": "Power / electrical fault",
+     "events": 1
+    },
+    {
+     "cause": "Compressor / air",
      "events": 1
     }
    ],
