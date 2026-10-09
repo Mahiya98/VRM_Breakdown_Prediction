@@ -14,7 +14,7 @@
   "VRM-2": {
    "breakdown_days": 61,
    "em_days_scored": 23,
-   "top2_hit_rate": 0.609,
+   "top2_hit_rate": 0.565,
    "baseline_top2_hit_rate": 0.304
   }
  },
@@ -85,7 +85,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Hydraulics / Rollers"
    ],
    "actual_families": [
     "Compressor",
@@ -152,8 +152,8 @@
    ],
    "predicted_families": [
     "Fan",
-    "Belt Conveyor / Weigh Feeder",
-    "Bag House / Bag Filter"
+    "Bag House / Bag Filter",
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -179,7 +179,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Bucket Elevator"
@@ -225,7 +225,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -263,7 +263,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Bag House / Bag Filter",
@@ -278,8 +278,8 @@
     "Electrical"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder",
     "Feeders / Gates / Dampers"
    ],
    "actual_families": [
@@ -305,9 +305,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Belt Conveyor / Weigh Feeder",
@@ -373,9 +373,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
+    "Hydraulics / Rollers",
     "Feeders / Gates / Dampers",
-    "Hydraulics / Rollers"
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
@@ -392,7 +392,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Other equipment"
    ],
    "actual_families": [
     "Fan",
@@ -448,9 +448,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Feeders / Gates / Dampers",
-    "Hydraulics / Rollers"
+    "Hydraulics / Rollers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -468,7 +468,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Other equipment"
    ],
    "actual_families": [
     "Fan",
@@ -497,7 +497,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Other equipment"
    ],
    "actual_families": [
     "Bag House / Bag Filter"
@@ -514,7 +514,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Other equipment"
@@ -531,7 +531,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Other equipment"
@@ -549,7 +549,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Belt Conveyor / Weigh Feeder"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Bag House / Bag Filter",
@@ -941,8 +941,8 @@
    ],
    "predicted_families": [
     "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Gearbox / Lube"
    ],
    "actual_families": [
     "Feeders / Gates / Dampers"
@@ -968,15 +968,15 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Gearbox / Lube"
    ],
    "actual_families": [
     "Gearbox / Lube",
     "HAG"
    ],
-   "top2_hit": false
+   "top2_hit": true
   },
   {
    "date": "2026-08-12",
@@ -997,9 +997,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Gearbox / Lube",
@@ -1115,9 +1115,9 @@
     "Other"
    ],
    "predicted_families": [
+    "Feeders / Gates / Dampers",
     "Hydraulics / Rollers",
-    "Belt Conveyor / Weigh Feeder",
-    "Feeders / Gates / Dampers"
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Feeders / Gates / Dampers"
@@ -1208,7 +1208,7 @@
    "predicted_families": [
     "Fan",
     "Bag House / Bag Filter",
-    "Compressor"
+    "Main Motor"
    ],
    "actual_families": [
     "Fan",
@@ -1224,9 +1224,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Main Motor"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -1260,9 +1260,9 @@
     "Mechanical"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Hydraulics / Rollers",
@@ -1296,9 +1296,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -1390,9 +1390,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Gearbox / Lube"
    ],
    "actual_families": [
     "Gearbox / Lube",
@@ -1418,14 +1418,14 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
+    "Gearbox / Lube",
     "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
-   "top2_hit": true
+   "top2_hit": false
   },
   {
    "date": "2026-07-25",
@@ -1444,8 +1444,8 @@
     "Mechanical"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
+    "Gearbox / Lube",
     "Feeders / Gates / Dampers"
    ],
    "actual_families": [
@@ -1462,15 +1462,15 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
+    "Gearbox / Lube",
     "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Belt Conveyor / Weigh Feeder",
     "HAG"
    ],
-   "top2_hit": true
+   "top2_hit": false
   },
   {
    "date": "2026-07-23",
@@ -1491,14 +1491,14 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
+    "Gearbox / Lube",
     "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Belt Conveyor / Weigh Feeder"
    ],
-   "top2_hit": true
+   "top2_hit": false
   },
   {
    "date": "2026-07-22",
@@ -1527,14 +1527,14 @@
     "Mechanical"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
+    "Gearbox / Lube",
     "Hydraulics / Rollers",
-    "Main Motor"
+    "Feeders / Gates / Dampers"
    ],
    "actual_families": [
     "Gearbox / Lube"
    ],
-   "top2_hit": false
+   "top2_hit": true
   },
   {
    "date": "2026-07-20",
@@ -1561,9 +1561,9 @@
     "Mechanical"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Gearbox / Lube"
@@ -1578,9 +1578,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Belt Conveyor / Weigh Feeder",
     "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Belt Conveyor / Weigh Feeder"
    ],
    "actual_families": [
     "Gearbox / Lube"
@@ -1626,8 +1626,8 @@
    ],
    "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers",
-    "Feeders / Gates / Dampers"
+    "Feeders / Gates / Dampers",
+    "Hydraulics / Rollers"
    ],
    "actual_families": [
     "Hydraulics / Rollers"
@@ -1653,8 +1653,8 @@
    ],
    "predicted_families": [
     "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers",
-    "Bag House / Bag Filter"
+    "Feeders / Gates / Dampers",
+    "Hydraulics / Rollers"
    ],
    "actual_families": [
     "Gearbox / Lube"
@@ -1686,9 +1686,9 @@
     "Other"
    ],
    "predicted_families": [
+    "Feeders / Gates / Dampers",
     "Belt Conveyor / Weigh Feeder",
-    "Hydraulics / Rollers",
-    "Bag House / Bag Filter"
+    "Hydraulics / Rollers"
    ],
    "actual_families": [
     "Gearbox / Lube"
@@ -1720,9 +1720,9 @@
     "Other"
    ],
    "predicted_families": [
-    "Hydraulics / Rollers",
     "Belt Conveyor / Weigh Feeder",
-    "Bag House / Bag Filter"
+    "Feeders / Gates / Dampers",
+    "Hydraulics / Rollers"
    ],
    "actual_families": [
     "Electrical Panel / Power"

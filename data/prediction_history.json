@@ -148,5 +148,155 @@
   "actual_status": "pending",
   "actual_families": [],
   "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-1",
+  "horizon": 1,
+  "forecast_date": "2026-10-07",
+  "predicted": [
+   "Bag House / Bag Filter",
+   "Fan",
+   "Compressor"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-1",
+  "horizon": 2,
+  "forecast_date": "2026-10-08",
+  "predicted": [
+   "Bag House / Bag Filter",
+   "Fan",
+   "Compressor"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-1",
+  "horizon": 3,
+  "forecast_date": "2026-10-09",
+  "predicted": [
+   "Bag House / Bag Filter",
+   "Fan",
+   "Compressor"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-1",
+  "horizon": 4,
+  "forecast_date": "2026-10-10",
+  "predicted": [
+   "Bag House / Bag Filter",
+   "Fan",
+   "Compressor"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-1",
+  "horizon": 5,
+  "forecast_date": "2026-10-11",
+  "predicted": [
+   "Bag House / Bag Filter",
+   "Fan",
+   "Compressor"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-2",
+  "horizon": 1,
+  "forecast_date": "2026-10-07",
+  "predicted": [
+   "Hydraulics / Rollers",
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-2",
+  "horizon": 2,
+  "forecast_date": "2026-10-08",
+  "predicted": [
+   "Hydraulics / Rollers",
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-2",
+  "horizon": 3,
+  "forecast_date": "2026-10-09",
+  "predicted": [
+   "Hydraulics / Rollers",
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-2",
+  "horizon": 4,
+  "forecast_date": "2026-10-10",
+  "predicted": [
+   "Hydraulics / Rollers",
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
+ },
+ {
+  "run_date": "2026-10-09",
+  "data_through": "2026-10-06",
+  "mill": "VRM-2",
+  "horizon": 5,
+  "forecast_date": "2026-10-11",
+  "predicted": [
+   "Hydraulics / Rollers",
+   "Belt Conveyor / Weigh Feeder",
+   "Feeders / Gates / Dampers"
+  ],
+  "actual_status": "pending",
+  "actual_families": [],
+  "equip_hit": null
  }
 ]

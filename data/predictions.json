@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generated_at": "2026-10-08 06:42 UTC",
+  "generated_at": "2026-10-09 01:12 UTC",
   "data_through": "2026-10-06",
-  "model_version": "v5.2 overdue alerts + CatBoost equipment (top-3) + cause analysis",
+  "model_version": "v6 overdue alerts + per-family equipment ranker (top-3) + cause analysis",
   "rows_in_sheet": 7712,
   "duplicate_rows_removed": 2151
  },
@@ -14,27 +14,27 @@
    "weekday": "Wed",
    "families": [
     {
-     "family": "Fan",
-     "conditional": 0.282,
-     "likely_causes": [
-      "Trip / overload / stop",
-      "High temperature"
-     ]
-    },
-    {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.189,
+     "conditional": 0.18,
      "likely_causes": [
       "Bag house DP / cycle off",
       "Mechanical wear / damage"
      ]
     },
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.097,
+     "family": "Fan",
+     "conditional": 0.132,
      "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+      "Trip / overload / stop",
+      "High temperature"
+     ]
+    },
+    {
+     "family": "Compressor",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Trip / overload / stop"
      ]
     }
    ]
@@ -46,27 +46,27 @@
    "weekday": "Thu",
    "families": [
     {
-     "family": "Fan",
-     "conditional": 0.295,
-     "likely_causes": [
-      "Trip / overload / stop",
-      "High temperature"
-     ]
-    },
-    {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.181,
+     "conditional": 0.18,
      "likely_causes": [
       "Bag house DP / cycle off",
       "Mechanical wear / damage"
      ]
     },
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.089,
+     "family": "Fan",
+     "conditional": 0.132,
      "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+      "Trip / overload / stop",
+      "High temperature"
+     ]
+    },
+    {
+     "family": "Compressor",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Trip / overload / stop"
      ]
     }
    ]
@@ -78,27 +78,27 @@
    "weekday": "Fri",
    "families": [
     {
-     "family": "Fan",
-     "conditional": 0.292,
-     "likely_causes": [
-      "Trip / overload / stop",
-      "High temperature"
-     ]
-    },
-    {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.182,
+     "conditional": 0.18,
      "likely_causes": [
       "Bag house DP / cycle off",
       "Mechanical wear / damage"
      ]
     },
     {
-     "family": "Hydraulics / Rollers",
-     "conditional": 0.097,
+     "family": "Fan",
+     "conditional": 0.132,
      "likely_causes": [
-      "High temperature",
-      "Pressure / lube / oil / hydraulic"
+      "Trip / overload / stop",
+      "High temperature"
+     ]
+    },
+    {
+     "family": "Compressor",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Trip / overload / stop"
      ]
     }
    ]
@@ -110,27 +110,27 @@
    "weekday": "Sat",
    "families": [
     {
-     "family": "Fan",
-     "conditional": 0.302,
-     "likely_causes": [
-      "Trip / overload / stop",
-      "High temperature"
-     ]
-    },
-    {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179,
+     "conditional": 0.18,
      "likely_causes": [
       "Bag house DP / cycle off",
       "Mechanical wear / damage"
      ]
     },
     {
-     "family": "Hydraulics / Rollers",
-     "conditional": 0.098,
+     "family": "Fan",
+     "conditional": 0.132,
      "likely_causes": [
-      "High temperature",
-      "Pressure / lube / oil / hydraulic"
+      "Trip / overload / stop",
+      "High temperature"
+     ]
+    },
+    {
+     "family": "Compressor",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Trip / overload / stop"
      ]
     }
    ]
@@ -142,27 +142,27 @@
    "weekday": "Sun",
    "families": [
     {
-     "family": "Fan",
-     "conditional": 0.303,
-     "likely_causes": [
-      "Trip / overload / stop",
-      "High temperature"
-     ]
-    },
-    {
      "family": "Bag House / Bag Filter",
-     "conditional": 0.179,
+     "conditional": 0.18,
      "likely_causes": [
       "Bag house DP / cycle off",
       "Mechanical wear / damage"
      ]
     },
     {
-     "family": "Hydraulics / Rollers",
-     "conditional": 0.097,
+     "family": "Fan",
+     "conditional": 0.132,
      "likely_causes": [
-      "High temperature",
-      "Pressure / lube / oil / hydraulic"
+      "Trip / overload / stop",
+      "High temperature"
+     ]
+    },
+    {
+     "family": "Compressor",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Bag house DP / cycle off",
+      "Trip / overload / stop"
      ]
     }
    ]
@@ -174,24 +174,24 @@
    "weekday": "Wed",
    "families": [
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.216,
-     "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
-     ]
-    },
-    {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.165,
+     "conditional": 0.237,
      "likely_causes": [
       "Mechanical wear / damage",
       "Pressure / lube / oil / hydraulic"
      ]
     },
     {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
+    },
+    {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.146,
+     "conditional": 0.114,
      "likely_causes": [
       "Safety sensor alarm (ZSS/BSS/motion/limit)",
       "Control / PLC / communication"
@@ -206,24 +206,24 @@
    "weekday": "Thu",
    "families": [
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.207,
-     "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
-     ]
-    },
-    {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.164,
+     "conditional": 0.237,
      "likely_causes": [
       "Mechanical wear / damage",
       "Pressure / lube / oil / hydraulic"
      ]
     },
     {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
+    },
+    {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.157,
+     "conditional": 0.114,
      "likely_causes": [
       "Safety sensor alarm (ZSS/BSS/motion/limit)",
       "Control / PLC / communication"
@@ -238,24 +238,24 @@
    "weekday": "Fri",
    "families": [
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.205,
-     "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
-     ]
-    },
-    {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.169,
+     "conditional": 0.237,
      "likely_causes": [
       "Mechanical wear / damage",
       "Pressure / lube / oil / hydraulic"
      ]
     },
     {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
+    },
+    {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.161,
+     "conditional": 0.114,
      "likely_causes": [
       "Safety sensor alarm (ZSS/BSS/motion/limit)",
       "Control / PLC / communication"
@@ -270,24 +270,24 @@
    "weekday": "Sat",
    "families": [
     {
-     "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.199,
-     "likely_causes": [
-      "Mechanical wear / damage",
-      "Safety sensor alarm (ZSS/BSS/motion/limit)"
-     ]
-    },
-    {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.185,
+     "conditional": 0.237,
      "likely_causes": [
       "Mechanical wear / damage",
       "Pressure / lube / oil / hydraulic"
      ]
     },
     {
+     "family": "Belt Conveyor / Weigh Feeder",
+     "conditional": 0.132,
+     "likely_causes": [
+      "Mechanical wear / damage",
+      "Safety sensor alarm (ZSS/BSS/motion/limit)"
+     ]
+    },
+    {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.169,
+     "conditional": 0.114,
      "likely_causes": [
       "Safety sensor alarm (ZSS/BSS/motion/limit)",
       "Control / PLC / communication"
@@ -303,7 +303,7 @@
    "families": [
     {
      "family": "Hydraulics / Rollers",
-     "conditional": 0.195,
+     "conditional": 0.237,
      "likely_causes": [
       "Mechanical wear / damage",
       "Pressure / lube / oil / hydraulic"
@@ -311,7 +311,7 @@
     },
     {
      "family": "Belt Conveyor / Weigh Feeder",
-     "conditional": 0.193,
+     "conditional": 0.132,
      "likely_causes": [
       "Mechanical wear / damage",
       "Safety sensor alarm (ZSS/BSS/motion/limit)"
@@ -319,7 +319,7 @@
     },
     {
      "family": "Feeders / Gates / Dampers",
-     "conditional": 0.176,
+     "conditional": 0.114,
      "likely_causes": [
       "Safety sensor alarm (ZSS/BSS/motion/limit)",
       "Control / PLC / communication"

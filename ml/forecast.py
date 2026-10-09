@@ -22,7 +22,8 @@ from catboost import CatBoostClassifier
 
 SRC, DROP, OUT = sys.argv[1:4]
 HL, BLEND = 120, 0.5
-VERSION = 'v5.2 overdue alerts + CatBoost equipment (top-3) + cause analysis'
+SEEDS = (0, 1, 2, 3, 4)          # the ranker is an average over these seeds, which is steadier than one fit
+VERSION = 'v6 overdue alerts + per-family equipment ranker (top-3) + cause analysis'
 TOP_K = 3
 OTHER = {'VRM-1': 'VRM-2', 'VRM-2': 'VRM-1'}
 META = ['target_date', 'state_t', 'y', 'known', 'valid', 'primary', 'all_reasons', 'origin']
@@ -38,26 +39,71 @@ last = daily['VRM-1'].index.max()
 ROWS = {(m, h): FE.make_rows(daily[m], h, False, 'equip', daily[OTHER[m]]).assign(mill_v2=int(m == 'VRM-2'), mill=m) for m in FE.MILLS for h in FE.HORIZONS}
 ALL = [c for c in ROWS[('VRM-1', 1)].columns if c not in META + ['mill']]
 
-def cat_model():
-    return CatBoostClassifier(iterations=80, depth=4, learning_rate=0.1, loss_function='MultiClass', verbose=0, thread_count=2, random_seed=0)
-
 def recency_freq(df, classes, now):
     ev = df[(df.y == 1) & df.primary.notna()]
     w = 0.5 ** ((now - ev.target_date).dt.days / HL)
     c = ev.assign(w=w).groupby('primary').w.sum().reindex(classes).fillna(0) + 0.5
     return (c / c.sum()).values
 
+# ----------------------------------------------------------------
+# EQUIPMENT RANKER (v6): one row per (day, equipment family) instead of one
+# multiclass row per day. Each row carries that family's own history — days
+# since it last failed, its recent counts, its mean gap and a smoothed hazard —
+# so the model learns per-family timing rather than a single label per day.
+# ----------------------------------------------------------------
+FAM_FEATS = ['since', 'n7', 'n30', 'n90', 'n365', 'rate', 'hz', 'mean_gap', 'gap_ratio', 'nev']
+_fam_cache = {}
+
+def fam_history(mill, fam, t):
+    """Features for one family at origin t, from events up to and including t."""
+    key = (mill, fam, t)
+    if key in _fam_cache: return _fam_cache[key]
+    t = pd.Timestamp(t); d = EV_DATES[mill].get(fam)
+    if d is None or not len(d) or d[0] > t:
+        r = dict(since=365.0, n7=0, n30=0, n90=0, n365=0, rate=0.0, hz=0.0, mean_gap=365.0, gap_ratio=0.0, nev=0)
+    else:
+        d = d[d <= t]
+        age = (t - pd.DatetimeIndex(d)).days.values; since = float(age.min())
+        gaps = np.diff(d).astype('timedelta64[D]').astype(int) if len(d) > 1 else np.array([])
+        mg = float(gaps.mean()) if len(gaps) else 365.0
+        hz = 0.0
+        if len(gaps) >= 3:          # conditional chance of failing tomorrow given the current gap
+            surv = gaps[gaps > since]; prior = 1 - np.exp(-1 / max(mg, 1))
+            hz = ((surv <= since + 1).sum() + 2 * prior) / (len(surv) + 2)
+        span = max((t - pd.Timestamp(d.min())).days, 1)
+        r = dict(since=since, n7=int((age <= 7).sum()), n30=int((age <= 30).sum()), n90=int((age <= 90).sum()),
+                 n365=int((age <= 365).sum()), rate=len(d) / span, hz=float(hz), mean_gap=mg,
+                 gap_ratio=since / mg if mg > 0 else 0.0, nev=len(d))
+    _fam_cache[key] = r; return r
+
+def pair_rows(origins, mill, classes):
+    """One row per (origin day, family) for the given origins."""
+    recs = [{**{'f_' + k: v for k, v in fam_history(mill, f, t).items()}, 'fam': f, 'mill': mill}
+            for t in origins for f in classes]
+    return pd.DataFrame(recs)
+
+PAIR_COLS = ['f_' + k for k in FAM_FEATS] + ['fam', 'mill']
+
 def fit_stage2(tr, now):
-    t = tr[(tr.y == 1) & tr.primary.notna()]
-    classes = sorted(t.primary.unique())
-    code = {c: i for i, c in enumerate(classes)}
-    m = cat_model().fit(t[ALL], t.primary.map(code).values)
-    cls = np.asarray(m.classes_).astype(int).ravel()
-    rec = {mm: recency_freq(tr[tr.mill == mm], classes, now) for mm in FE.MILLS}
-    def predict(X, mill):
-        P = np.zeros((len(X), len(classes)))
-        P[:, cls] = m.predict_proba(X[ALL])
-        return BLEND * P + (1 - BLEND) * np.tile(rec[mill], (len(X), 1))
+    """Fit the per-family ranker. Returns predict(rows, mill) -> probability per family."""
+    lab = tr[(tr.y == 1) & tr.all_reasons.map(lambda a: isinstance(a, list) and len(a) > 0)]
+    classes = sorted({f for a in lab.all_reasons for f in a})
+    X, Y = [], []
+    for mm in FE.MILLS:
+        g = lab[lab.mill == mm]
+        if not len(g): continue
+        X.append(pair_rows(g.origin.tolist(), mm, classes))
+        Y.append(np.array([int(f in a) for a in g.all_reasons for f in classes]))
+    X = pd.concat(X, ignore_index=True); Y = np.concatenate(Y)
+    models = [CatBoostClassifier(iterations=250, depth=5, learning_rate=0.06, loss_function='Logloss',
+                                 verbose=0, thread_count=2, random_seed=s, cat_features=['fam', 'mill']).fit(X[PAIR_COLS], Y)
+              for s in SEEDS]
+    def predict(rows, mill):
+        origins = pd.to_datetime(rows['origin']).tolist()
+        T = pair_rows(origins, mill, classes)
+        p = np.mean([m.predict_proba(T[PAIR_COLS])[:, 1] for m in models], axis=0).reshape(len(origins), len(classes))
+        s = p.sum(axis=1, keepdims=True)
+        return np.divide(p, s, out=np.full_like(p, 1 / len(classes)), where=s > 0)
     return predict, classes
 
 iso = lambda d: str(pd.Timestamp(d).date())
@@ -68,6 +114,7 @@ iso = lambda d: str(pd.Timestamp(d).date())
 em_raw = raw[raw['Breakdown Type'].isin(['Electrical Breakdown', 'Mechanical Breakdown'])].copy()
 em_raw['family'] = em_raw['Breakdwon Name'].map(FE.map_equip)
 em_raw['cause'] = em_raw['Reason'].map(FE.map_cause)
+EV_DATES = {m: {f: np.sort(pd.to_datetime(g.Date.unique())) for f, g in em_raw[em_raw['Mill Name'] == m].groupby('family')} for m in FE.MILLS}
 today = last  # use last data date as reference
 
 MIN_EVENTS = 3  # need at least 3 events to compute meaningful gap stats
@@ -183,6 +230,7 @@ for m in FE.MILLS:
     for h in FE.HORIZONS:
         tgt = last + pd.Timedelta(days=h)
         x = of.copy(); x['h'] = h; x['tgt_dow'] = tgt.dayofweek; x['tgt_month'] = tgt.month; x['tgt_weekend'] = int(tgt.dayofweek >= 5)
+        x['origin'] = last
         P = p2f(x, m)[0]; top = np.argsort(-P)[:TOP_K]
         fam_list = []
         for i in top:

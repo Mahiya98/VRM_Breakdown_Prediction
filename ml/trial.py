@@ -11,14 +11,15 @@ Regexes match the lower-cased equipment name without its leading code (e.g. "o01
 
 Every trial uses the same rolling-origin backtest: FOLDS windows of FOLD_DAYS days ending at the
 last data date; each window is predicted by a model trained only on earlier data (1-day ahead,
-E/M breakdown days only, same model as forecast.py). Results: results.json and printed table."""
+E/M breakdown days only, same per-family ranker as forecast.py). Results: results.json and printed table."""
 import sys, os, re, json, glob, math, warnings, numpy as np, pandas as pd
 warnings.filterwarnings('ignore'); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import features as FE
 from catboost import CatBoostClassifier
 
-SRC, DROP = sys.argv[1:3]; TRIALS = sys.argv[3:] or sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'trials', '*.json')))
+SRC, DROP = sys.argv[1:3]; TRIALS = sys.argv[3:] or sorted(p for p in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'trials', '*.json')) if os.path.basename(p) != 'results.json')
 HL, BLEND, TOP_K, FOLDS, FOLD_DAYS = 120, 0.5, 3, 4, 45
+SEEDS = (0, 1, 2)   # fewer seeds than production: trials only need to rank groupings against each other
 OTHER = {'VRM-1': 'VRM-2', 'VRM-2': 'VRM-1'}
 META = ['target_date', 'state_t', 'y', 'known', 'valid', 'primary', 'all_reasons', 'origin']
 BASE_RULES = list(FE.EQUIP_RULES)
@@ -36,8 +37,30 @@ def apply_ops(ops):
         elif 'drop' in o: rules = [r for r in rules if r[0] != o['drop']]
     return rules
 
-def cat_model():
-    return CatBoostClassifier(iterations=80, depth=4, learning_rate=0.1, loss_function='MultiClass', verbose=0, thread_count=2, random_seed=0)
+FAM_FEATS = ['since', 'n7', 'n30', 'n90', 'n365', 'rate', 'hz', 'mean_gap', 'gap_ratio', 'nev']
+PAIR_COLS = ['f_' + k for k in FAM_FEATS] + ['fam', 'mill']
+
+def fam_history(ev_dates, fam, t):
+    """Same family features the production ranker uses (ml/forecast.py)."""
+    t = pd.Timestamp(t); d = ev_dates.get(fam)
+    if d is None or not len(d) or d[0] > t:
+        return dict(since=365.0, n7=0, n30=0, n90=0, n365=0, rate=0.0, hz=0.0, mean_gap=365.0, gap_ratio=0.0, nev=0)
+    d = d[d <= t]
+    age = (t - pd.DatetimeIndex(d)).days.values; since = float(age.min())
+    gaps = np.diff(d).astype('timedelta64[D]').astype(int) if len(d) > 1 else np.array([])
+    mg = float(gaps.mean()) if len(gaps) else 365.0
+    hz = 0.0
+    if len(gaps) >= 3:
+        surv = gaps[gaps > since]; prior = 1 - np.exp(-1 / max(mg, 1))
+        hz = ((surv <= since + 1).sum() + 2 * prior) / (len(surv) + 2)
+    span = max((t - pd.Timestamp(d.min())).days, 1)
+    return dict(since=since, n7=int((age <= 7).sum()), n30=int((age <= 30).sum()), n90=int((age <= 90).sum()),
+                n365=int((age <= 365).sum()), rate=len(d) / span, hz=float(hz), mean_gap=mg,
+                gap_ratio=since / mg if mg > 0 else 0.0, nev=len(d))
+
+def pair_rows(ev_dates, origins, mill, classes):
+    return pd.DataFrame([{**{'f_' + k: v for k, v in fam_history(ev_dates, f, t).items()}, 'fam': f, 'mill': mill}
+                         for t in origins for f in classes])
 
 def wilson(k, n, z=1.96):
     if not n: return (None, None)
@@ -50,26 +73,38 @@ def run(rules):
     FE.EQUIP_RULES = rules; FE.TYPES = [t for t, _ in rules] + ['Other equipment']
     daily = FE.build_daily(raw, uni); last = daily['VRM-1'].index.max()
     ROWS = {(m, h): FE.make_rows(daily[m], h, False, 'equip', daily[OTHER[m]]).assign(mill_v2=int(m == 'VRM-2'), mill=m) for m in FE.MILLS for h in FE.HORIZONS}
-    ALL = [c for c in ROWS[('VRM-1', 1)].columns if c not in META + ['mill']]
-    h1 = {m: 0 for m in FE.MILLS}; res = dict(n=0, h1=0, h3=0, b3=0, folds=[], by_mill={m: dict(n=0, h3=0, b3=0) for m in FE.MILLS})
+    em = raw[raw['Breakdown Type'].isin(['Electrical Breakdown', 'Mechanical Breakdown'])].copy()
+    em['family'] = em['Breakdwon Name'].map(FE.map_equip)
+    EVD = {m: {f: np.sort(pd.to_datetime(g.Date.unique())) for f, g in em[em['Mill Name'] == m].groupby('family')} for m in FE.MILLS}
+    res = dict(n=0, h1=0, h3=0, b3=0, folds=[], by_mill={m: dict(n=0, h3=0, b3=0) for m in FE.MILLS})
     for f in range(FOLDS):
         end = last - pd.Timedelta(days=f * FOLD_DAYS); start = end - pd.Timedelta(days=FOLD_DAYS - 1)
         tr = pd.concat([x[x.valid & (x.target_date < start)] for x in ROWS.values()])
-        t = tr[(tr.y == 1) & tr.primary.notna()]; classes = sorted(t.primary.unique()); code = {c: i for i, c in enumerate(classes)}
-        mdl = cat_model().fit(t[ALL], t.primary.map(code).values); cls = np.asarray(mdl.classes_).astype(int).ravel()
-        base = t.primary.value_counts(normalize=True).reindex(classes).fillna(0).values
+        lab = tr[(tr.y == 1) & tr.all_reasons.map(lambda a: isinstance(a, list) and len(a) > 0)]
+        classes = sorted({c for a in lab.all_reasons for c in a})
+        X, Y = [], []
+        for m in FE.MILLS:
+            g = lab[lab.mill == m]
+            if not len(g): continue
+            X.append(pair_rows(EVD[m], g.origin.tolist(), m, classes))
+            Y.append(np.array([int(c in a) for a in g.all_reasons for c in classes]))
+        X = pd.concat(X, ignore_index=True); Y = np.concatenate(Y)
+        mdls = [CatBoostClassifier(iterations=250, depth=5, learning_rate=0.06, loss_function='Logloss',
+                                   verbose=0, thread_count=2, random_seed=s, cat_features=['fam', 'mill']).fit(X[PAIR_COLS], Y)
+                for s in SEEDS]
+        prim = tr[(tr.y == 1) & tr.primary.notna()].primary.value_counts(normalize=True).reindex(classes).fillna(0).values
+        b3 = [classes[j] for j in np.argsort(-prim)[:TOP_K]]
         fn = fh1 = fh3 = fb3 = 0
         for m in FE.MILLS:
-            ev = tr[tr.mill == m]; ev = ev[(ev.y == 1) & ev.primary.notna()]
-            w = 0.5 ** ((start - ev.target_date).dt.days / HL); c = ev.assign(w=w).groupby('primary').w.sum().reindex(classes).fillna(0) + 0.5; rec = (c / c.sum()).values
             r = ROWS[(m, 1)]; te = r[r.valid & (r.target_date >= start) & (r.target_date <= end) & (r.y == 1)]
             te = te[te.all_reasons.map(lambda a: isinstance(a, list) and len(a) > 0)]
             if not len(te): continue
-            P = np.zeros((len(te), len(classes))); P[:, cls] = mdl.predict_proba(te[ALL]); P = BLEND * P + (1 - BLEND) * rec
-            b3 = [classes[j] for j in np.argsort(-base)[:TOP_K]]
+            T = pair_rows(EVD[m], pd.to_datetime(te.origin).tolist(), m, classes)
+            P = np.mean([md.predict_proba(T[PAIR_COLS])[:, 1] for md in mdls], axis=0).reshape(len(te), len(classes))
             for i, (_, row) in enumerate(te.iterrows()):
                 order = np.argsort(-P[i]); acts = row.all_reasons
-                h3 = any(a in [classes[j] for j in order[:TOP_K]] for a in acts); h1_ = classes[order[0]] in acts; hb = any(a in b3 for a in acts)
+                h3 = any(a in [classes[j] for j in order[:TOP_K]] for a in acts)
+                h1_ = classes[order[0]] in acts; hb = any(a in b3 for a in acts)
                 fn += 1; fh1 += h1_; fh3 += h3; fb3 += hb
                 bm = res['by_mill'][m]; bm['n'] += 1; bm['h3'] += h3; bm['b3'] += hb
         res['n'] += fn; res['h1'] += fh1; res['h3'] += fh3; res['b3'] += fb3
